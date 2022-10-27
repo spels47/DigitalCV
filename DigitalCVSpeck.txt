@@ -1,0 +1,31 @@
+digital cv speck
+
+kontaktskjema
+bilder, flere bilder som kan blas igjennom for å se meg.
+en om meg seksjon hvor jeg snakker om mine interesser og hobbyer.
+en hvor jeg er basert hen del type noe som sier at jeg er en utvikler i larvik med integrert kart som viser hvor det er hen.
+
+tekniske kunnskaper sidepanel meny ting, med forkjellige teknologier og kodespråk etc som må fungere som linker ish.
+de skal ha et tidspenn av hvor lang tid jeg har opparbeidet erfaring med teknologien eller kodespråket og skal også
+fungere som linker som enten tar deg til en annen side eller en pop up dialog elns som utdyper hva jeg har brukt teknologien til
+i dypere detalj.
+
+ha oversettelse til forkjellige språk gjennom tannhjul meny i topp meny, lagret preferert språk i local storage
+viss det ikke finnes noe i localstorage prøve å basere default språk ut ifra ip addressa for å finne ut hvilken land ip addressa
+kommer fra.
+
+kontakt skjema skal helst kunne sende en email rett fra websiden og til meg med obligatoriske felter som
+fra addresse (addresse som jeg kan nå avsender fra)
+navn på person
+navn på selskap personen representerer
+subject
+email body (innhold)
+i tillegg til en drag and drop greie for attachments.
+
+viss jeg ikke skal ha et email sende skjema så må jeg i det minste ha email, telefon nummer og linkedin konto 
+i noe fancy card elns
+
+det kan hende dark mode settings er kjekt å ha for siden også men tror dette burde være optional til å begynne med
+
+kommer nok til å trenge å gjøre siden mobile friendly for å sørge for at ting ikke ser rart ut for folk som besøker siden fra
+enheter med liten skjerm.
