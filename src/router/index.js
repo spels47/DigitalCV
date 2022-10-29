@@ -1,11 +1,18 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import JobApplication from '../views/JobApplication.vue'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+
+Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '*',
+    redirect: '/'
+  },
+  {
     path: '/',
-    name: 'JobApplication',
-    component: JobApplication
+    name: 'home',
+    component: HomeView
   },
   {
     path: '/about',
@@ -19,8 +26,8 @@ const routes = [
   }
 ]
 
-const router = createRouter({
-  history: createWebHashHistory(),
+const router = new VueRouter({
+  mode: "history",
   routes
 })
 

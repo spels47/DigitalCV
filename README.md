@@ -1,4 +1,4 @@
-# digital-cv
+# DigitalCV
 
 ## Project setup
 ```
