@@ -3,11 +3,12 @@
     <v-main>
       <v-app-bar color="background" app>
 
+        <v-app-bar-nav-icon @click="navDrawerOpen = true"></v-app-bar-nav-icon>
         <v-btn class="ml-2 mr-2" text color="primary" to="/dashboard">
           <v-icon left>mdi-home</v-icon>
           <span style="color: var(--v-contrast-base)">Dashboard</span>
         </v-btn>
-        <v-btn class="ml-2 mr-2" text color="primary" to="/about">
+        <v-btn class="ml-2 mr-2" text color="primary" to="/contact">
           <v-icon left>mdi-card-account-mail</v-icon>
           <span style="color: var(--v-contrast-base)">Contact Patrick</span>
         </v-btn>
@@ -42,6 +43,27 @@
           </v-list>
         </v-menu>
       </v-app-bar>
+
+      <v-navigation-drawer v-model="navDrawerOpen" absolute temporary>
+        <v-list nav dense>
+          <v-list-item-group v-model="navDrawerGroup" active-class="primary--text text--accent-4">
+            <v-list-item to="/education">
+              <v-list-item-icon>
+                <v-icon>mdi-account-school</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>Education & Certificates</v-list-item-title>
+            </v-list-item>
+
+            <v-list-item to="/references">
+              <v-list-item-icon>
+                <v-icon>mdi-account-heart</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>References</v-list-item-title>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-navigation-drawer>
+
       <router-view/>
     </v-main>
   </v-app>
@@ -79,7 +101,9 @@ export default {
             text: "Norwegian",
             value: "NO"
           }
-        ]
+        ],
+        navDrawerOpen: false,
+        navDrawerGroup: []
       }
     },
   methods: {

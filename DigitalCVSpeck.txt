@@ -1,18 +1,38 @@
 digital cv speck
 
-kontaktskjema
-bilder, flere bilder som kan blas igjennom for å se meg.
-en om meg seksjon hvor jeg snakker om mine interesser og hobbyer.
-en hvor jeg er basert hen del type noe som sier at jeg er en utvikler i larvik med integrert kart som viser hvor det er hen.
+generelt:
 
-tekniske kunnskaper sidepanel meny ting, med forkjellige teknologier og kodespråk etc som må fungere som linker ish.
+det kan hende dark mode settings er kjekt å ha for siden også men tror dette burde være optional til å begynne med - DONE
+
+kommer nok til å trenge å gjøre siden mobile friendly for å sørge for at ting ikke ser rart ut for folk som besøker siden fra
+enheter med liten skjerm.
+
+
+topp meny:
+
+ha oversettelse til forkjellige språk gjennom tannhjul meny, lagret preferert språk i local storage - DONE
+
+viss det ikke finnes noe i localstorage prøve å basere default språk ut ifra ip addressa for å finne ut hvilken land ip addressa
+kommer fra. (må fortsatt gjøres, foreløpig defaulter til engelsk om ingenting annet er bestemt)
+
+hamburger meny ->
+meny punkt som heter Referanser, skal lede til en side hvor alle referansene mine er.
+meny punkt som heter Utdannelse og kursbevis, skal lede til en side hvor relevant utdannelse og kursbevis ligger.
+
+
+dashboard page:
+
+profil bilde.
+bildegalleri ting hvor du kan bla i flere bilder av meg
+en kort om meg seksjon hvor jeg snakker om mine interesser og hobbyer.
+noe som sier at jeg er en utvikler i larvik med integrert kart som viser hvor det er hen.
+
+tekniske kunnskaper sidepanel meny ting, med forkjellige teknologier og kodespråk etc.
 de skal ha et tidspenn av hvor lang tid jeg har opparbeidet erfaring med teknologien eller kodespråket og skal også
-fungere som linker som enten tar deg til en annen side eller en pop up dialog elns som utdyper hva jeg har brukt teknologien til
+fungere som linker som åpner en pop up dialog elns som utdyper hva jeg har brukt teknologien til
 i dypere detalj.
 
-ha oversettelse til forkjellige språk gjennom tannhjul meny i topp meny, lagret preferert språk i local storage
-viss det ikke finnes noe i localstorage prøve å basere default språk ut ifra ip addressa for å finne ut hvilken land ip addressa
-kommer fra.
+contact patrick page:
 
 kontakt skjema skal helst kunne sende en email rett fra websiden og til meg med obligatoriske felter som
 fra addresse (addresse som jeg kan nå avsender fra)
@@ -25,7 +45,14 @@ i tillegg til en drag and drop greie for attachments.
 viss jeg ikke skal ha et email sende skjema så må jeg i det minste ha email, telefon nummer og linkedin konto 
 i noe fancy card elns
 
-det kan hende dark mode settings er kjekt å ha for siden også men tror dette burde være optional til å begynne med
 
-kommer nok til å trenge å gjøre siden mobile friendly for å sørge for at ting ikke ser rart ut for folk som besøker siden fra
-enheter med liten skjerm.
+referanser page:
+
+det hadde vært litt kult å hatt sånn profil avatar med bilde og navn av personen som referansen er skrevet av
+og så ha en stjerne basert rating i tilleg til en tekst boks under for den faktiske tekst referansen.
+
+kan hende jeg må strukturere det annerledes siden noe av denne informasjonen er uortodoks å samle inn.
+
+utdannelse:
+
+denne siden skal ha et lite bilde av enten karakterkort eller kursbevis med en tittel om hva det er som for eksempel Get Academy med en subtekst under bilde som er fra - til jeg gikk på det programmet.
