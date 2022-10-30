@@ -1,9 +1,7 @@
 <template>
   <div>
     <hello-world />
-    <v-btn><span class="test">test</span></v-btn>
   </div>
-  
 </template>
 
 <script>
@@ -23,5 +21,6 @@
 <style lang="scss">
 .test{
   color: var(--v-primary-base);
+  background-color: var(--v-background-base);
 }
 </style>

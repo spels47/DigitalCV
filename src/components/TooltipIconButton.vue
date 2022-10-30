@@ -53,7 +53,7 @@ export default {
     clickable: {
       type: Boolean,
       default: true
-    }
+    },
   },
   methods: {
     buttonClicked() {
