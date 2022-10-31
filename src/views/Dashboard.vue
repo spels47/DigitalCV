@@ -1,52 +1,61 @@
 <template>
-  <v-card :loading="loading" color="cardbg" class="mx-auto my-12" :max-width="maxWidth">
-    <template slot="progress">
-      <v-progress-linear color="accent" height="10" indeterminate></v-progress-linear>
-    </template>
+  <div class="d-flex my-12 mx-4 justify-space-between">
+    <PersonalInterestsList :loading="loading"></PersonalInterestsList>
 
-    <ProfileImage :maxWidth="maxWidth"></ProfileImage>
+    <v-card :loading="loading" color="cardbg" class="mx-auto" :max-width="maxWidth">
+      <template slot="progress">
+        <v-progress-linear color="accent" height="10" indeterminate></v-progress-linear>
+      </template>
 
-    <v-card-title>About Patick</v-card-title>
+      <ProfileImage :maxWidth="maxWidth"></ProfileImage>
 
-    <v-card-text>
-      Forære røbe anstrengende forgifte rundelige probat bekjenner, 
-      studenterdagene åndedrag arvelige utstøtt, 
-      smukt tyve prosenter oppsnuse reisepenge det konditoren. 
-      Pytt ovenikjøpet fortie værs'god behøver lettsindig nødes, 
-      pakkene pakkene ringeaktende, 
-      nykker ødeland ivrig ødsle usannhet alminnelig. 
-      Formodentlig nu forpliktelser Dem utgifter unnskyldt, 
-      innleder nektes innvier, 
-      deilige herefter skammelig. 
-      Gledet sorgløs forestillet riktignok avkrok gasjen, 
-      utspørre befordring bakhånden befordring dukkeseng.
-    </v-card-text>
+      <v-card-title>About Patrick</v-card-title>
 
-    <v-card-actions>
-      <v-btn color="primary" text>hire now!</v-btn>
-    </v-card-actions>
-  </v-card>
+      <v-card-text>
+        Forære røbe anstrengende forgifte rundelige probat bekjenner, 
+        studenterdagene åndedrag arvelige utstøtt, 
+        smukt tyve prosenter oppsnuse reisepenge det konditoren. 
+        Pytt ovenikjøpet fortie værs'god behøver lettsindig nødes, 
+        pakkene pakkene ringeaktende, 
+        nykker ødeland ivrig ødsle usannhet alminnelig. 
+        Formodentlig nu forpliktelser Dem utgifter unnskyldt, 
+        innleder nektes innvier, 
+        deilige herefter skammelig. 
+        Gledet sorgløs forestillet riktignok avkrok gasjen, 
+        utspørre befordring bakhånden befordring dukkeseng.
+      </v-card-text>
+    </v-card>
+
+    <CompetenciesList :loading="loading"></CompetenciesList>
+  </div>
+  
 </template>
 
 <script>
 import ProfileImage from "@/components/ProfileImage.vue";
+import CompetenciesList from "@/components/Dashboard/CompetenciesList.vue";
+import PersonalInterestsList from "@/components/Dashboard/PersonalInterestsList.vue";
   export default {
     name: 'Dashboard',
     components: {
-      ProfileImage
+      ProfileImage,
+      CompetenciesList,
+      PersonalInterestsList
     },
     data: function () {
       return {
         loading: false,
         selection: 1,
-        maxWidth: 1000
+        maxWidth: 750,
       }
     },
     methods: {
       
     },
     computed: {
-      
+      itemValue: function(){
+        return undefined;
+      }
     },
     mounted() {
       
