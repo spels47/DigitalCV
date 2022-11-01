@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import ExampleModule from "@/store/modules/ExampleModule";
+import CompetenciesModule from "@/store/modules/CompetenciesModule";
+import PersonalInterestsModule from "@/store/modules/PersonalInterestsModule";
 
 Vue.use(Vuex)
 
@@ -23,6 +24,7 @@ export default new Vuex.Store({
     }
   },
   modules: {
-    ExampleModule: ExampleModule
+    CompetenciesModule: CompetenciesModule,
+    PersonalInterestsModule: PersonalInterestsModule
   }
 })

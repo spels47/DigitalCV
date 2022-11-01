@@ -27,20 +27,27 @@
     </v-card>
 
     <CompetenciesList :loading="loading"></CompetenciesList>
+
+
+    <CompetenciesDialog></CompetenciesDialog>
+    <PersonalInterestsDialog></PersonalInterestsDialog>
   </div>
-  
 </template>
 
 <script>
 import ProfileImage from "@/components/ProfileImage.vue";
 import CompetenciesList from "@/components/Dashboard/CompetenciesList.vue";
+import CompetenciesDialog from "@/components/Dashboard/CompetenciesDialog.vue";
+import PersonalInterestsDialog from "@/components/Dashboard/PersonalInterestsDialog.vue";
 import PersonalInterestsList from "@/components/Dashboard/PersonalInterestsList.vue";
   export default {
     name: 'Dashboard',
     components: {
       ProfileImage,
       CompetenciesList,
-      PersonalInterestsList
+      CompetenciesDialog,
+      PersonalInterestsList,
+      PersonalInterestsDialog
     },
     data: function () {
       return {
