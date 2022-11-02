@@ -3,8 +3,10 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
+import util from "@/helpers/util";
 
 Vue.config.productionTip = false
+Vue.prototype.$utils = util;
 
 new Vue({
   router,

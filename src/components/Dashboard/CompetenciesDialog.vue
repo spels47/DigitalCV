@@ -1,20 +1,24 @@
 <template>
-  <v-dialog :value="showDialog" @click:outside="closeDialog()" max-width="290">
-      <v-card color="cardbg" outlined>
-        <v-card-title class="text-h5" color="primary">
-          Competencies test
-        </v-card-title>
-        <v-card-subtitle>{{selectedCompetency}}</v-card-subtitle>
+  <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" :height="height">
+      <v-card color="cardbg" outlined rounded :height="height" style="overflow: hidden;">
+        <Csharp :height="height" v-if="selectedCompetency == 'Csharp'"></Csharp>
+        <Javascript :height="height" v-if="selectedCompetency == 'Javascript'"></Javascript>
+        <VisualBasic :height="height" v-if="selectedCompetency == 'Visual Basic'"></VisualBasic>
       </v-card>
     </v-dialog>
 </template>
 
 <script>
   import { mapState, mapActions } from "vuex";
+  import Csharp from "./Competencies/Csharp.vue";
+  import Javascript from "./Competencies/Javascript.vue";
+  import VisualBasic from "./Competencies/VisualBasic.vue";
   export default {
     name: 'CompetenciesDialog',
     components: {
-      
+      Csharp,
+      Javascript,
+      VisualBasic
     },
     props: {
       loading: {
@@ -25,7 +29,7 @@
     },
     data: function () {
       return {
-        
+        height: 750,
       }
     },
     methods: {

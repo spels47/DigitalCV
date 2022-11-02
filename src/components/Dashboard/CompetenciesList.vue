@@ -8,33 +8,33 @@
         <v-subheader>Code Languages</v-subheader>
         <v-list-item-group color="primary" :value="codeLanguageSelected" @change="changeGroupSelection($event, 'codeLanguage')">
 
-          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('CSHARP')">
+          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('Csharp')">
             <v-list-item-icon >
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
+              <v-icon>mdi-file-code</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Best Programming Language</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
+              <v-list-item-title>Csharp</v-list-item-title>
+              <v-list-item-subtitle>{{experience(new Date(2016, 8), null)}} experience</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('JAVASCRIPT')">
+          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('Javascript')">
             <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
+              <v-icon>mdi-file-code</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Best Programming Language</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
+              <v-list-item-title>Javascript</v-list-item-title>
+              <v-list-item-subtitle>{{experience(new Date(2019, 9), null)}} experience</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('VISUAL BASIC')">
+          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('Visual Basic')">
             <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
+              <v-icon>mdi-file-code</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Best Programming Language</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
+              <v-list-item-title>Visual Basic</v-list-item-title>
+              <v-list-item-subtitle>{{experience(new Date(2020, 7), null)}} experience</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
 
@@ -112,6 +112,7 @@
 
 <script>
   import { mapState, mapActions } from "vuex";
+  import util from "@/helpers/util";
   export default {
     name: 'CompetenciesList',
     components: {
@@ -132,13 +133,16 @@
     methods: {
       ...mapActions({
         changeSelectedCompetency: 'CompetenciesModule/setSelectedCompetency',
-        changeCompetencyGroupSelection: 'CompetenciesModule/setListSelection',
+        changeCompetencyGroupSelection: 'CompetenciesModule/setListSelection'
       }),
       displayCompetence(competence){
         this.changeSelectedCompetency(competence);
       },
       changeGroupSelection(selection, group){
         this.changeCompetencyGroupSelection({type: group, value: selection});
+      },
+      experience(start, stop){
+        return util.calculateExperience(start, stop);
       }
     },
     computed: {
