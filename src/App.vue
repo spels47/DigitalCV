@@ -165,19 +165,19 @@ var(--v-NAME_OF_VARIABLE-darken[1 - 5])
 }
 
 *::-webkit-scrollbar-track:active {
-  background-color: var(--v-marked-base);
+  background-color: var(--v-secondary-base);
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background-color: var(--v-primary-base);
+  background-color: var(--v-primary-darken1);
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: var(--v-primary-lighten1);
+  background-color: var(--v-primary-base);
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: var(--v-primary-lighten2);
+  background-color: var(--v-primary-lighten1);
 }
 </style>
