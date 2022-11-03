@@ -1,11 +1,11 @@
 <template>
   <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" :height="height">
-      <v-card color="cardbg" outlined rounded :height="height" style="overflow: hidden;">
-        <Csharp :height="height" v-if="selectedCompetency == 'Csharp'"></Csharp>
-        <Javascript :height="height" v-if="selectedCompetency == 'Javascript'"></Javascript>
-        <VisualBasic :height="height" v-if="selectedCompetency == 'Visual Basic'"></VisualBasic>
-      </v-card>
-    </v-dialog>
+    <v-card color="cardbg" outlined rounded :height="height" style="overflow: hidden;">
+      <Csharp :height="height" v-if="selectedCompetency == 'Csharp'"></Csharp>
+      <Javascript :height="height" v-if="selectedCompetency == 'Javascript'"></Javascript>
+      <VisualBasic :height="height" v-if="selectedCompetency == 'Visual Basic'"></VisualBasic>
+    </v-card>
+  </v-dialog>
 </template>
 
 <script>

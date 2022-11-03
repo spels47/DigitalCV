@@ -1,20 +1,18 @@
 <template>
-  <v-dialog v-model="showDialog" max-width="290">
-      <v-card>
-        <v-card-title class="text-h5" color="primary">
-          Personal Interest test
-        </v-card-title>
-        <v-card-subtitle>{{selectedPersonalInterest}}</v-card-subtitle>
-      </v-card>
-    </v-dialog>
+  <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" :height="height">
+    <v-card color="cardbg" outlined rounded :height="height" style="overflow: hidden;">
+      <Pathfinder :height="height" v-if="selectedPersonalInterest == 'Pathfinder'"></Pathfinder>
+    </v-card>
+  </v-dialog>
 </template>
 
 <script>
-  import { mapState } from "vuex";
+  import { mapState, mapActions } from "vuex";
+  import Pathfinder from "./PersonalInterests/Pathfinder.vue";
   export default {
     name: 'PersonalInterestsDialog',
     components: {
-      
+      Pathfinder
     },
     props: {
       loading: {
@@ -25,11 +23,24 @@
     },
     data: function () {
       return {
-        
+        height: 750,
       }
     },
     methods: {
-      
+      ...mapActions({
+        changeSelectedPersonalInterest: 'PersonalInterestsModule/setSelectedPersonalInterest',
+        disableListSelection: 'PersonalInterestsModule/resetListSelection'
+      }),
+      closeDialog(){
+        var activeElements = document.getElementsByClassName("v-list-item--active");
+        for (let i = 0; i < activeElements.length; i++) {
+          const element = activeElements[i];
+          element.classList.remove("v-item--active");
+          element.classList.remove("v-list-item--active");
+        }
+        this.disableListSelection();
+        this.changeSelectedPersonalInterest(null);
+      }
     },
     computed: {
       ...mapState('PersonalInterestsModule', ['selectedPersonalInterest', 'showDialog']),
