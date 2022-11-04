@@ -16,7 +16,7 @@
       </v-carousel>
     </v-card>
 
-    <v-card v-if="togglePatrick">
+    <!-- <v-card v-if="togglePatrick">
       <v-carousel style="width: 500px;" height="350" :show-arrows="false" :value="previousPicture2" hide-delimiters>
         <v-carousel-item v-for="(item,i) in pictures" :key="i" :src="item.src" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
       </v-carousel>
@@ -29,6 +29,54 @@
     <v-card v-if="togglePatrick">
       <v-carousel style="width: 500px;" height="350" :show-arrows="false" :value="nextPicture2" hide-delimiters>
         <v-carousel-item v-for="(item,i) in pictures" :key="i" :src="item.src" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+      </v-carousel> -->
+
+      <v-card v-if="togglePatrick">
+      <v-carousel style="width: 500px;" height="350" :show-arrows="false" :value="previousPicture2" hide-delimiters>
+        <v-carousel-item src="@/assets/patrick1.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick2.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick3.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick4.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick5.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick6.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick7.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick8.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick9.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick10.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick11.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick12.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+      </v-carousel>
+    </v-card>
+    <v-card v-if="togglePatrick">
+      <v-carousel style="width: 1000px;" height="550" v-model="selected" interval="10000" cycle progress progress-color="accent" hide-delimiters>
+        <v-carousel-item src="@/assets/patrick1.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick2.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick3.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick4.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick5.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick6.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick7.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick8.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick9.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick10.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick11.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick12.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+      </v-carousel>
+    </v-card>
+    <v-card v-if="togglePatrick">
+      <v-carousel style="width: 500px;" height="350" :show-arrows="false" :value="nextPicture2" hide-delimiters>
+        <v-carousel-item src="@/assets/patrick1.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick2.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick3.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick4.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick5.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick6.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick7.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick8.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick9.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick10.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick11.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick12.jpg" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
       </v-carousel>
     </v-card>
   </div>
@@ -90,6 +138,15 @@
           },
           {
             src: '@/assets/patrick9.jpg',
+          },
+          {
+            src: '@/assets/patrick10.jpg',
+          },
+          {
+            src: '@/assets/patrick11.jpg',
+          },
+          {
+            src: '@/assets/patrick12.jpg',
           },
         ],
         selected: 0,
