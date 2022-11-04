@@ -1,5 +1,5 @@
 <template>
-  <v-card :loading="loading" color="cardbg" class="pl-2 pr-2 pt-1 pb-1">
+  <v-card :loading="loading" color="cardbg" class="pl-2 pr-2 pt-1 pb-1" style="max-height: 100%; overflow-x: auto;">
       <v-list color="cardbg" dense>
         <v-list-item-title>Hobbies & Spare time activities</v-list-item-title>
         <v-divider></v-divider>

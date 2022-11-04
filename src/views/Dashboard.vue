@@ -1,9 +1,9 @@
 <template>
   <div class="my-12 mx-4">
-    <div class="d-flex mb-4 justify-space-around">
+    <div class="d-flex mb-4 justify-space-around" style="max-height: 50vh;">
       <PersonalInterestsList :loading="loading"></PersonalInterestsList>
 
-      <v-card :loading="loading" color="cardbg" class="mx-auto" :max-width="maxWidth">
+      <v-card :loading="loading" color="cardbg" class="mx-auto" :max-width="maxWidth" style="max-height: 100%; overflow-x: auto;">
         <template slot="progress">
           <v-progress-linear color="accent" height="10" indeterminate></v-progress-linear>
         </template>
@@ -33,8 +33,10 @@
       <CompetenciesDialog></CompetenciesDialog>
       <PersonalInterestsDialog></PersonalInterestsDialog>
     </div>
-
-    <PictureCarousel></PictureCarousel>
+    <div style="max-height: 35vh; overflow: hidden;">
+      <PictureCarousel></PictureCarousel>
+    </div>
+    
   </div>
 </template>
 
