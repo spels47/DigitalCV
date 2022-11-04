@@ -1,10 +1,10 @@
 <template>
   <v-card class="mx-auto" :max-width="maxWidth" tile>
-    <v-img height="100%" src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg">
+    <v-img height="250" lazy-src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg" src="@/assets/programming.gif">
       <v-row align="end" class="fill-height">
         <v-col align-self="start" class="pa-0" cols="12">
-          <v-avatar class="profile" color="grey" :size="maxWidth / 3" rounded>
-            <v-img src="https://cdn.vuetifyjs.com/images/profiles/marcus.jpg"></v-img>
+          <v-avatar class="profile" color="grey" :size="200" rounded>
+            <v-img src="@/assets/patrick-profile.jpg"></v-img>
           </v-avatar>
         </v-col>
         <v-col class="py-0">
