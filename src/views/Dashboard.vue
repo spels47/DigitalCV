@@ -85,7 +85,7 @@
 </template>
 
 <script>
-import ProfileImage from "@/components/ProfileImage.vue";
+import ProfileImage from "@/components/Dashboard/ProfileImage.vue";
 import CompetenciesList from "@/components/Dashboard/CompetenciesList.vue";
 import CompetenciesDialog from "@/components/Dashboard/CompetenciesDialog.vue";
 import PersonalInterestsDialog from "@/components/Dashboard/PersonalInterestsDialog.vue";
