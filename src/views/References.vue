@@ -1,41 +1,6 @@
 <template>
   <v-card height="100%">
-    <v-card-title><v-icon color="primary">mdi-account-heart</v-icon><span class="pl-4">REFERENCES</span></v-card-title>
-    <!-- <v-container fluid>
-      <v-row justify="start" align="start">
-        <v-col cols="4">
-          <v-card color="cardbg">
-            <v-card-title>title</v-card-title>
-            <v-card-subtitle>subtitle</v-card-subtitle>
-            <v-card-text>text text text</v-card-text>
-            <v-card-actions>
-              <v-btn>action</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col cols="4">
-          <v-card color="cardbg">
-            <v-card-title>title</v-card-title>
-            <v-card-subtitle>subtitle</v-card-subtitle>
-            <v-card-text>text text text</v-card-text>
-            <v-card-actions>
-              <v-btn>action</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-        <v-col cols="4">
-          <v-card color="cardbg">
-            <v-card-title>title</v-card-title>
-            <v-card-subtitle>subtitle</v-card-subtitle>
-            <v-card-text>text text text</v-card-text>
-            <v-card-actions>
-              <v-btn>action</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-      </v-row>
-    </v-container> -->
-
+    <v-card-title><v-icon color="primary">mdi-account-heart</v-icon><span class="pl-4">References</span></v-card-title>
     <div class="d-flex flex-wrap justify-space-around align-start" style="width: 100%; height: calc(100% - 200px); overflow-y: auto;">
       <v-card v-for="(reference, index) in references" :key="index" class="ma-4 cardMain" width="100%" height="100%" color="cardbg">
         <v-card class="d-flex pa-2" elevation="0" color="cardbg">
@@ -56,8 +21,6 @@
       </v-card>
     </div>
   </v-card>
-  
-  
 </template>
 
 <script>
@@ -111,7 +74,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .referenceColumn{
   width: 20vw;
 }
