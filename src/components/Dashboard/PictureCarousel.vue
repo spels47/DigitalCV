@@ -18,116 +18,116 @@
 
       <v-card>
       <v-carousel style="width: 20vw;" height="20vh" :show-arrows="false" :value="previousPicture" hide-delimiters>
-        <v-carousel-item src="@/assets/patrick4.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick4.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick10.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick10.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick11.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item src="@/assets/patrick13.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick11.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick13.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick14.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick14.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick15.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick15.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick16.jpg" contain max-height="20vh"></v-img>
-        </v-carousel-item>
-        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick17.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick16.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick18.jpg" contain max-height="20vh"></v-img>
-        </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick19.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick20.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick17.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick21.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick18.jpg" contain max-height="20vh"></v-img>
+        </v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick19.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+          <v-img src="@/assets/patrick/patrick20.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick22.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick21.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick23.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick22.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick24.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item src="@/assets/patrick25.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+          <v-img src="@/assets/patrick/patrick23.jpg" contain max-height="20vh"></v-img>
+        </v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick24.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick25.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
       </v-carousel>
     </v-card>
     <v-card>
       <v-carousel style="width: 40vw;" height="35vh" v-model="selected" interval="10000" cycle progress progress-color="accent" hide-delimiters>
-        <v-carousel-item src="@/assets/patrick4.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick4.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick10.jpg" contain max-height="35vh"></v-img>
+          <v-img src="@/assets/patrick/patrick10.jpg" contain max-height="35vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick11.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item src="@/assets/patrick13.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick11.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick13.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick14.jpg" contain max-height="35vh"></v-img>
+          <v-img src="@/assets/patrick/patrick14.jpg" contain max-height="35vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick15.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick15.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick16.jpg" contain max-height="35vh"></v-img>
-        </v-carousel-item>
-        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick17.jpg" contain max-height="35vh"></v-img>
+          <v-img src="@/assets/patrick/patrick16.jpg" contain max-height="35vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick18.jpg" contain max-height="35vh"></v-img>
-        </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick19.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick20.jpg" contain max-height="35vh"></v-img>
+          <v-img src="@/assets/patrick/patrick17.jpg" contain max-height="35vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick21.jpg" contain max-height="35vh"></v-img>
+          <v-img src="@/assets/patrick/patrick18.jpg" contain max-height="35vh"></v-img>
+        </v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick19.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+          <v-img src="@/assets/patrick/patrick20.jpg" contain max-height="35vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick22.jpg" contain max-height="35vh"></v-img>
+          <v-img src="@/assets/patrick/patrick21.jpg" contain max-height="35vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick23.jpg" contain max-height="35vh"></v-img>
+          <v-img src="@/assets/patrick/patrick22.jpg" contain max-height="35vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick24.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item src="@/assets/patrick25.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+          <v-img src="@/assets/patrick/patrick23.jpg" contain max-height="35vh"></v-img>
+        </v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick24.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick25.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
       </v-carousel>
     </v-card>
     <v-card>
       <v-carousel style="width: 20vw;" height="20vh" :show-arrows="false" :value="nextPicture" hide-delimiters>
-        <v-carousel-item src="@/assets/patrick4.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick4.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick10.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick10.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick11.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item src="@/assets/patrick13.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick11.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick13.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick14.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick14.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick15.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick15.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick16.jpg" contain max-height="20vh"></v-img>
-        </v-carousel-item>
-        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick17.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick16.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick18.jpg" contain max-height="20vh"></v-img>
-        </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick19.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick20.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick17.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick21.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick18.jpg" contain max-height="20vh"></v-img>
+        </v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick19.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+          <v-img src="@/assets/patrick/patrick20.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick22.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick21.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
         <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
-          <v-img src="@/assets/patrick23.jpg" contain max-height="20vh"></v-img>
+          <v-img src="@/assets/patrick/patrick22.jpg" contain max-height="20vh"></v-img>
         </v-carousel-item>
-        <v-carousel-item src="@/assets/patrick24.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
-        <v-carousel-item src="@/assets/patrick25.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+          <v-img src="@/assets/patrick/patrick23.jpg" contain max-height="20vh"></v-img>
+        </v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick24.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
+        <v-carousel-item src="@/assets/patrick/patrick25.jpg" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition"></v-carousel-item>
       </v-carousel>
     </v-card>
   </div>

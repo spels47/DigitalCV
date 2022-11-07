@@ -13,17 +13,7 @@
         <v-card-title>About Patrick</v-card-title>
 
         <v-card-text style="max-height: 52%; overflow-y: auto;">
-          Forære røbe anstrengende forgifte rundelige probat bekjenner, 
-          studenterdagene åndedrag arvelige utstøtt, 
-          smukt tyve prosenter oppsnuse reisepenge det konditoren. 
-          Pytt ovenikjøpet fortie værs'god behøver lettsindig nødes, 
-          pakkene pakkene ringeaktende, 
-          nykker ødeland ivrig ødsle usannhet alminnelig. 
-          Formodentlig nu forpliktelser Dem utgifter unnskyldt, 
-          innleder nektes innvier, 
-          deilige herefter skammelig. 
-          Gledet sorgløs forestillet riktignok avkrok gasjen, 
-          utspørre befordring bakhånden befordring dukkeseng.
+          Hello 😁 i'm a {{age(new Date(1995, 9, 3))}} year old full stack developer from Larvik, Norway.
 
           <v-divider></v-divider>
 
@@ -91,6 +81,7 @@ import CompetenciesDialog from "@/components/Dashboard/CompetenciesDialog.vue";
 import PersonalInterestsDialog from "@/components/Dashboard/PersonalInterestsDialog.vue";
 import PersonalInterestsList from "@/components/Dashboard/PersonalInterestsList.vue";
 import PictureCarousel from "@/components/Dashboard/PictureCarousel.vue";
+import util from "@/helpers/util";
   export default {
     name: 'Dashboard',
     components: {
@@ -109,7 +100,9 @@ import PictureCarousel from "@/components/Dashboard/PictureCarousel.vue";
       }
     },
     methods: {
-      
+      age(start){
+        return util.calculateAge(start);
+      }
     },
     computed: {
       itemValue: function(){

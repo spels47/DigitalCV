@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar class="mr-4"><v-img src="@/assets/csharp.png"></v-img></v-avatar> Csharp
+      <v-avatar class="mr-4"><v-img src="@/assets/programming-languages/csharp.png"></v-img></v-avatar> Csharp
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 650px; overflow-y: auto;">

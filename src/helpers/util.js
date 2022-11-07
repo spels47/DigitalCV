@@ -19,5 +19,11 @@ export default {
       result += `${days} day(s)`;
     }
     return result;
+  },
+  calculateAge(startDate){
+    var time = new Date() - startDate;
+    let milliSecondsInAYear = 31557600000;
+    let years = Math.floor(time / milliSecondsInAYear);
+    return years;
   }
 };

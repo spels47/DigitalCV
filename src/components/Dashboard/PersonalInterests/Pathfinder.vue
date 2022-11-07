@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar class="mr-4"><v-img src="@/assets/pathfinder.png"></v-img></v-avatar> Pathfinder
+      <v-avatar class="mr-4"><v-img src="@/assets/hobbies/pathfinder.png"></v-img></v-avatar> Pathfinder
     </v-card-title>
     <v-card-text style="max-height: 650px; overflow-y: auto;">
       Erklærte nykker bevares, blanco måttet frykteligste med vokte, støte nærhet forstyrr. Pytt lyster er, sanglerke luner forstille sås besvær vokte, efterlot etsteds hva blekere. Underskrev mangt mangt De gjeldsbevis redningsmann forstille, underordnede magrere toner nødvendige, reddes visitter gledet. Meg utenlandsreise prosenter makroner skrape avsetter, hyss gjeldsbevis datum.

@@ -29,14 +29,14 @@
             {
               name: "Thor Heyerdahl vgs",
               type: "High School",
-              picture: require("@/assets/vidregående-vitnemål.jpg"),
+              picture: require("@/assets/education/vidregående-vitnemål.jpg"),
               startDate: new Date(2011, 8, 15),
               stopDate: new Date(2015, 6, 22)
             },
             {
               name: "Get Academy",
               type: "Code Bootcamp",
-              picture: require("@/assets/vidregående-vitnemål.jpg"),
+              picture: require("@/assets/education/vidregående-vitnemål.jpg"),
               startDate: new Date(2019, 1, 28),
               stopDate: new Date(2020, 6, 19)
             },
