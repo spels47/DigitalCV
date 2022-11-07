@@ -80,7 +80,7 @@
 }
 
 .cardMain{
-  max-width: 600px;
+  max-width: 30vw;
   max-height: 600px;
   overflow-y: hidden;
 }
