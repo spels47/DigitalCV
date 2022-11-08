@@ -48,7 +48,13 @@
     },
     methods: {
       sendEmail(){
-        var link = `mailto:${this.email}?subject=${encodeURIComponent(this.subject)}&body=${encodeURIComponent(this.body)}`;
+        var link = `mailto:${this.email}`;
+        if(this.subject) link += `?subject=${encodeURIComponent(this.subject)}`
+        if(this.body){
+          if(link.includes('?')) link += '&';
+          else link += '?';
+          link += `body=${encodeURIComponent(this.body)}`;
+        }
         console.log("link:", link);
         window.location.href = link;
       },
