@@ -12,7 +12,7 @@
 
         <v-card-title>About Patrick</v-card-title>
 
-        <v-card-text style="max-height: 52%; overflow-y: auto;">
+        <v-card-text style="max-height: 20vh; overflow-y: auto;">
           Hello 😁 i'm a {{age(new Date(1995, 9, 3))}} year old full stack developer from Larvik, Norway.
 
           <v-divider></v-divider>
