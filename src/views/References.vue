@@ -39,7 +39,7 @@
             jobTitle: "Engineering Team Lead",
             phoneNumber: null,
             link: "https://www.linkedin.com/in/rykkelid/",
-            referenceText: "Prøvet samtykker kan, undertiden pyntet innesto, innfall enkemann nedbrutt. Igjennem bille bakhånden tra foreta kvartalsrenter, oppholdt hyppigst forestillet forlatelse pines rest avser, toner nebb tåle sølen gasje. Gjestebudene herefter behøver tærer riktignok jages utsette, overs egenkjærlig velstående. Nebb prøvet støte forrykke, ovenikjøpet pine gledet romsterer underskrev illebefinnende, nyss rår bestyrelse luftdraget forretningsdyktighet. Kjoletøyer papiret pakkene fryde ivrig, måttet gripe drakt Deres ubesindighet legemlig løgnaktige."
+            referenceText: "Patrick is a dedicated and engaged developer. He has had the opportunity to work with many advanced technologies and is up to date on the .net platform, but is also familiar with older technology on the .net platform. Despite his knowledge of current technologies - he has also worked on legacy systems and respects existing code-bases. Patrick is interested in technology and likes a good discussion, but from a practical perspective where he is most interested in actually producing high-quality working software. Patrick is experienced with Kanban, Scrum, relational databases and document databases, RESTful APIs, MQ, CI/CD, source control, web development (HTML, javascript, CSS, angularjs, vue, etc), micro services and docker. He is young at heart and would fit particularly well in a young environment. Patrick is good at identifying challenges that may arise in development projects."
           },
           {
             name: "name",
