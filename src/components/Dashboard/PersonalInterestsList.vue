@@ -3,32 +3,14 @@
       <v-list color="cardbg" dense>
         <v-list-item-title>Hobbies & Spare time activities</v-list-item-title>
         <v-divider></v-divider>
+        <v-subheader>Hobbies</v-subheader>
         <v-list-item-group color="primary" :value="hobbySelected" @change="changeGroupSelection($event)">
-
-          <v-list-item :ripple="false" color="contrast" @click="displayPersonalInterest('Pathfinder')">
-            <v-list-item-icon >
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Pathfinder</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
-          <v-list-item :ripple="false" color="contrast">
+          <v-list-item v-for="(hobby, index) in hobbies" :key="index" :ripple="false" color="contrast" @click="displayPersonalInterest(hobby.name)">
             <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
+              <v-icon>mdi-dice-multiple-outline</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>My super fascinating hobby</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
-          <v-list-item :ripple="false" color="contrast">
-            <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>My super fascinating spare time activity</v-list-item-title>
+              <v-list-item-title>{{hobby.name}}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -52,7 +34,17 @@ import { mapState, mapActions } from "vuex";
     },
     data: function () {
       return {
-        
+        hobbies: [
+          {
+            name: "Pathfinder",
+          },
+          {
+            name: "Game Development"
+          },
+          {
+            name: "Streaming"
+          }
+        ]
       }
     },
     methods: {
