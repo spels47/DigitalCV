@@ -17,8 +17,8 @@
         <v-card width="15vw" color="cardbg">
           <v-card-title class="title"><span class="pr-4">Contact info</span> <v-icon color="primary">mdi-email</v-icon></v-card-title>
           <div class="pa-8">
-            <v-text-field label="Phone number" color="secondary" prefix="+47" persistent-hint :hint="copiedPhone ? 'copied to clipboard!' : ''" readonly @click="clickPhone()" :value="phone"></v-text-field>
-            <v-text-field label="Email" color="secondary" prefix="@" persistent-hint :hint="copiedEmail ? 'copied to clipboard!' : ''" readonly @click="clickEmail()" :value="email"></v-text-field>
+            <v-text-field class="pointerLink" label="Phone number" color="secondary" prefix="+47" persistent-hint :hint="copiedPhone ? 'copied to clipboard!' : ''" readonly @click="clickPhone()" :value="phone"></v-text-field>
+            <v-text-field class="pointerLink" label="Email" color="secondary" prefix="@" persistent-hint :hint="copiedEmail ? 'copied to clipboard!' : ''" readonly @click="clickEmail()" :value="email"></v-text-field>
             <v-btn color="blue ligthen-1" block href="https://www.linkedin.com/in/patrick-88a4a1179" target="_blank">linkedin</v-btn>
             <v-btn class="mt-4" color="purple lighten-1" block href="https://github.com/spels47" target="_blank">github</v-btn>
           </div>
@@ -88,6 +88,8 @@
   }
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+  .pointerLink{
+    cursor: pointer;
+  }
 </style>  

@@ -14,50 +14,25 @@
 
         <v-card-text style="max-height: 20vh; overflow-y: auto;">
           Hello 😁 i'm a {{age(new Date(1995, 9, 3))}} year old full stack developer from Larvik, Norway.
+          I take pride in my work, and like to work on my deliveries until im proud of what i deliver.
+          I strive to improve myself professionally regardless of how good i might get at what i do.
 
-          <v-divider></v-divider>
+          <v-divider class="my-2"></v-divider>
 
-          Gjelden hjems hospitalslem, 
-          kontordøren passiar datere. 
-          Bet tarvelig hjems, 
-          betrygget bille gasjen åndedrag. 
-          Velsignede utenlandsreise besvær, 
-          forretningsplanen føye bekymringer tålte. 
-          Linde innvier er, 
-          forestillet utlandet værs'god elskverdig forfrossen. 
-          Ektemenn rekk bet og arkskrift, 
-          gasjen ekorne lerkefuglen.
+          I'm an objective thinker, that is good at identifying issues and actively work on solutions.
+          I like to work closely with the product department and pitch ideas for changes or improvements as i do get creative inspirations while implementing the spec provided to me.
 
-          <v-divider></v-divider>
+          <v-divider class="my-2"></v-divider>
 
-          Biomstendighetene punge erkjennelse Dem, 
-          måttet banksaker lerkefuglen småting besynderlig utlandet godhet. 
-          Råttenskap grassert begriper pakkene lenestolen forkler datum, 
-          dog ydmykende sås, 
-          hjerteløs dødsdag bekymringer luftdraget menneskers fastere. 
-          Forinnen især likesom utlandet kvartalsrenter enfoldig fordømme, 
-          handlings sunne børnene sunne. 
-          Formodentlig meg dukkeseng stivt gjemmespill moret, 
-          lengste dukkeseng forfrossen, 
-          avkrok formiddag middel. 
-          Har besynderlig fornøyelig pleie frelste innvendig fryde, 
-          således gnavet ekornet enfoldig.
+          Outside the workplace i spend time with friends, watch movies, play pathfinder, enjoy documentaries and play video games.
+          I like spending time on game development and other creative side projects.
 
-          <v-divider></v-divider>
+          <v-divider class="my-2"></v-divider>
 
-          Prøvet samtykker kan, 
-          undertiden pyntet innesto, 
-          innfall enkemann nedbrutt. 
-          Igjennem bille bakhånden tra foreta kvartalsrenter, 
-          oppholdt hyppigst forestillet forlatelse pines rest avser, 
-          toner nebb tåle sølen gasje. 
-          Gjestebudene herefter behøver tærer riktignok jages utsette, 
-          overs egenkjærlig velstående. 
-          Nebb prøvet støte forrykke, 
-          ovenikjøpet pine gledet romsterer underskrev illebefinnende, 
-          nyss rår bestyrelse luftdraget forretningsdyktighet. 
-          Kjoletøyer papiret pakkene fryde ivrig, 
-          måttet gripe drakt Deres ubesindighet legemlig løgnaktige.
+          I was first introduced to programming when i went to a community college back in 2016, and fell in love with game development that year.
+          I learned to use programming for more business related purposes when i entered Get Academy in 2019, and have a total experience with programming of {{experience(new Date(2016, 9))}},
+          <br>
+          but i have {{experience(new Date(2019, 1, 27))}} experience, working with programming professionally
         </v-card-text>
       </v-card>
 
@@ -102,6 +77,9 @@ import util from "@/helpers/util";
     methods: {
       age(start){
         return util.calculateAge(start);
+      },
+      experience(start, stop){
+        return util.calculateExperience(start, stop);
       }
     },
     computed: {

@@ -4,7 +4,7 @@
       <v-row align="end" class="fill-height">
         <v-col align-self="start" class="pa-0" cols="12">
           <v-avatar class="profile" color="grey" :size="200" rounded>
-            <v-img src="@/assets/patrick/patrick10.jpg"></v-img>
+            <v-img src="@/assets/patrick/patrick26.jpg"></v-img>
           </v-avatar>
         </v-col>
         <v-col class="py-0">

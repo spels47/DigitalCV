@@ -1,5 +1,5 @@
 <template>
-  <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" :height="height">
+  <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" height="60vh">
     <v-card color="cardbg" outlined rounded :height="height" style="overflow: hidden;">
       <Pathfinder :height="height" v-if="selectedPersonalInterest == 'Pathfinder'"></Pathfinder>
     </v-card>
