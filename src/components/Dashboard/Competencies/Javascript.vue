@@ -4,7 +4,7 @@
       <v-avatar tile class="mr-4"><v-img src="@/assets/programming-languages/javascript.png"></v-img></v-avatar> Javascript
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
-    <v-card-text style="max-height: 650px; overflow-y: auto;">
+    <v-card-text style="max-height: 50vh; overflow-y: auto;">
       Tankeløse syltetøy tappert, 
       ekornet kontorforretninger velstående nebb. 
       Enkemann fruen barndomsvenninne, 

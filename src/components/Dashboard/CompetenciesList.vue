@@ -3,105 +3,47 @@
       <v-list color="cardbg" dense>
         <v-list-item-title>Technical Competencies</v-list-item-title>
 
-        <v-divider></v-divider>
+        <v-divider class="my-2"></v-divider>
 
         <v-subheader>Code Languages</v-subheader>
         <v-list-item-group color="primary" :value="codeLanguageSelected" @change="changeGroupSelection($event, 'codeLanguage')">
-
-          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('Csharp')">
+          <v-list-item v-for="(codeLanguage, index) in codeLanguages" :key="index" :ripple="false" color="contrast" @click="displayCompetence(codeLanguage.name)">
             <v-list-item-icon >
               <v-icon>mdi-file-code</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Csharp</v-list-item-title>
-              <v-list-item-subtitle>{{experience(new Date(2016, 8), null)}} experience</v-list-item-subtitle>
+              <v-list-item-title>{{codeLanguage.name}}</v-list-item-title>
+              <v-list-item-subtitle>{{experience(codeLanguage.experienceStart, codeLanguage.experienceStop)}} experience</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
-
-          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('Javascript')">
-            <v-list-item-icon>
-              <v-icon>mdi-file-code</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Javascript</v-list-item-title>
-              <v-list-item-subtitle>{{experience(new Date(2019, 9), null)}} experience</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-
-          <v-list-item :ripple="false" color="contrast" @click="displayCompetence('Visual Basic')">
-            <v-list-item-icon>
-              <v-icon>mdi-file-code</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Visual Basic</v-list-item-title>
-              <v-list-item-subtitle>{{experience(new Date(2020, 7), null)}} experience</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-
         </v-list-item-group>
 
-        <v-divider></v-divider>
+        <v-divider class="my-2"></v-divider>
 
         <v-subheader>Technologies</v-subheader>
         <v-list-item-group color="primary" :value="technologySelected" @change="changeGroupSelection($event, 'technology')">
-          <v-list-item :ripple="false" color="contrast">
+          <v-list-item v-for="(technology, index) in technologies" :key="index" :ripple="false" color="contrast" @click="displayCompetence(technology.name)">
             <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
+              <v-icon>mdi-cards-spade-outline</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Best Tecnology</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item :ripple="false" color="contrast">
-            <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Best Tecnology</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item :ripple="false" color="contrast">
-            <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Best Tecnology</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
+              <v-list-item-title>{{technology.name}}</v-list-item-title>
+              <v-list-item-subtitle>{{experience(technology.experienceStart, technology.experienceStop)}} experience</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
 
-        <v-divider></v-divider>
+        <v-divider class="my-2"></v-divider>
 
         <v-subheader>Frameworks</v-subheader>
         <v-list-item-group color="primary" :value="frameworkSelected" @change="changeGroupSelection($event, 'framework')">
-          <v-list-item :ripple="false" color="contrast">
+          <v-list-item v-for="(framework, index) in frameworks" :key="index" :ripple="false" color="contrast" @click="displayCompetence(framework.name)">
             <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
+              <v-icon>mdi-code-json</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Best Framework</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item :ripple="false" color="contrast">
-            <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Best Framework</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-          <v-list-item :ripple="false" color="contrast">
-            <v-list-item-icon>
-              <v-icon>mdi-all-inclusive-box-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Best Framework</v-list-item-title>
-              <v-list-item-subtitle>2 years 5 months experience</v-list-item-subtitle>
+              <v-list-item-title>{{framework.name}}</v-list-item-title>
+              <v-list-item-subtitle>{{experience(framework.experienceStart, framework.experienceStop)}} experience</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -127,7 +69,92 @@
     },
     data: function () {
       return {
-        selection: 1,
+        codeLanguages: [
+          {
+            name: "Csharp",
+            experienceStart: new Date(2016, 8),
+            experienceStop: null
+          },
+          {
+            name: "Javascript",
+            experienceStart: new Date(2019, 1),
+            experienceStop: null
+          },
+          {
+            name: "Visual Basic",
+            experienceStart: new Date(2020, 1),
+            experienceStop: null
+          },
+          {
+            name: "Typescript",
+            experienceStart: new Date(2020, 8),
+            experienceStop: new Date(2021, 2)
+          }
+        ],
+        technologies: [
+          {
+            name: "Mssql",
+            experienceStart: new Date(2019, 3),
+            experienceStop: null
+          },
+          {
+            name: "MongoDB",
+            experienceStart: new Date(2020, 1),
+            experienceStop: null
+          },
+          {
+            name: "RavenDB",
+            experienceStart: new Date(2019, 11),
+            experienceStop: new Date(2020, 3)
+          },
+          {
+            name: "Google Firebase",
+            experienceStart: new Date(2019, 2),
+            experienceStop: new Date(2019, 3)
+          },
+          {
+            name: "Docker",
+            experienceStart: new Date(2020, 2),
+            experienceStop: null
+          },
+          {
+            name: "RabbitMQ",
+            experienceStart: new Date(2020, 7),
+            experienceStop: null
+          }
+        ],
+        frameworks: [
+          {
+            name: "AngularJS",
+            experienceStart: new Date(2019, 9),
+            experienceStop: new Date(2021, 2)
+          },
+          {
+            name: "Vue",
+            experienceStart: new Date(2019, 2),
+            experienceStop: null
+          },
+          {
+            name: "Bootstrap",
+            experienceStart: new Date(2019, 2),
+            experienceStop: new Date(2021, 2)
+          },
+          {
+            name: "Vuetify",
+            experienceStart: new Date(2022, 2),
+            experienceStop: null
+          },
+          {
+            name: "Vuex",
+            experienceStart: new Date(2022, 2),
+            experienceStop: null
+          },
+          {
+            name: "Vue Router",
+            experienceStart: new Date(2019, 2),
+            experienceStop: null
+          }
+        ]
       }
     },
     methods: {

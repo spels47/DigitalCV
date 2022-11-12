@@ -1,6 +1,6 @@
 export default {
   calculateExperience(startDate, stopDate) {
-    var experienceTime =  stopDate ?? new Date() - startDate;
+    var experienceTime =  (stopDate ?? new Date()) - startDate;
     let milliSecondsInAYear = 31557600000;
     let milliSecondsInAMonth = 2629800000;
     let milliSecondsInADay = 86400000;

@@ -12,7 +12,7 @@
 
         <v-card-title>About Patrick</v-card-title>
 
-        <v-card-text style="max-height: 20vh; overflow-y: auto;">
+        <v-card-text style="max-height: 25vh; overflow-y: auto;">
           Hello 😁 i'm a {{age(new Date(1995, 9, 3))}} year old full stack developer from Larvik, Norway.
           I take pride in my work, and like to work on my deliveries until im proud of what i deliver.
           I strive to improve myself professionally regardless of how good i might get at what i do.
