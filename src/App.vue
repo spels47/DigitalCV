@@ -1,7 +1,7 @@
 <template>
   <v-app class="app">
-    <v-main>
-      <v-app-bar color="background" app>
+    <v-main class="main">
+      <v-app-bar color="background lighten-1" app>
 
         <v-app-bar-nav-icon @click="navDrawerOpen = true"></v-app-bar-nav-icon>
         <v-btn class="ml-2 mr-2" text color="primary" to="/dashboard">
@@ -148,7 +148,11 @@ var(--v-NAME_OF_VARIABLE-darken[1 - 5])
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--v-secondary) var(--v-background);
+  scrollbar-color: var(--v-secondary-base) var(--v-background-lighten1);
+}
+
+.main{
+  background-color: var(--v-background-base);
 }
 
 /* Chrome, Edge and Safari */
@@ -157,7 +161,7 @@ var(--v-NAME_OF_VARIABLE-darken[1 - 5])
 }
 *::-webkit-scrollbar-track {
   // border-radius: 20px;
-  background-color: var(--v-background-base);
+  background-color: var(--v-background-lighten1);
 }
 
 *::-webkit-scrollbar-track:hover {
