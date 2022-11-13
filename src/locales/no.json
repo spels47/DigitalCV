@@ -1,3 +1,10 @@
 {
-  "help": "hjelp"
+  "topBar": {
+    "dashboard": "dashboard",
+    "contact": "kontakt patrick",
+    "education": "Utdannelse & Kursbevis",
+    "references": "Referanser",
+    "darkMode": "Veksle mørk modus",
+    "languagePicker": "Endre språk"
+  }
 }

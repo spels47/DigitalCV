@@ -6,21 +6,17 @@
         <v-app-bar-nav-icon @click="navDrawerOpen = true"></v-app-bar-nav-icon>
         <v-btn class="ml-2 mr-2" text color="primary" to="/dashboard">
           <v-icon left>mdi-home</v-icon>
-          <span style="color: var(--v-contrast-base)">Dashboard</span>
+          <span style="color: var(--v-contrast-base)">{{$t("topBar.dashboard")}}</span>
         </v-btn>
         <v-btn class="ml-2 mr-2" text color="primary" to="/contact">
           <v-icon left>mdi-card-account-mail</v-icon>
-          <span style="color: var(--v-contrast-base)">Contact Patrick</span>
+          <span style="color: var(--v-contrast-base)">{{$t("topBar.contact")}}</span>
         </v-btn>
 
         <v-spacer></v-spacer>
 
-        {{$i18n.locale}}
-        {{selectedLanguage.value.toLowerCase()}}
-        {{$t("help")}}
-
-        <TooltipIconButton v-if="darkModeState" @clicked="toggleDarkMode()" color="contrast" icon="mdi-weather-night" tooltip="Toggle dark mode"/>
-        <TooltipIconButton v-if="!darkModeState" @clicked="toggleDarkMode()" color="contrast" icon="mdi-weather-sunny" tooltip="Toggle dark mode"/>
+        <TooltipIconButton v-if="darkModeState" @clicked="toggleDarkMode()" color="contrast" icon="mdi-weather-night" :tooltip="$t('topBar.darkMode')"/>
+        <TooltipIconButton v-if="!darkModeState" @clicked="toggleDarkMode()" color="contrast" icon="mdi-weather-sunny" :tooltip="$t('topBar.darkMode')"/>
         <v-menu offset-y>
           <template #activator="menu">
             <v-tooltip bottom>
@@ -29,7 +25,7 @@
                   <v-icon>mdi-translate</v-icon>
                 </v-btn>
               </template>
-              <span>Change language</span>
+              <span>{{$t("topBar.languagePicker")}}</span>
             </v-tooltip>
           </template>
 
@@ -55,14 +51,14 @@
               <v-list-item-icon>
                 <v-icon>mdi-account-school</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>Education & Certificates</v-list-item-title>
+              <v-list-item-title>{{$t("topBar.education")}}</v-list-item-title>
             </v-list-item>
 
             <v-list-item to="/references">
               <v-list-item-icon>
                 <v-icon>mdi-account-heart</v-icon>
               </v-list-item-icon>
-              <v-list-item-title>References</v-list-item-title>
+              <v-list-item-title>{{$t("topBar.references")}}</v-list-item-title>
             </v-list-item>
           </v-list-item-group>
         </v-list>

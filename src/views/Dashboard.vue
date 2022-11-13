@@ -13,26 +13,22 @@
         <v-card-title>About Patrick</v-card-title>
 
         <v-card-text style="max-height: 25vh; overflow-y: auto;">
-          Hello 😁 i'm a {{age(new Date(1995, 9, 3))}} year old full stack developer from Larvik, Norway.
-          I take pride in my work, and like to work on my deliveries until im proud of what i deliver.
-          I strive to improve myself professionally regardless of how good i might get at what i do.
+          {{$t("dashboard.content1", {age: age(new Date(1995, 9, 3))})}}
 
           <v-divider class="my-2"></v-divider>
 
-          I'm an objective thinker, that is good at identifying issues and actively work on solutions.
-          I like to work closely with the product department and pitch ideas for changes or improvements as i do get creative inspirations while implementing the spec provided to me.
+          {{$t("dashboard.content2")}}
 
           <v-divider class="my-2"></v-divider>
 
-          Outside the workplace i spend time with friends, watch movies, play pathfinder, enjoy documentaries and play video games.
-          I like spending time on game development and other creative side projects.
+          {{$t("dashboard.content3")}}
 
           <v-divider class="my-2"></v-divider>
 
-          I was first introduced to programming when i went to a community college back in 2016, and fell in love with game development that year.
-          I learned to use programming for more business related purposes when i entered Get Academy in 2019, and have a total experience with programming of {{experience(new Date(2016, 9))}},
+          {{$t("dashboard.content4", {experience: experience(new Date(2016, 9))})}}
+
           <br>
-          but i have {{experience(new Date(2019, 1, 27))}} experience, working with programming professionally
+          {{$t("dashboard.content5", {experience: experience(new Date(2019, 1, 27))})}}
         </v-card-text>
       </v-card>
 
