@@ -38,7 +38,6 @@
 
       <CompetenciesList :loading="loading"></CompetenciesList>
 
-
       <CompetenciesDialog></CompetenciesDialog>
       <PersonalInterestsDialog></PersonalInterestsDialog>
     </div>
