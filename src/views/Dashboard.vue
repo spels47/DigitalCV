@@ -69,7 +69,6 @@ import util from "@/helpers/util";
     data: function () {
       return {
         loading: false,
-        selection: 1,
         maxWidth: 750,
       }
     },
