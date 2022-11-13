@@ -15,6 +15,10 @@
 
         <v-spacer></v-spacer>
 
+        {{$i18n.locale}}
+        {{selectedLanguage.value.toLowerCase()}}
+        {{$t("help")}}
+
         <TooltipIconButton v-if="darkModeState" @clicked="toggleDarkMode()" color="contrast" icon="mdi-weather-night" tooltip="Toggle dark mode"/>
         <TooltipIconButton v-if="!darkModeState" @clicked="toggleDarkMode()" color="contrast" icon="mdi-weather-sunny" tooltip="Toggle dark mode"/>
         <v-menu offset-y>
@@ -79,6 +83,7 @@ export default {
   mounted() {
     this.selectedLanguageIndex = this.languages.indexOf(this.getLanguageByValue(window.localStorage.getItem("selectedLanguage"))) ?? 0;
     this.selectedLanguage = this.getLanguageByValue(window.localStorage.getItem("selectedLanguage")) ?? this.languages[0]; // replace default with what country the browser says the user is from
+    this.$i18n.locale = this.selectedLanguage.value.toLowerCase();
     if (window.localStorage.getItem("darkmode") == "true" || window.localStorage.getItem("darkmode") == null) {
       this.$vuetify.theme.dark = true;
       this.$store.commit("updateVuetifyDarkMode", true);
@@ -125,6 +130,7 @@ export default {
       handler: function (newValue, oldValue) {
         this.selectedLanguage = this.languages[newValue];
         window.localStorage.setItem("selectedLanguage", this.languages[newValue]?.value);
+        this.$i18n.locale = this.selectedLanguage.value.toLowerCase();
       },
       deep: false
     }
