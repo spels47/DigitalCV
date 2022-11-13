@@ -5,16 +5,9 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      Bootstrap is the first styling focused library i ever used.
+      I learned about it in Get Academy first, but also used it in ABAX for a time.
+      However it is worth mentioning that the Bootstrap i used in ABAX was highly customized and not vanilla Bootstrap.
     </v-card-text>
   </div>
 </template>

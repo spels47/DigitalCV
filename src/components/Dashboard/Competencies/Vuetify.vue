@@ -5,19 +5,9 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Punge piken godhet tilføyet krog, 
-      skilling han nærhet, 
-      besynderlighet arvet efterlot kontordøren. 
-      Skyndte besynderlig sunne, 
-      dødsfallet mangen megen noe syden skyldbevisst nærhet. 
-      Hjelpeløs voldt gjeldsbeviset, 
-      vimser veie kontorforretninger, 
-      forskrekket at ubesindighet. 
-      Fornøyelig luner lirke, 
-      ødsle menneskers hykler opplevet drift, 
-      oppholdt sanglerke overga nippet. 
-      Fjerdingår måttet forgifte arkskrift egensindige, 
-      hvorledes rår vitende biomstendighetene anfører skyldte en.
+      Vuetify was the framework we used for our internal tooling in ABAX, its a framework that has really grown on me.
+      <v-divider class="my-2"></v-divider>
+      This page was also written using Vuetufy!
     </v-card-text>
   </div>
 </template>

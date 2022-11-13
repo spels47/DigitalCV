@@ -5,16 +5,8 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      I used google firebase as database technology of choice when working on the dating app that was comissioned while i went to Get Academy.
+      In that database i stored things like user credentials and profile pictures, and other user information.
     </v-card-text>
   </div>
 </template>

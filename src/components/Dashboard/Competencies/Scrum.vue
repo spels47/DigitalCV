@@ -5,16 +5,11 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      While working in ABAX we followed the SCRUM framework for project management,
+      We would hold Standup meetings in the mornings, taking turns explaining what we did yesterday and if we were stuck on something / needed help from somebody on the team with something.
+      We would estimate our tasks and break the bigger tasks into smaller, more easy to define in technical steps needed to finish, tasks.
+      Then we would work with those smaller tasks in our Kanban board.
+      We would also hold weekly meetings with the teams Business Analyst in order to look at progress and also to look at specs for upcoming tasks and plan forward for when different new tasks should start being worked on.
     </v-card-text>
   </div>
 </template>

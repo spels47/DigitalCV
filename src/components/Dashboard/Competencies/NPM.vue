@@ -5,16 +5,8 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      Node Package Manager is the primary package manager i have used for all frontend applications i have worked on.
+      And as such i have learned various commands with it, but also learned how to create my own custom commands where i string together multiple commands for easy use using && syntax between the commands.
     </v-card-text>
   </div>
 </template>

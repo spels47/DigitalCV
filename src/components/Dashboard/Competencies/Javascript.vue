@@ -5,16 +5,18 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      I learned Javascript when i started at Get Academy in 2019,
+      And have only used it in context of creating web clients (web pages)
+
+      <v-divider class="my-2"></v-divider>
+
+      The first real project that i used javascript on was when Get Academy was comissioned to make a proof of concept for a dating app, that i was delegated to work on.
+      the first iteration was made using only javascript, html and css, i would later refactor this to work with Vue, and bootstrap which was the first time i used frameworks.
+
+      <v-divider class="my-2"></v-divider>
+
+      During my time in ABAX i also used Javascript when maintining or creating solutions for the different web clients there,
+      and learned and developed my skills with Javascript there.
     </v-card-text>
   </div>
 </template>

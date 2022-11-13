@@ -5,16 +5,16 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      I first used MongoDB in ABAX,
+      during that time i learned to use tools like Mongo Compass and Studio 3T.
+      As well as using the Mongo Shell on occasion.
+      During my time using MondoDB i have learned:
+      <ul>
+        <li>How to use the C# driver</li>
+        <li>How to create new Indexes including TTL indexes (Time To Live)</li>
+        <li>How to write queries using the C# driver</li>
+      </ul>
+      I have also used MongoDB in a personal project to store pdf documents as base64 string
     </v-card-text>
   </div>
 </template>

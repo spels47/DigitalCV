@@ -5,16 +5,11 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      I have used paket to install dependencies for a .net project that had paket as its way of fetching packages.
+      Paket was also used to lock versions of packages in that project and it was all very legacy, 
+      things would break and stop working if packages were updated to latest version.
+      An unfortunate side effect of the projects Legacy state at the time, However this would gradually improve over time.
+      So my experience with Paket is rather isolated to that project.
     </v-card-text>
   </div>
 </template>

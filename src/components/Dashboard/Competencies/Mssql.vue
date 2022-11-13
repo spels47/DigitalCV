@@ -5,16 +5,19 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      I first learned the basics of sql querying language when i went to Get Academy.
+      I got a deeper understanding of the querying language when worked at ABAX.
+      During my time at ABAX i have written complicated queries, i have learned about:
+      <ul>
+        <li>Indexes</li>
+        <li>How to hit indexes</li>
+        <li>How to measure performance</li>
+        <li>How to improve performance in queries</li>
+        <li>How to link databases</li>
+        <li>How to use temp tables</li>
+        <li>How to set up transactions and using them for both comitting or rolling back changes</li>
+      </ul>
+      I personally prefer Relational Database technologies over Document Database technologies in general, but both have their strengths and weaknesses.
     </v-card-text>
   </div>
 </template>

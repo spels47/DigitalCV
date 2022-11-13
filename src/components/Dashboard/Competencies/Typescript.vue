@@ -5,16 +5,13 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      I have only used Typescript a little bit, i have a basic understanding of it.
+      I used Typescript on occasion when i worked on a pretty big frontend refactor project for ABAX, for some specific components that required this.
+      However for the most part i used Javascript during my time on that project.
+
+      <v-divider class="my-2"></v-divider>
+
+      Still i do have some experience with Typescript, so i wouldnt be starting from scratch should i encounter it again in the future.
     </v-card-text>
   </div>
 </template>

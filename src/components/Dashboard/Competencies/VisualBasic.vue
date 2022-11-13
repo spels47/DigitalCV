@@ -5,19 +5,8 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Punge piken godhet tilføyet krog, 
-      skilling han nærhet, 
-      besynderlighet arvet efterlot kontordøren. 
-      Skyndte besynderlig sunne, 
-      dødsfallet mangen megen noe syden skyldbevisst nærhet. 
-      Hjelpeløs voldt gjeldsbeviset, 
-      vimser veie kontorforretninger, 
-      forskrekket at ubesindighet. 
-      Fornøyelig luner lirke, 
-      ødsle menneskers hykler opplevet drift, 
-      oppholdt sanglerke overga nippet. 
-      Fjerdingår måttet forgifte arkskrift egensindige, 
-      hvorledes rår vitende biomstendighetene anfører skyldte en.
+      I have only used Visual Basic to maintain Legacy code bases, but have in that time made bugfixes to a SOAP api and written Unit tests.
+      I have also converted large quanities of Visual Basic code to C#.
     </v-card-text>
   </div>
 </template>

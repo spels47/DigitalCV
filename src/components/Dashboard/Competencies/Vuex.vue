@@ -5,19 +5,11 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Punge piken godhet tilføyet krog, 
-      skilling han nærhet, 
-      besynderlighet arvet efterlot kontordøren. 
-      Skyndte besynderlig sunne, 
-      dødsfallet mangen megen noe syden skyldbevisst nærhet. 
-      Hjelpeløs voldt gjeldsbeviset, 
-      vimser veie kontorforretninger, 
-      forskrekket at ubesindighet. 
-      Fornøyelig luner lirke, 
-      ødsle menneskers hykler opplevet drift, 
-      oppholdt sanglerke overga nippet. 
-      Fjerdingår måttet forgifte arkskrift egensindige, 
-      hvorledes rår vitende biomstendighetene anfører skyldte en.
+      Vuex is a global stateholder that is an optional addon for Vue applications.
+      I heard about this back in Get Academy but didn't really start using it before i started working with the internal tools project in ABAX.
+      But i am glad that i did and i am a big fan of it now that i am familiar with it.
+      <v-divider class="my-2"></v-divider>
+      This web page also used Vuex!
     </v-card-text>
   </div>
 </template>

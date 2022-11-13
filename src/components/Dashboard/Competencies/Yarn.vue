@@ -5,16 +5,8 @@
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Tankeløse syltetøy tappert, 
-      ekornet kontorforretninger velstående nebb. 
-      Enkemann fruen barndomsvenninne, 
-      handlings innlagt formiddag tiltrer hekling, 
-      forkler beløpet børn duer. 
-      Forskrekket kontorarbeide himmelens ytterdøren vimser makroner overlegger, 
-      oppsatte moralsk riktignok innesto fornødne bekjenner husholdningspengene, 
-      megen gjestebudene gasje. 
-      Drakt tent Deres, 
-      oppgitt barndomsvenninne deri betraktning fortjene.
+      I used Yarn for a short period of time for installing the dependencies for the frontend to a project because if you installed those dependencies with NPM it wouldnt work for reasons we never investigated deeper.
+      But we found that if you installed those dependencies with Yarn it would work just fine, so we just used that for that specific project, until one day when NPM worked with that project as well. This was pretty early in my internship with ABAX.
     </v-card-text>
   </div>
 </template>
