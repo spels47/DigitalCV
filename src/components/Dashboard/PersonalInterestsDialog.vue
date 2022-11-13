@@ -1,7 +1,9 @@
 <template>
   <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" height="60vh">
     <v-card color="cardbg" outlined rounded :height="height" style="overflow: hidden;">
-      <Pathfinder :height="height" v-if="selectedPersonalInterest == 'Pathfinder'"></Pathfinder>
+      <Pathfinder v-if="selectedPersonalInterest == 'Pathfinder'"></Pathfinder>
+      <GameDevelopment v-if="selectedPersonalInterest == 'Game Development'"></GameDevelopment>
+      <Streaming v-if="selectedPersonalInterest == 'Streaming'"></Streaming>
     </v-card>
   </v-dialog>
 </template>
@@ -9,10 +11,14 @@
 <script>
   import { mapState, mapActions } from "vuex";
   import Pathfinder from "./PersonalInterests/Pathfinder.vue";
+  import GameDevelopment from "./PersonalInterests/GameDevelopment.vue";
+  import Streaming from "./PersonalInterests/Streaming.vue";
   export default {
     name: 'PersonalInterestsDialog',
     components: {
-      Pathfinder
+      Pathfinder,
+      GameDevelopment,
+      Streaming
     },
     props: {
       loading: {

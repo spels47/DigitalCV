@@ -6,6 +6,8 @@ const state = {
   codeLanguageSelected: null,
   technologySelected: null,
   frameworkSelected: null,
+  methodologySelected: null,
+  packageManagerSelected: null
 };
 
 const mutations = {
@@ -21,6 +23,12 @@ const mutations = {
   },
   frameworkSelected(state, payload){
     state.frameworkSelected = payload;
+  },
+  methodologySelected(state, payload){
+    state.methodologySelected = payload;
+  },
+  packageManagerSelected(state, payload){
+    state.packageManagerSelected = payload;
   }
 };
 
@@ -32,11 +40,15 @@ const actions = {
     if(payload.type == "codeLanguage") commit("updateCodeLanguageSelected", payload.value);
     else if(payload.type == "technology") commit("updateTechnologySelected", payload.value);
     else if(payload.type == "framework") commit("frameworkSelected", payload.value);
+    else if(payload.type == "methodology") commit("methodologySelected", payload.value);
+    else if(payload.type == "packageManager") commit("packageManagerSelected", payload.value);
   },
   resetListSelection({ commit }, payload) {
     commit("updateCodeLanguageSelected", null);
     commit("updateTechnologySelected", null);
     commit("frameworkSelected", null);
+    commit("methodologySelected", null);
+    commit("packageManagerSelected", null);
   }
 };
 

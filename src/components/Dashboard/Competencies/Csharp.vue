@@ -54,10 +54,7 @@ import util from "@/helpers/util";
 
     },
     props: {
-      height: {
-        type: Number,
-        required: true
-      }
+      
     },
     data: function () {
       return {

@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/programming-languages/javascript.png"></v-img></v-avatar> Javascript
+      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/google-firebase.png"></v-img></v-avatar> Google Firebase
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
@@ -22,7 +22,7 @@
 <script>
 import util from "@/helpers/util";
   export default {
-    name: 'Javascript',
+    name: 'Google-Firebase',
     components: {
 
     },
@@ -31,8 +31,8 @@ import util from "@/helpers/util";
     },
     data: function () {
       return {
-        experienceStart: new Date(2019, 9),
-        experienceStop: null
+        experienceStart: new Date(2019, 2),
+        experienceStop: new Date(2019, 3)
       }
     },
     methods: {

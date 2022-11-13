@@ -1,5 +1,5 @@
 <template>
-  <v-card :loading="loading" color="cardbg" class="pl-2 pr-2 pt-1 pb-1" style="max-height: 100%; overflow-x: auto;">
+  <v-card :loading="loading" color="cardbg" class="pl-2 pr-2 pt-1 pb-1" width="15vw" style="max-height: 100%; overflow-x: auto;">
       <v-list color="cardbg" dense>
         <v-list-item-title>Technical Competencies</v-list-item-title>
 
@@ -48,6 +48,36 @@
           </v-list-item>
         </v-list-item-group>
 
+        <v-divider class="my-2"></v-divider>
+
+        <v-subheader>Methodologies</v-subheader>
+        <v-list-item-group color="primary" :value="methodologySelected" @change="changeGroupSelection($event, 'methodology')">
+          <v-list-item v-for="(methodology, index) in methodologies" :key="index" :ripple="false" color="contrast" @click="displayCompetence(methodology.name)">
+            <v-list-item-icon>
+              <v-icon>mdi-book</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>{{methodology.name}}</v-list-item-title>
+              <v-list-item-subtitle>{{experience(methodology.experienceStart, methodology.experienceStop)}} experience</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+
+        <v-divider class="my-2"></v-divider>
+
+        <v-subheader>Package managers</v-subheader>
+        <v-list-item-group color="primary" :value="packageManagerSelected" @change="changeGroupSelection($event, 'packageManager')">
+          <v-list-item v-for="(packageManager, index) in packageManagers" :key="index" :ripple="false" color="contrast" @click="displayCompetence(packageManager.name)">
+            <v-list-item-icon>
+              <v-icon>mdi-package-variant-closed</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>{{packageManager.name}}</v-list-item-title>
+              <v-list-item-subtitle>{{experience(packageManager.experienceStart, packageManager.experienceStop)}} experience</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+
       </v-list>
     </v-card>
 </template>
@@ -77,7 +107,7 @@
           },
           {
             name: "Javascript",
-            experienceStart: new Date(2019, 1),
+            experienceStart: new Date(2019, 1, 27),
             experienceStop: null
           },
           {
@@ -154,6 +184,40 @@
             experienceStart: new Date(2019, 2),
             experienceStop: null
           }
+        ],
+        methodologies: [
+          {
+            name: "Kanban",
+            experienceStart: new Date(2019, 9),
+            experienceStop: null
+          },
+          {
+            name: "Scrum",
+            experienceStart: new Date(2019, 9),
+            experienceStop: null
+          }
+        ],
+        packageManagers: [
+          {
+            name: "Node Package Manager (NPM)",
+            experienceStart: new Date(2019, 1, 27),
+            experienceStop: null
+          },
+          {
+            name: "Yarn",
+            experienceStart: new Date(2019, 9),
+            experienceStop: new Date(2020, 1)
+          },
+          {
+            name: "Paket",
+            experienceStart: new Date(2019, 9),
+            experienceStop: new Date(2021, 1)
+          },
+          {
+            name: "NuGet",
+            experienceStart: new Date(2019, 9),
+            experienceStop: null
+          }
         ]
       }
     },
@@ -173,7 +237,7 @@
       }
     },
     computed: {
-      ...mapState('CompetenciesModule', ['codeLanguageSelected', 'technologySelected', 'frameworkSelected']),
+      ...mapState('CompetenciesModule', ['codeLanguageSelected', 'technologySelected', 'frameworkSelected', 'methodologySelected', 'packageManagerSelected']),
     },
     mounted() {
       

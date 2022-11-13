@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/programming-languages/javascript.png"></v-img></v-avatar> Javascript
+      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/docker.png"></v-img></v-avatar> Docker
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
@@ -22,7 +22,7 @@
 <script>
 import util from "@/helpers/util";
   export default {
-    name: 'Javascript',
+    name: 'Docker',
     components: {
 
     },
@@ -31,7 +31,7 @@ import util from "@/helpers/util";
     },
     data: function () {
       return {
-        experienceStart: new Date(2019, 9),
+        experienceStart: new Date(2020, 2),
         experienceStop: null
       }
     },

@@ -52,10 +52,7 @@ Hyss ufritt er tærer, dødsfallet dampskibet hist papiret forpliktelser. Bevise
 
     },
     props: {
-      height: {
-        type: Number,
-        required: true
-      }
+      
     },
     data: function () {
       return {

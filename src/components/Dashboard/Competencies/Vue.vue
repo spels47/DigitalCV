@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/programming-languages/visualbasic.png"></v-img></v-avatar> Visual Basic
+      <v-avatar tile class="mr-4"><v-img src="@/assets/frameworks/vue.png"></v-img></v-avatar> Vue
     </v-card-title>
     <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
@@ -25,7 +25,7 @@
 <script>
 import util from "@/helpers/util";
   export default {
-    name: 'VisualBasic',
+    name: 'Vue',
     components: {
 
     },
@@ -34,7 +34,7 @@ import util from "@/helpers/util";
     },
     data: function () {
       return {
-        experienceStart: new Date(2020, 7),
+        experienceStart: new Date(2019, 2),
         experienceStop: null
       }
     },
