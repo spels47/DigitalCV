@@ -1,11 +1,11 @@
 <template>
   <v-card :loading="loading" color="cardbg" class="pl-2 pr-2 pt-1 pb-1" width="15vw" style="max-height: 100%; overflow-x: auto;">
       <v-list color="cardbg" dense>
-        <v-list-item-title>Technical Competencies</v-list-item-title>
+        <v-list-item-title>{{$t("technicalList.title")}}</v-list-item-title>
 
         <v-divider class="my-2"></v-divider>
 
-        <v-subheader>Code Languages</v-subheader>
+        <v-subheader>{{$t("technicalList.codeLanguageHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="codeLanguageSelected" @change="changeGroupSelection($event, 'codeLanguage')">
           <v-list-item v-for="(codeLanguage, index) in codeLanguages" :key="index" :ripple="false" color="contrast" @click="displayCompetence(codeLanguage.name)">
             <v-list-item-icon >
@@ -20,7 +20,7 @@
 
         <v-divider class="my-2"></v-divider>
 
-        <v-subheader>Technologies</v-subheader>
+        <v-subheader>{{$t("technicalList.technologyHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="technologySelected" @change="changeGroupSelection($event, 'technology')">
           <v-list-item v-for="(technology, index) in technologies" :key="index" :ripple="false" color="contrast" @click="displayCompetence(technology.name)">
             <v-list-item-icon>
@@ -35,7 +35,7 @@
 
         <v-divider class="my-2"></v-divider>
 
-        <v-subheader>Frameworks</v-subheader>
+        <v-subheader>{{$t("technicalList.frameworkHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="frameworkSelected" @change="changeGroupSelection($event, 'framework')">
           <v-list-item v-for="(framework, index) in frameworks" :key="index" :ripple="false" color="contrast" @click="displayCompetence(framework.name)">
             <v-list-item-icon>
@@ -50,7 +50,7 @@
 
         <v-divider class="my-2"></v-divider>
 
-        <v-subheader>Methodologies</v-subheader>
+        <v-subheader>{{$t("technicalList.methodologyHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="methodologySelected" @change="changeGroupSelection($event, 'methodology')">
           <v-list-item v-for="(methodology, index) in methodologies" :key="index" :ripple="false" color="contrast" @click="displayCompetence(methodology.name)">
             <v-list-item-icon>
@@ -65,7 +65,7 @@
 
         <v-divider class="my-2"></v-divider>
 
-        <v-subheader>Package managers</v-subheader>
+        <v-subheader>{{$t("technicalList.packageManagerHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="packageManagerSelected" @change="changeGroupSelection($event, 'packageManager')">
           <v-list-item v-for="(packageManager, index) in packageManagers" :key="index" :ripple="false" color="contrast" @click="displayCompetence(packageManager.name)">
             <v-list-item-icon>

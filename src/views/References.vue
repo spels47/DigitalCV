@@ -1,6 +1,6 @@
 <template>
   <v-card height="100%">
-    <v-card-title><v-icon color="primary">mdi-account-heart</v-icon><span class="pl-4">References</span></v-card-title>
+    <v-card-title><v-icon color="primary">mdi-account-heart</v-icon><span class="pl-4">{{$t("references.title")}}</span></v-card-title>
     <div class="d-flex flex-wrap justify-space-around align-start" style="width: 100%; height: calc(100% - 200px); overflow-y: auto;">
       <v-card v-for="(reference, index) in references" :key="index" class="ma-4 cardMain" width="100%" height="100%" color="cardbg">
         <v-card :class="`d-flex pa-2 ${reference.link ? 'pointerLink' : ''}`" elevation="0" color="cardbg" @click="openReferenceLink(reference.link)">

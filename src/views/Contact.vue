@@ -3,22 +3,22 @@
     <v-row justify="space-around">
       <v-col>
         <v-card width="30vw" color="cardbg">
-          <v-card-title class="title"><span class="pr-4">Contact me by Email</span> <v-icon color="primary">mdi-email</v-icon></v-card-title>
+          <v-card-title class="title"><span class="pr-4">{{$t("contact.contactByEmail")}}</span> <v-icon color="primary">mdi-email</v-icon></v-card-title>
           <div class="pa-8">
-            <v-text-field label="Subject" outlined v-model="subject"></v-text-field>
-            <v-textarea no-resize rows="15" outlined label="Message body" v-model="body"></v-textarea>
+            <v-text-field :label="$t('contact.subject')" outlined v-model="subject"></v-text-field>
+            <v-textarea no-resize rows="15" outlined :label="$t('contact.messageBody')" v-model="body"></v-textarea>
             <v-card-actions>
-              <v-btn @click="sendEmail()" outlined color="primary">Send email <v-icon right>mdi-email-fast</v-icon></v-btn>
+              <v-btn @click="sendEmail()" outlined color="primary">{{$t("contact.sendEmail")}} <v-icon right>mdi-email-fast</v-icon></v-btn>
             </v-card-actions>
           </div>
         </v-card>
       </v-col>
       <v-col>
         <v-card width="15vw" color="cardbg">
-          <v-card-title class="title"><span class="pr-4">Contact info</span> <v-icon color="primary">mdi-email</v-icon></v-card-title>
+          <v-card-title class="title"><span class="pr-4">{{$t("contact.contactInfo")}}</span> <v-icon color="primary">mdi-email</v-icon></v-card-title>
           <div class="pa-8">
-            <v-text-field class="pointerLink" label="Phone number" color="secondary" prefix="+47" persistent-hint :hint="copiedPhone ? 'copied to clipboard!' : ''" readonly @click="clickPhone()" :value="phone"></v-text-field>
-            <v-text-field class="pointerLink" label="Email" color="secondary" prefix="@" persistent-hint :hint="copiedEmail ? 'copied to clipboard!' : ''" readonly @click="clickEmail()" :value="email"></v-text-field>
+            <v-text-field class="pointerLink" :label="$t('contact.phoneLabel')" color="secondary" prefix="+47" persistent-hint :hint="copiedPhone ? 'copied to clipboard!' : ''" readonly @click="clickPhone()" :value="phone"></v-text-field>
+            <v-text-field class="pointerLink" :label="$t('contact.emailLabel')" color="secondary" prefix="@" persistent-hint :hint="copiedEmail ? 'copied to clipboard!' : ''" readonly @click="clickEmail()" :value="email"></v-text-field>
             <v-btn color="blue ligthen-1" block href="https://www.linkedin.com/in/patrick-88a4a1179" target="_blank">linkedin</v-btn>
             <v-btn class="mt-4" color="purple lighten-1" block href="https://github.com/spels47" target="_blank">github</v-btn>
           </div>
@@ -55,7 +55,6 @@
           else link += '?';
           link += `body=${encodeURIComponent(this.body)}`;
         }
-        console.log("link:", link);
         window.location.href = link;
       },
       clickPhone(){

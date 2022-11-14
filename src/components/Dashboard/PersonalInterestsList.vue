@@ -1,9 +1,9 @@
 <template>
   <v-card :loading="loading" color="cardbg" class="pl-2 pr-2 pt-1 pb-1" width="15vw" style="max-height: 100%; overflow-x: auto;">
       <v-list color="cardbg" dense>
-        <v-list-item-title>Hobbies & Spare time activities</v-list-item-title>
+        <v-list-item-title>{{$t("hobbiesList.title")}}</v-list-item-title>
         <v-divider></v-divider>
-        <v-subheader>Hobbies</v-subheader>
+        <v-subheader>{{$t("hobbiesList.hobbyHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="hobbySelected" @change="changeGroupSelection($event)">
           <v-list-item v-for="(hobby, index) in hobbies" :key="index" :ripple="false" color="contrast" @click="displayPersonalInterest(hobby.name)">
             <v-list-item-icon>
@@ -39,10 +39,10 @@ import { mapState, mapActions } from "vuex";
             name: "Pathfinder",
           },
           {
-            name: "Game Development"
+            name: this.$t("hobbiesList.gameDevelopment")
           },
           {
-            name: "Streaming"
+            name: this.$t("hobbiesList.streaming")
           }
         ]
       }

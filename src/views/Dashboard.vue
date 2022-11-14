@@ -10,7 +10,7 @@
 
         <ProfileImage :maxWidth="maxWidth"></ProfileImage>
 
-        <v-card-title>About Patrick</v-card-title>
+        <v-card-title>{{$t("dashboard.about")}}</v-card-title>
 
         <v-card-text style="max-height: 25vh; overflow-y: auto;">
           {{$t("dashboard.content1", {age: age(new Date(1995, 9, 3))})}}

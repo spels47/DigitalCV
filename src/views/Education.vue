@@ -1,6 +1,6 @@
 <template>
     <v-card height="100%">
-    <v-card-title><v-icon color="primary">mdi-account-school</v-icon><span class="pl-4">Education & Certificates</span></v-card-title>
+    <v-card-title><v-icon color="primary">mdi-account-school</v-icon><span class="pl-4">{{$t("education.title")}}</span></v-card-title>
     <div class="d-flex flex-wrap justify-start align-start" style="width: 100%; height: calc(100% - 200px); overflow-y: auto;">
       <v-card v-for="(certificate, index) in certificates.filter(cert => cert.show)" :key="index" class="ma-4 cardMain d-flex flex-column align-center" width="100%" height="100%" color="cardbg" @click="selectImage(certificate.picture)">
         <v-card-title>{{certificate.name}}</v-card-title>
@@ -28,7 +28,7 @@
           certificates: [
             {
               name: "Thor Heyerdahl vgs",
-              type: "High School",
+              type: this.$t("education.highSchool"),
               picture: require("@/assets/education/vidregående-vitnemål.jpg"),
               startDate: new Date(2011, 8, 15),
               stopDate: new Date(2015, 6, 22),
@@ -36,7 +36,7 @@
             },
             {
               name: "Get Academy",
-              type: "Code Bootcamp",
+              type: this.$t("education.codeBootcamp"),
               picture: require("@/assets/education/vidregående-vitnemål.jpg"),
               startDate: new Date(2019, 1, 28),
               stopDate: new Date(2020, 6, 19),

@@ -14,5 +14,57 @@
     "content3": "Outside the workplace i spend time with friends, watch movies, play pathfinder, enjoy documentaries and play video games. I like spending time on game development and other creative side projects.",
     "content4": "I was first introduced to programming when i went to a community college back in 2016, and fell in love with game development that year. I learned to use programming for more business related purposes when i entered Get Academy in 2019, and have a total experience with programming of {experience},",
     "content5": "but i have {experience} experience, working with programming professionally"
+  },
+  "hobbiesList": {
+    "title": "Hobbies & Spare time activities",
+    "hobbyHeader": "Hobbies",
+    "gameDevelopment": "Game Development",
+    "streaming": "Streaming"
+  },
+  "gameDevelopment": {
+    "title": "Game Development",
+    "content1": "I first learned how to do game development when i went to Bjerkely Folkehøyskole in 2016-2017. While there i learned how to program C# in the Unity engine, and how to use the Unity engine in general. I also learned the basics of 3d modeling using Blender, and texturing 3d models, that includes creating textures that simulate 3d using bump maps and has metadata on how light interacts with the texture using diffusion maps etc. The projects i made that year is gone since i didnt work with any technology that kept backups during that time.",
+    "content2": "But i did make some games since i left school, i made a mobile game that i had hosted on Google Play store for a limited time until it was removed by google, it was called FlurryTurry and it was a relatively fun tower defence game i had made.",
+    "content3": "The reason why the game was taken down from the Google Play store was because i had used an SDK a package of tools for making the builds of my mobile game that also included tools for in app purchase functionality, not that i knew about this or had used these tools, but since they were part of the toolset that the game was built with, Google thought my game had in app purchases in it. And since i hadnt declared any in app purchases Google took down the game. So it was taken down over a misunderstanding, however i managed to corrupt the projects files when i accidentally updated Unity to a beta version, which made it impossible to fix this and create another build of the game sadly.",
+    "content4": "I also made a Console App text adventure game called Ogrevent, which is available for download",
+    "here": "here",
+    "content5": "Game development is something i find fun, but it is very time consuming and difficult to do alone so its not something i get around to very often anymore."
+  },
+  "pathfinder": {
+    "title": "Pathfinder",
+    "content1": "Pathfinder is a",
+    "tabletopLink": "tabletop roleplaying game",
+    "content2": "most people who have heard of some form of tabletop roleplaying game, has heard of Dungeons & Dragons.",
+    "content3": "Pathfinder is like Dungeons & Dragons only it has different rules.",
+    "content4": "Me and some friends occasionally get together, maybe every other weekend, and we roll dice and have a good time playing Pathfinder together."
+  },
+  "streaming": {
+    "title": "Streaming",
+    "content1": "Occasionally i stream games on twitch, its just something i do because i think its fun, and its not something that i do in a professional capacity or would ever like to do in a professional capacity."
+  },
+  "technicalList": {
+    "title": "Technical Competencies",
+    "codeLanguageHeader": "Code Languages",
+    "technologyHeader": "Technologies",
+    "frameworkHeader": "Frameworks",
+    "methodologyHeader": "Methodologies",
+    "packageManagerHeader": "Package managers"
+  },
+  "contact": {
+    "contactByEmail": "Contact me by Email",
+    "subject": "Subject",
+    "messageBody": "Message body",
+    "sendEmail": "Send email",
+    "contactInfo": "Contact info",
+    "phoneLabel": "Phone number",
+    "emailLabel": "Email"
+  },
+  "education": {
+    "title": "Education & Certificates",
+    "highSchool": "High School",
+    "codeBootcamp": "Code Bootcamp"
+  },
+  "references": {
+    "title": "References"
   }
 }
