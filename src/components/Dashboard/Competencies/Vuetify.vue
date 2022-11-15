@@ -1,13 +1,13 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/frameworks/vuetify.png"></v-img></v-avatar> Vuetify
+      <v-avatar tile class="mr-4"><v-img src="@/assets/frameworks/vuetify.png"></v-img></v-avatar> {{$t("vuetify.title")}}
     </v-card-title>
-    <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
+    <v-card-subtitle>{{experience}} {{$t("ofExperience")}}</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      Vuetify was the framework we used for our internal tooling in ABAX, its a framework that has really grown on me.
+      {{$t("vuetify.content1")}}
       <v-divider class="my-2"></v-divider>
-      This page was also written using Vuetufy!
+      {{$t("vuetify.content2")}}
     </v-card-text>
   </div>
 </template>

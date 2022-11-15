@@ -1,23 +1,21 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/sql.png"></v-img></v-avatar> Mssql
+      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/sql.png"></v-img></v-avatar> {{$t("mssql.title")}}
     </v-card-title>
-    <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
+    <v-card-subtitle>{{experience}} {{$t("ofExperience")}}</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      I first learned the basics of sql querying language when i went to Get Academy.
-      I got a deeper understanding of the querying language when worked at ABAX.
-      During my time at ABAX i have written complicated queries, i have learned about:
+      {{$t("mssql.content1")}}
       <ul>
-        <li>Indexes</li>
-        <li>How to hit indexes</li>
-        <li>How to measure performance</li>
-        <li>How to improve performance in queries</li>
-        <li>How to link databases</li>
-        <li>How to use temp tables</li>
-        <li>How to set up transactions and using them for both comitting or rolling back changes</li>
+        <li>{{$t("mssql.listItem1")}}</li>
+        <li>{{$t("mssql.listItem2")}}</li>
+        <li>{{$t("mssql.listItem3")}}</li>
+        <li>{{$t("mssql.listItem4")}}</li>
+        <li>{{$t("mssql.listItem5")}}</li>
+        <li>{{$t("mssql.listItem6")}}</li>
+        <li>{{$t("mssql.listItem7")}}</li>
       </ul>
-      I personally prefer Relational Database technologies over Document Database technologies in general, but both have their strengths and weaknesses.
+      {{$t("mssql.content2")}}
     </v-card-text>
   </div>
 </template>

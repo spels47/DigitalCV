@@ -1,11 +1,11 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/package-managers/nuget.png"></v-img></v-avatar> NuGet
+      <v-avatar tile class="mr-4"><v-img src="@/assets/package-managers/nuget.png"></v-img></v-avatar> {{$t("nuget.title")}}
     </v-card-title>
-    <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
+    <v-card-subtitle>{{experience}} {{$t("ofExperience")}}</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      NuGet is the primary package manager that i have used for installing and updating package dependencies for .net projects.
+      {{$t("nuget.content")}}
     </v-card-text>
   </div>
 </template>

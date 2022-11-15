@@ -1,11 +1,11 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/ravendb.png"></v-img></v-avatar> RavenDB
+      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/ravendb.png"></v-img></v-avatar> {{$t("ravenDb.title")}}
     </v-card-title>
-    <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
+    <v-card-subtitle>{{experience}} {{$t("ofExperience")}}</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      I have only used RavenDB a little bit, i have used it to alter some documents in the web interface, and also download and upload collections.
+      {{$t("ravenDb.content")}}
     </v-card-text>
   </div>
 </template>

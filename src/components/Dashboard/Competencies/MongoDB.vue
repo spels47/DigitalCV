@@ -1,20 +1,17 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/mongodb.png"></v-img></v-avatar> MongoDB
+      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/mongodb.png"></v-img></v-avatar> {{$t("mongoDb.title")}}
     </v-card-title>
-    <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
+    <v-card-subtitle>{{experience}} {{$t("ofExperience")}}</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      I first used MongoDB in ABAX,
-      during that time i learned to use tools like Mongo Compass and Studio 3T.
-      As well as using the Mongo Shell on occasion.
-      During my time using MondoDB i have learned:
+      {{$t("mongoDb.content1")}}
       <ul>
-        <li>How to use the C# driver</li>
-        <li>How to create new Indexes including TTL indexes (Time To Live)</li>
-        <li>How to write queries using the C# driver</li>
+        <li>{{$t("mongoDb.listItem1")}}</li>
+        <li>{{$t("mongoDb.listItem2", {TTL: "TTL", TTLText: "(Time To Live)"})}}</li>
+        <li>{{$t("mongoDb.listItem3")}}</li>
       </ul>
-      I have also used MongoDB in a personal project to store pdf documents as base64 string
+      {{$t("mongoDb.content2")}}
     </v-card-text>
   </div>
 </template>
