@@ -1,19 +1,19 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/programming-languages/javascript.png"></v-img></v-avatar> {{$("javascript.title")}}
+      <v-avatar tile class="mr-4"><v-img src="@/assets/programming-languages/javascript.png"></v-img></v-avatar> {{$t("javascript.title")}}
     </v-card-title>
     <v-card-subtitle>{{experience}} {{$t("ofExperience")}}</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      {{$("javascript.content1")}}
+      {{$t("javascript.content1")}}
 
       <v-divider class="my-2"></v-divider>
 
-      {{$("javascript.content2")}}
+      {{$t("javascript.content2")}}
 
       <v-divider class="my-2"></v-divider>
 
-      {{$("javascript.content3")}}
+      {{$t("javascript.content3")}}
     </v-card-text>
   </div>
 </template>
