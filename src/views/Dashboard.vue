@@ -73,7 +73,7 @@ import util from "@/helpers/util";
         return util.calculateAge(start);
       },
       experience(start, stop){
-        return util.calculateExperience(start, stop);
+        return util.calculateExperience(start, stop, this.$t("years"), this.$t("months"), this.$t("days"));
       }
     },
     computed: {

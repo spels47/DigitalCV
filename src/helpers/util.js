@@ -1,5 +1,5 @@
 export default {
-  calculateExperience(startDate, stopDate) {
+  calculateExperience(startDate, stopDate, yearsText, monthsText, daysText) {
     var experienceTime =  (stopDate ?? new Date()) - startDate;
     let milliSecondsInAYear = 31557600000;
     let milliSecondsInAMonth = 2629800000;
@@ -10,13 +10,13 @@ export default {
     let months = Math.floor(experienceTime / milliSecondsInAMonth);
     experienceTime -= months * milliSecondsInAMonth;
     var result = "";
-    if(years > 0) result += `${years} year(s)`;
+    if(years > 0) result += `${years} ${yearsText}`;
     if(result.length > 0) result += ", ";
-    if(months > 0) result += `${months} month(s)`;
+    if(months > 0) result += `${months} ${monthsText}`;
     if(result.length == 0) {
       let days = Math.floor(experienceTime / milliSecondsInADay);
       experienceTime -= days * milliSecondsInADay;
-      result += `${days} day(s)`;
+      result += `${days} ${daysText}`;
     }
     return result;
   },

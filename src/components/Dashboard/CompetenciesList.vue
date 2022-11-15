@@ -233,7 +233,7 @@
         this.changeCompetencyGroupSelection({type: group, value: selection});
       },
       experience(start, stop){
-        return util.calculateExperience(start, stop);
+        return util.calculateExperience(start, stop, this.$t("years"), this.$t("months"), this.$t("days"));
       }
     },
     computed: {

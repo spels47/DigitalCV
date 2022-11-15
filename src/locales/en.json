@@ -1,5 +1,8 @@
 {
   "ofExperience": "of experience",
+  "years": "year(s)",
+  "months": "month(s)",
+  "days": "day(s)",
   "topBar": {
     "dashboard": "dashboard",
     "contact": "contact patrick",

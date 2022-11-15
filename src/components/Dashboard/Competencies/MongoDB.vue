@@ -37,7 +37,7 @@ import util from "@/helpers/util";
     },
     computed: {
       experience(){
-        return util.calculateExperience(this.experienceStart, this.experienceStop);
+        return util.calculateExperience(this.experienceStart, this.experienceStop, this.$t("years"), this.$t("months"), this.$t("days"));
       }
     },
     mounted() {
