@@ -1,12 +1,11 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/frameworks/angularjs.png"></v-img></v-avatar> AngularJS
+      <v-avatar tile class="mr-4"><v-img src="@/assets/frameworks/angularjs.png"></v-img></v-avatar> {{$t("angularJs.title")}}
     </v-card-title>
-    <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
+    <v-card-subtitle>{{experience}} {{$t("ofExperience")}}</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      I have experience with an older version of AngularJS from my time in ABAX, where i used to do maintenance and bugfixing that occasionally involved fixing things that didnt work as expected in the frontend.
-      So during that time i became very familiar with AngularJS.
+      {{$t("angularJs.content")}}
     </v-card-text>
   </div>
 </template>

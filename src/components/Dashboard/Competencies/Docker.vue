@@ -1,13 +1,11 @@
 <template>
   <div>
     <v-card-title class="text-h4" color="primary">
-      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/docker.png"></v-img></v-avatar> Docker
+      <v-avatar tile class="mr-4"><v-img src="@/assets/technologies/docker.png"></v-img></v-avatar> {{$t("docker.title")}}
     </v-card-title>
-    <v-card-subtitle>{{experience}} of experience</v-card-subtitle>
+    <v-card-subtitle>{{experience}} {{$t("ofExperience")}}</v-card-subtitle>
     <v-card-text style="max-height: 50vh; overflow-y: auto;">
-      I learned Docker when i started in ABAX, i have used it to write Dockerfiles for containerization of apps, i have also used it for docker-compose.
-      I familiarised myself with the build and run commands and some of its different flags.
-      I have also used the Docker desktop GUI.
+      {{$t("docker.content")}}
     </v-card-text>
   </div>
 </template>

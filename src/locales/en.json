@@ -1,4 +1,5 @@
 {
+  "ofExperience": "of experience",
   "topBar": {
     "dashboard": "dashboard",
     "contact": "contact patrick",
@@ -49,6 +50,35 @@
     "frameworkHeader": "Frameworks",
     "methodologyHeader": "Methodologies",
     "packageManagerHeader": "Package managers"
+  },
+  "angularJs": {
+    "title": "AngularJS",
+    "content": "I have experience with an older version of AngularJS from my time in ABAX, where i used to do maintenance and bugfixing that occasionally involved fixing things that didnt work as expected in the frontend. So during that time i became very familiar with AngularJS."
+  },
+  "bootstrap": {
+    "title": "Bootstrap",
+    "content": "Bootstrap is the first styling focused library i ever used. I learned about it in Get Academy first, but also used it in ABAX for a time. However it is worth mentioning that the Bootstrap i used in ABAX was highly customized and not vanilla Bootstrap."
+  },
+  "csharp": {
+    "title": "Csharp",
+    "content1": "I learned C# in 2016-2017 when i went to Bjerkely Folkehøyskole, where i studied game development. There were many different roles that could be chosen when it comes to game development. A game typically contains images, animations, 3d models or 2d sprites, sound effects, music and of course code that dictates the behaviour and interactability of the game. And it was the code, the programming that caught my interest the most. So i spent the majority of my time that year learning to write C# in the Unity game engine.",
+    "content2": "After my year at Bjerkely i still did some occasional game development, but few of the projects i worked on became anything functional as i didnt have any artists or animators or sound engineers to work with, so even if i could get the code working, my motivation began to suffer pretty quickly when i realised that i was unable to make the game look and sound good on my own.",
+    "content3": "In 2019 when i went to Get Academy i learned more about C# for business purposes and creating REST api's with .net framework. I would learn even more about this when i would later that year begin as an intern in ABAX and would maintain and fix bugs in their WebApi which was .net framework, but would later also interact with api's in modern .net core I have also used C# to consume and emit events over Message Queues (RabbitMQ) during my time in ABAX. I have also written a lot of Unit tests and Integration tests in XUnit, using Substitutes for external services and data providers when writing Unit tests.",
+    "content4": "I have also made a Console App text adventure game that is available on my github profile."
+  },
+  "docker": {
+    "title": "Docker",
+    "content": "I learned Docker when i started in ABAX, i have used it to write Dockerfiles for containerization of apps, i have also used it for docker-compose. I familiarised myself with the build and run commands and some of its different flags. I have also used the Docker desktop GUI."
+  },
+  "googleFirebase": {
+    "title": "Google Firebase",
+    "content": "I used google firebase as database technology of choice when working on the dating app that was comissioned while i went to Get Academy. In that database i stored things like user credentials and profile pictures, and other user information."
+  },
+  "javascript": {
+    "title": "Javascript",
+    "content1": "I learned Javascript when i started at Get Academy in 2019, And have only used it in context of creating web clients (web pages)",
+    "content2": "The first real project that i used javascript on was when Get Academy was comissioned to make a proof of concept for a dating app, that i was delegated to work on. The first iteration was made using only javascript, html and css, i would later refactor this to work with Vue, and bootstrap which was the first time i used frameworks.",
+    "content3": "During my time in ABAX i also used Javascript when maintining or creating solutions for the different web clients there, and learned and developed my skills with Javascript there."
   },
   "contact": {
     "contactByEmail": "Contact me by Email",
