@@ -80,104 +80,104 @@
   "javascript": {
     "title": "Javascript",
     "content1": "Jeg lærte Javascript når jeg started på Get Academy i 2019, og jeg har bare brukt det til å lage web applikasjoner.",
-    "content2": "The first real project that i used javascript on was when Get Academy was comissioned to make a proof of concept for a dating app, that i was delegated to work on. The first iteration was made using only javascript, html and css, i would later refactor this to work with Vue, and bootstrap which was the first time i used frameworks.",
-    "content3": "During my time in ABAX i also used Javascript when maintining or creating solutions for the different web clients there, and learned and developed my skills with Javascript there."
+    "content2": "Det første ekte prosjektet jeg jobbet på hvor Javascript ble bruk, var når Get Academy ble gitt oppdrag om å lage et proof of concept for en dating app, som jeg ble delegert til å jobbe på. Den første iterasjonen var laget med bare javascript, html og css, senere så refaktorerte jeg løsningen i Vue rammeverket, og med bootstrap som var første gangen jeg også brukte et rammeverk.",
+    "content3": "Under tiden min hos ABAX så ble javascript brukt en del i vedlikehold eller implementasjonen av nye løsninger for litt forkjellige frontender der, og jeg lærte og utviklet egenskapene mine med Javascript der."
   },
   "kanban": {
     "title": "Kanban",
-    "content": "Throughout my time in ABAX i have tracked my task in Kanban boards. I have used Jira and Gitlab boards primarily to track the tasks i personally work on. But have also used Monday but primarily Monday is a place where roadmap items were tracked which is often big long term tasks, that the tasks i tracked in Gitlab represented a small part of."
+    "content": "Gjennom tiden min i ABAX så har jeg holdt styr på oppgavene mine ved bruk av kanban boards. Jeg har brukt Jira og Gitlab boards primært til å holde styr på de oppgavene jeg personlig jobber med. Men har også brukt Monday til å tracke roadmap oppgaver, de oppgavene er som regel større oppgaver som er forventet å strekke seg over lengre tid, de oppgavene jeg jobber med i Gitlab er oppdelte biter av en roadmap oppgave som regel."
   },
   "mongoDb": {
     "title": "MongoDB",
-    "content1": "I first used MongoDB in ABAX, during that time i learned to use tools like Mongo Compass and Studio 3T. As well as using the Mongo Shell on occasion. During my time using MondoDB i have learned:",
-    "listItem1": "How to use the C# driver",
-    "listItem2": "How to create new Indexes including {TTL} indexes {TTLText}",
-    "listItem3": "How to write queries using the C# driver",
-    "content2": "I have also used MongoDB in a personal project to store pdf documents as base64 string"
+    "content1": "jeg begynte å bruke MongoDB for første gang når jeg jobbet i ABAX, i den tiden så lærte jeg å bruke verktøy som Mongo Compass og Studio 3T. I tillegg så har jeg brukt Mongo Shell fra tid til annen. I tiden jeg har brukt MongoDB så har jeg lært:",
+    "listItem1": "Hvordan jeg bruker C# driveren",
+    "listItem2": "Hvordan jeg lager Indexer, inkluderende {TTL} indexer {TTLText}",
+    "listItem3": "Hvordan jeg skriver queries med C# driveren",
+    "content2": "Jeg har også brukt MongoDB i et personlig prosjekt hvor jeg lagret pdf dokumenter som base64 string på databasen"
   },
   "mssql": {
     "title": "Mssql",
-    "content1": "I first learned the basics of sql querying language when i went to Get Academy. I got a deeper understanding of the querying language when worked at ABAX. During my time at ABAX i have written complicated queries, i have learned about:",
-    "listItem1": "Indexes",
-    "listItem2": "How to hit indexes",
-    "listItem3": "How to measure performance",
-    "listItem4": "How to improve performance in queries",
-    "listItem5": "How to link databases",
-    "listItem6": "How to use temp tables",
-    "listItem7": "How to set up transactions and using them for both comitting or rolling back changes",
-    "content2": "I personally prefer Relational Database technologies over Document Database technologies in general, but both have their strengths and weaknesses."
+    "content1": "Jeg lærte the grunnleggende av sql querying for første gang når jeg gikk på Get Academy. Jeg fikk en dypere forståelse for querying språket når jeg jobbet hos ABAX. Under tiden min hos ABAX så har jeg skrevet kompliserte queries, og jeg har lært om:",
+    "listItem1": "Indekser",
+    "listItem2": "Hvordan treffe indekser",
+    "listItem3": "Hvordan måle ytelse",
+    "listItem4": "Hvordan man forbedrer ytelsen til queries",
+    "listItem5": "Hvordan man kobler sammen databaser",
+    "listItem6": "Hvordan man jobber med temp tabeller",
+    "listItem7": "Hvordan man setter opp transaksjoner og bruker dem til å gjennomføre eller rulle tilbake endringer",
+    "content2": "Personlig så foretrekker jeg relasjons database teknologier over dokument database teknologier generelt sett, men det er styrker og svakheter ved begge."
   },
   "npm": {
     "title": "Node Package Manager (NPM)",
-    "content": "Node Package Manager is the primary package manager i have used for all frontend applications i have worked on. And as such i have learned various commands with it, but also learned how to create my own custom commands where i string together multiple commands for easy use using && syntax between the commands."
+    "content": "Node Package Manager er den package manageren som jeg har brukt mest i alle frontend applikasjonene jeg har jobbet med. Og har derfor lært en del om kommandoene som hører til det, men jeg har lært hvordan jeg setter sammen mine egne kommandoer hvor jeg syr sammen fler forkjellige kommandoer for enkel bruk med hjelp av && syntaksen mellom vær kommando."
   },
   "nuget": {
     "title": "NuGet",
-    "content": "NuGet is the primary package manager that i have used for installing and updating package dependencies for .net projects."
+    "content": "NuGet er den package manageren jeg har brukt mest når det kommer til å installere og oppdatere pakker til .net prosjektene jeg har jobbet på."
   },
   "paket": {
     "title": "Paket",
-    "content": "I have used paket to install dependencies for a .net project that had paket as its way of fetching packages. Paket was also used to lock versions of packages in that project and it was all very legacy, things would break and stop working if packages were updated to latest version. An unfortunate side effect of the projects Legacy state at the time, However this would gradually improve over time. So my experience with Paket is rather isolated to that project."
+    "content": "Jeg har brukt paket til å installere avhengiheter til et .net framework WebApi prosjekt som hadde paket som dens måte av å hente pakker på. Paket var også brukt til å låse versjonen av pakkene i det prosjektet siden prosjektet var ganske legacy, ting brakk og slutten å fungere viss pakkene ble oppdatert til siste versjon. En uheldig bivirkning av at prosjektet var i den Legacy tilstanden den var i på den tiden, Men over tid så ble tilstanden gradvis forbedret. Så min erfaring med Paket er rimelig begrenset til hvordan det ble brukt i det ene prosjektet."
   },
   "rabbitMq": {
     "title": "RabbitMQ",
-    "content": "I have used RabbitMQ to consume and emit messages in C# backends, i have also used the RabbitMQ GUI where i have looked at error messages in error queues and learned the difference between nack and ack. I have also learned how to move messages from one queue to another using that interface."
+    "content": "Jeg har brukt RabbitMQ til å konsumere og sende ut meldinger i C# backender, jeg har også brukt RabbitMQ sitt GUI hvor jeg har sett på error meldinger i error køer og lært forkjellen mellom nack og ack. Jeg har også lært hvordan jeg flytter meldinger fra en kø til en annen med det grensesnittet."
   },
   "ravenDb": {
     "title": "RavenDB",
-    "content": "I have only used RavenDB a little bit, i have used it to alter some documents in the web interface, and also download and upload collections."
+    "content": "Jeg har bare brukt RavenDB littegrann, men jeg har brukt det til å endre dokumenter i web grensesnittet, og har også lastet ned og lastet opp collections."
   },
   "scrum": {
     "title": "Scrum",
-    "content": "While working in ABAX we followed the SCRUM framework for project management, We would hold Standup meetings in the mornings, taking turns explaining what we did yesterday and if we were stuck on something / needed help from somebody on the team with something. We would estimate our tasks and break the bigger tasks into smaller, more easy to define in technical steps needed to finish, tasks. Then we would work with those smaller tasks in our Kanban board. We would also hold weekly meetings with the teams Business Analyst in order to look at progress and also to look at specs for upcoming tasks and plan forward for when different new tasks should start being worked on."
+    "content": "Mens jeg har jobbet i ABAX så har vi brukt SCRUM rammeverket for å holde styr på arbeidet og for å arbeide effektivt, vi holdt Standup møter om morgenen, der byttet vi på å forklare hva vi gjorde forrige arbeidsdag og om vi satt fast / trengte hjelp fra noen på teamet med noe. Vi estimerte hvor lang tid vi trodde oppgavene våres ville ta og brøyt oppgavene ned i mindre oppgaver, som er lettere å definere i tekniske gjøremål som vi trengte å gjøre for å bli ferdig. Så jobbet vi med de mindre oppgavene våres i et Kanban board. Vi holdt ukentlige møter sammen med teamets Business Analyst for å ta en oppdatering på progresjonen på oppgaver vi aktivt jobbet med, og for å se på specs til oppgaver som vi skulle starte med i nærmere fremtid og se på når disse nye oppgavene burde begynne å bli jobbet med iforhold til progresjonen på nåværende oppgaver."
   },
   "typescript": {
     "title": "Typescript",
-    "content1": "I have only used Typescript a little bit, i have a basic understanding of it. I used Typescript on occasion when i worked on a pretty big frontend refactor project for ABAX, for some specific components that required this. However for the most part i used Javascript during my time on that project.",
-    "content2": "Still i do have some experience with Typescript, so i wouldnt be starting from scratch should i encounter it again in the future."
+    "content1": "Jeg har bare brukt Typescript littegrann, men jeg har en grunnleggende forståelse for det. Jeg har brukt Typescript fra tid til annen når jeg jobbet på en relativt stor frontend refaktorerings prosjekt for ABAX, til noen spesifikke komponenter som krevde Typescript. Men for det meste har jeg brukt Javascript når jeg jobbet med det prosjektet.",
+    "content2": "Men jeg har fortsatt fått erfaring med Typescript, så jeg ville ikke startet fra ingenting om jeg skulle møte på det igjen i fremtiden."
   },
   "visualBasic": {
     "title": "Visual Basic",
-    "content": "I have only used Visual Basic to maintain Legacy code bases, but have in that time made bugfixes to a SOAP api and written Unit tests. I have also converted large quanities of Visual Basic code to C#."
+    "content": "Jeg har bare brukt Visual Basic til å vedlikeholde Legacy kode baser, men har i en tiden laget løsninger på bugs i et SOAP api og skrevet Unit tester. Jeg har også konvertert store mengder med Visual Basic kode til C#."
   },
   "vueRouter": {
     "title": "Vue Router",
-    "content1": "Vue Router is an optional package for Vue applications. It makes it easy to route between different pages within the application, making it possible to have the application be a {SPA} {SPAText} easily. Most modern pages are a form of {SPA} application as loading a full web page just to navigate to a different place on the same web page is very much a thing of the past.",
-    "content2": "Every Vue project i have worked on has used Vue Router, including this one!"
+    "content1": "Vue Router er en valgfri pakke som kan brukes i Vue applikasjoner. Det gjør det lettere å navigere mellom forkjellige sider inni applikasjonen, som gjør det lettere å gjøre applikasjonen til en {SPA} {SPAText} applikasjon. De fleste moderne nettsider er en eller annen form for {SPA} applikasjon siden det å gjøre en full lasting bare for å navigere til et annet sted på samme nettsted er for det meste en ting i fortiden.",
+    "content2": "Alle Vue prosjekter jeg har jobbet med har brukt Vue Router, inkludert denne!"
   },
   "vue": {
     "title": "Vue",
-    "content1": "Vue is the first framework i learned how to use, and it is also my favorite framework out of all the frameworks of its kind that i have had the pleasure of experiencing throughout my career. I used it first in a refactor of a dating app i was working on back when i went to Get Academy. Then i used it in some learning projects where my focus was primarily on learning technologies other than Vue. Some time after this i used the framework while working on a project focused on refactoring our frontend from old AngularJS to new Vue3 for ABAX. After this project i worked on maintenance and feature development for internal tools that also used Vue for its frontend.",
-    "content2": "I am primarily familiar with writing Vue in the options api, but have a basic understanding of the compositions api also.",
-    "content3": "This web page is also written in Vue!"
+    "content1": "Vue er det første rammeverket jeg lærte å bruke, og det er også favoritt rammeverket mitt ut av de forkjellige rammeverkene av dens type som jeg har hatt gleden av å erfare gjennom karrieren min. Jeg brukte det for første gang da jeg refaktorerte en dating app som jeg jobbet med tilbake på Get Academy. Så brukte jeg det igjen i noen lære prosjekter hvor fokuset mitt var primært på å lære noen andre teknologier enn Vue. En tid etter dette så brukte jeg rammeverket mens jeg jobbet på et prosjekt fokusert på å refaktorere en frontend fra en eldre versjon av AngularJS til Vue3 for ABAX. Etter det prosjektet jobbet jeg med vedlikehold og utvikling av nye interne verktøy som også brukte Vue i frontenden sin.",
+    "content2": "Jeg er hovedsaklig kjent med å skrive Vue i options api, men har også en grunnleggende forståelse for compositions apiet.",
+    "content3": "Denne nettsiden er også skrevet i Vue!"
   },
   "vuetify": {
     "title": "Vuetify",
-    "content1": "Vuetify was the framework we used for our internal tooling in ABAX, its a framework that has really grown on me.",
-    "content2": "This page was also written using Vuetufy!"
+    "content1": "Vuetify var rammeverket vi brukte for de interne verktøyene i ABAX, det er et rammeverk som virkelig har grodd på meg.",
+    "content2": "Denne nettsiden er også skrevet med Vuetify!"
   },
   "vuex": {
     "title": "Vuex",
-    "content1": "Vuex is a global stateholder that is an optional addon for Vue applications. I heard about this back in Get Academy but didn't really start using it before i started working with the internal tools project in ABAX. But i am glad that i did and i am a big fan of it now that i am familiar with it.",
-    "content2": "This web page also used Vuex!"
+    "content1": "Vuex er en global holder av data tilstanden som er en valgfri pakke som kan brukes til Vue applikasjoner. Jeg hørte om det tilbake på Get Academy men tok det ikke i bruk før jeg startet å jobbe med de interne verktøyene i ABAX. Men jeg er glad for at jeg fikk muligheten til å jobbe med det og jeg er en stor fan av det nå som jeg er blitt kjent med det.",
+    "content2": "Denne nettsiden er også skrevet med Vuex!"
   },
   "yarn": {
     "title": "Yarn",
-    "content": "I used Yarn for a short period of time for installing the dependencies for the frontend to a project because if you installed those dependencies with NPM it wouldnt work for reasons we never investigated deeper. But we found that if you installed those dependencies with Yarn it would work just fine, so we just used that for that specific project, until one day when NPM worked with that project as well. This was pretty early in my internship with ABAX."
+    "content": "Jeg brukte Yarn i en kort periode for å installere avhengigheter til frontenden av et prosjekt fordi viss du installerte de avhengighetene med NPM så ville det ikke fungere av grunner vi aldri undersøkte dypere. Men vi fant ut at viss du bare installerte avhengighetene med Yarn så fungerte det helt fint, så vi bare brukte det for det spesifikke prosjektet, inntil en dag hvor NPM fungerte med det prosjektet også. Dette var ganske tidlig i min lærlingsperiode hos ABAX."
   },
   "contact": {
-    "contactByEmail": "Contact me by Email",
-    "subject": "Subject",
-    "messageBody": "Message body",
-    "sendEmail": "Send email",
-    "contactInfo": "Contact info",
-    "phoneLabel": "Phone number",
-    "emailLabel": "Email"
+    "contactByEmail": "Kontakt meg på e-post",
+    "subject": "Emne",
+    "messageBody": "Meldingstekst",
+    "sendEmail": "Send e-post",
+    "contactInfo": "Kontakt info",
+    "phoneLabel": "Telefon nummer",
+    "emailLabel": "Epost"
   },
   "education": {
-    "title": "Education & Certificates",
-    "highSchool": "High School",
-    "codeBootcamp": "Code Bootcamp"
+    "title": "Utdannelse & Kursbevis",
+    "highSchool": "Vidregående",
+    "codeBootcamp": "Programmerings kurs"
   },
   "references": {
     "title": "References"
