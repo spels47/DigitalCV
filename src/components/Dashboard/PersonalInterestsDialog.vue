@@ -2,8 +2,8 @@
   <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" height="60vh">
     <v-card color="cardbg" outlined rounded :height="height" style="overflow: hidden;">
       <Pathfinder v-if="selectedPersonalInterest == 'Pathfinder'"></Pathfinder>
-      <GameDevelopment v-if="selectedPersonalInterest == 'Game Development'"></GameDevelopment>
-      <Streaming v-if="selectedPersonalInterest == 'Streaming'"></Streaming>
+      <GameDevelopment v-if="selectedPersonalInterest == $t('hobbiesList.gameDevelopment')"></GameDevelopment>
+      <Streaming v-if="selectedPersonalInterest == $t('hobbiesList.streaming')"></Streaming>
     </v-card>
   </v-dialog>
 </template>
