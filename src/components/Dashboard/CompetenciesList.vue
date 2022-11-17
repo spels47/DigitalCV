@@ -1,5 +1,5 @@
 <template>
-  <v-card :loading="loading" color="cardbg" class="pl-2 pr-2 pt-1 pb-1" width="15vw" style="max-height: 100%; overflow-x: auto;">
+  <v-card :loading="loading" color="cardbg" class="pl-2 pr-2 pt-1 pb-1 listCard">
       <v-list color="cardbg" dense>
         <v-list-item-title>{{$t("technicalList.title")}}</v-list-item-title>
 
@@ -248,6 +248,20 @@
   }
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+  .listCard{
+    width: 15vw;
+    max-height: 100%;
+    overflow-x: auto;
+  }
+  @media only screen and (max-width: 1220px) {
+    .listCard{
+      width: 70vw;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .listCard{
+      width: 90vw;
+    }
+  }
 </style>  

@@ -1,6 +1,6 @@
 <template>
-  <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" height="60vh">
-    <v-card color="cardbg" outlined rounded :height="height" style="overflow: hidden;">
+  <v-dialog :value="showDialog" @click:outside="closeDialog()" scrollable width="1200" class="competenceDialog">
+    <v-card color="cardbg" outlined rounded class="competenceDialog" style="overflow: hidden;">
       <Csharp v-if="selectedCompetency == 'Csharp'"></Csharp>
       <Javascript v-if="selectedCompetency == 'Javascript'"></Javascript>
       <VisualBasic v-if="selectedCompetency == 'Visual Basic'"></VisualBasic>
@@ -117,6 +117,8 @@
   }
 </script>
 
-<style lang="scss">
-
+<style lang="scss" scoped>
+  .competenceDialog{
+    height: 60vh;
+  }
 </style>  

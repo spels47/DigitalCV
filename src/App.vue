@@ -8,7 +8,7 @@
           <v-icon left>mdi-home</v-icon>
           <span style="color: var(--v-contrast-base)">{{$t("topBar.dashboard")}}</span>
         </v-btn>
-        <v-btn class="ml-2 mr-2" text color="primary" to="/contact">
+        <v-btn class="ml-2 mr-2 contactButtonTop" text color="primary" to="/contact">
           <v-icon left>mdi-card-account-mail</v-icon>
           <span style="color: var(--v-contrast-base)">{{$t("topBar.contact")}}</span>
         </v-btn>
@@ -59,6 +59,13 @@
                 <v-icon>mdi-account-heart</v-icon>
               </v-list-item-icon>
               <v-list-item-title>{{$t("topBar.references")}}</v-list-item-title>
+            </v-list-item>
+
+            <v-list-item class="contactButtonDrawer" to="/contact">
+              <v-list-item-icon>
+                <v-icon>mdi-card-account-mail</v-icon>
+              </v-list-item-icon>
+              <v-list-item-title>{{$t("topBar.contact")}}</v-list-item-title>
             </v-list-item>
           </v-list-item-group>
         </v-list>
@@ -124,6 +131,11 @@ export default {
   watch: {
     selectedLanguageIndex: {
       handler: function (newValue, oldValue) {
+        if(newValue < 0) {
+          this.selectedLanguageIndex = oldValue;
+          return;
+        }
+        if(newValue == null) newValue = oldValue;
         this.selectedLanguage = this.languages[newValue];
         window.localStorage.setItem("selectedLanguage", this.languages[newValue]?.value);
         this.$i18n.locale = this.selectedLanguage.value.toLowerCase();
@@ -185,5 +197,23 @@ var(--v-NAME_OF_VARIABLE-darken[1 - 5])
 
 *::-webkit-scrollbar-thumb:active {
   background-color: var(--v-primary-lighten1);
+}
+
+.contactButtonDrawer{
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1220px) {
+  .app{
+    overflow-y: auto;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .contactButtonTop{
+    display: none;
+  }
+  .contactButtonDrawer{
+    visibility: initial;
+  }
 }
 </style>

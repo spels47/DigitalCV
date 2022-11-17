@@ -1,18 +1,18 @@
 <template>
   <div class="my-12 mx-4">
-    <div class="d-flex mb-4 justify-space-around" style="max-height: 50vh;">
-      <PersonalInterestsList :loading="loading"></PersonalInterestsList>
+    <div class="d-flex mb-4 justify-space-around mobileFlex">
+      <PersonalInterestsList class="hideBelow1220" :loading="loading"></PersonalInterestsList>
 
-      <v-card :loading="loading" color="cardbg" class="mx-auto" :max-width="maxWidth" style="max-height: 100%; overflow-y: hidden;">
+      <v-card :loading="loading" color="cardbg" class="mx-auto maxWidth aboutCard">
         <template slot="progress">
           <v-progress-linear color="accent" height="10" indeterminate></v-progress-linear>
         </template>
 
-        <ProfileImage :maxWidth="maxWidth"></ProfileImage>
+        <ProfileImage></ProfileImage>
 
         <v-card-title>{{$t("dashboard.about")}}</v-card-title>
 
-        <v-card-text style="max-height: 25vh; overflow-y: auto;">
+        <v-card-text class="aboutText">
           {{$t("dashboard.content1", {age: age(new Date(1995, 9, 3))})}}
 
           <v-divider class="my-2"></v-divider>
@@ -32,12 +32,20 @@
         </v-card-text>
       </v-card>
 
-      <CompetenciesList :loading="loading"></CompetenciesList>
+      <CompetenciesList class="mx-auto mt-4 hideAbove1220" :loading="loading"></CompetenciesList>
+      <PersonalInterestsList class="mx-auto mt-4 hideAbove1220" :loading="loading"></PersonalInterestsList>
+
+      <CompetenciesList class="hideBelow1220" :loading="loading"></CompetenciesList>
 
       <CompetenciesDialog></CompetenciesDialog>
       <PersonalInterestsDialog></PersonalInterestsDialog>
     </div>
-    <div style="max-height: 35vh; overflow: hidden;">
+    <!-- <div class="hideAbove1220 maxWidth">
+      <PersonalInterestsList :loading="loading"></PersonalInterestsList>
+      <CompetenciesList :loading="loading"></CompetenciesList>
+    </div> -->
+    
+    <div class="pictureCarousel">
       <PictureCarousel></PictureCarousel>
     </div>
     
@@ -65,7 +73,6 @@ import util from "@/helpers/util";
     data: function () {
       return {
         loading: false,
-        maxWidth: 750,
       }
     },
     methods: {
@@ -90,6 +97,59 @@ import util from "@/helpers/util";
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.pictureCarousel{
+  max-height: 35vh;
+  overflow: hidden;
+}
 
+.maxWidth{
+  max-width: 30vw;
+}
+
+.aboutCard{
+  max-height: 100%; 
+  overflow-y: hidden;
+}
+
+.aboutText{
+  max-height: 25vh;
+  overflow-y: auto;
+}
+
+.hideAbove1220{
+  display: none;
+}
+
+.mobileFlex{
+  max-height: 50vh;
+}
+
+@media only screen and (max-width: 1220px) {
+  .pictureCarousel{
+    display: none;
+  }
+  .hideAbove1220{
+    display: initial;
+  }
+  .hideBelow1220{
+    display: none;
+  }
+  .mobileFlex{
+    flex-direction: column;
+    max-height: none;
+  }
+  .maxWidth{
+    max-width: 70vw;
+  }
+  .aboutText{
+    max-height: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .maxWidth{
+    max-width: 90vw;
+  }
+}
 </style>

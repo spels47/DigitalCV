@@ -1,6 +1,6 @@
 <template>
-  <v-card class="mx-auto" :max-width="maxWidth" tile>
-    <v-img height="250" lazy-src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg" src="@/assets/programming.gif">
+  <v-card class="mx-auto width" tile>
+    <v-img height="250" id="backgroundPicture" lazy-src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg" :src="backgroundPictureWidth > 630 ? require('@/assets/programming.gif') : null">
       <v-row align="end" class="fill-height">
         <v-col align-self="start" class="pa-0" cols="12">
           <v-avatar class="profile" color="grey" :size="200" rounded>
@@ -21,22 +21,23 @@
 </template>
 
 <script>
-
   export default {
     name: 'ProfileImage',
     components: {
 
     },
     props: {
-      maxWidth: {
-        type: Number,
-        required: true,
-        default: null
-      },
+      
     },
     data: function () {
       return {
-        
+        backgroundPictureWidth: 0,
+        resizeObserver: new ResizeObserver((elements) => {
+          let element = elements[0].contentRect;
+
+          let width = element.width;
+          this.backgroundPictureWidth = width;
+        })
       }
     },
     methods: {
@@ -46,7 +47,11 @@
       
     },
     mounted() {
-      
+      this.backgroundPictureWidth = document.getElementById("backgroundPicture")?.offsetWidth;
+      this.resizeObserver.observe(document.getElementById("backgroundPicture"));
+    },
+    unmounted(){
+      this.resizeObserver.unobserve();
     },
     watch: {
       
@@ -54,6 +59,22 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+  .width{
+    max-width: 30vw;
+  }
 
+  @media only screen and (max-width: 1220px) {
+    .width{
+      max-width: 70vw;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .width{
+      max-width: 90vw;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+
+  }
 </style>

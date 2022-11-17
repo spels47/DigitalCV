@@ -1,14 +1,14 @@
 <template>
-    <v-card height="100%">
+    <v-card class="outerCard">
     <v-card-title><v-icon color="primary">mdi-account-school</v-icon><span class="pl-4">{{$t("education.title")}}</span></v-card-title>
-    <div class="d-flex flex-wrap justify-start align-start" style="width: 100%; height: calc(100% - 200px); overflow-y: auto;">
+    <div class="d-flex flex-wrap justify-start align-start boxSize">
       <v-card v-for="(certificate, index) in certificates.filter(cert => cert.show)" :key="index" class="ma-4 cardMain d-flex flex-column align-center" width="100%" height="100%" color="cardbg" @click="selectImage(certificate.pictures)">
         <v-card-title>{{certificate.name}}</v-card-title>
         <v-card-subtitle>{{certificate.type}}</v-card-subtitle>
-        <v-img contain max-height="50%" max-width="50%" :src="certificate.pictures[0]"></v-img>
+        <v-img contain class="miniImage" :src="certificate.pictures[0]"></v-img>
         <v-card-subtitle>{{presentationDate(certificate.startDate)}} - {{presentationDate(certificate.stopDate)}}</v-card-subtitle>
       </v-card>
-      <v-dialog width="50%" height="100vh" class="ma-4" :value="showDialog" @click:outside="showDialog = false">
+      <v-dialog class="ma-4 dialogSize" :value="showDialog" @click:outside="showDialog = false">
         <v-carousel hide-delimiters height="100%">
           <v-carousel-item v-for="(picture, index) in selectedImages" :key="index" :src="picture" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
         </v-carousel>
@@ -48,7 +48,7 @@
               startDate: new Date(2019, 1, 28),
               stopDate: new Date(2020, 6, 19),
               show: true,
-            },
+            }
           ]
         }
       },
@@ -83,5 +83,42 @@
     max-width: 300px;
     max-height: 300px;
     overflow-y: hidden;
+  }
+  .boxSize{
+    width: 100%;
+    height: calc(100% - 200px);
+    overflow-y: auto;
+  }
+
+  .outerCard{
+    height: 100%;
+  }
+  .miniImage{
+    max-height: 50%;
+    max-width: 50%;
+  }
+
+  .dialogSize{
+    width: 50%;
+    height: 100vh;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .boxSize{
+      width: 100%;
+      height: inherit;
+      overflow-y: none;
+    }
+    .outerCard{
+      height: initial;
+      min-height: 100%;
+    }
+    .miniImage{
+      max-height: 150px;
+      max-width: 150px;
+    }
+    .dialogSize{
+      width: 90%;
+    }
   }
   </style>  

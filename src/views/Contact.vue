@@ -1,8 +1,8 @@
 <template>
-  <v-container class="pa-16">
+  <v-container class="dialogPadding">
     <v-row justify="space-around">
       <v-col>
-        <v-card width="30vw" color="cardbg">
+        <v-card min-width="300" width="30vw" color="cardbg">
           <v-card-title class="title"><span class="pr-4">{{$t("contact.contactByEmail")}}</span> <v-icon color="primary">mdi-email</v-icon></v-card-title>
           <div class="pa-8">
             <v-text-field :label="$t('contact.subject')" outlined v-model="subject"></v-text-field>
@@ -14,7 +14,7 @@
         </v-card>
       </v-col>
       <v-col>
-        <v-card width="15vw" color="cardbg">
+        <v-card min-width="300" width="15vw" color="cardbg">
           <v-card-title class="title"><span class="pr-4">{{$t("contact.contactInfo")}}</span> <v-icon color="primary">mdi-email</v-icon></v-card-title>
           <div class="pa-8">
             <v-text-field class="pointerLink" :label="$t('contact.phoneLabel')" color="secondary" prefix="+47" persistent-hint :hint="copiedPhone ? 'copied to clipboard!' : ''" readonly @click="clickPhone()" :value="phone"></v-text-field>
@@ -90,5 +90,18 @@
 <style lang="scss" scoped>
   .pointerLink{
     cursor: pointer;
+  }
+  .dialogPadding{
+    margin: 64px;
+  }
+  @media only screen and (max-width: 430px) {
+    .dialogPadding{
+      margin: 32px;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .dialogPadding{
+      margin: 16px;
+    }
   }
 </style>  
