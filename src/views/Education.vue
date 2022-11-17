@@ -8,7 +8,7 @@
         <v-img contain class="miniImage" :src="certificate.pictures[0]"></v-img>
         <v-card-subtitle>{{presentationDate(certificate.startDate)}} - {{presentationDate(certificate.stopDate)}}</v-card-subtitle>
       </v-card>
-      <v-dialog class="ma-4 dialogSize" :value="showDialog" @click:outside="showDialog = false">
+      <v-dialog id="dialogId" class="ma-4 dialogSize" :width="pictureWidth > 1220 ? '50%' : null" :value="showDialog" @click:outside="showDialog = false">
         <v-carousel hide-delimiters height="100%">
           <v-carousel-item v-for="(picture, index) in selectedImages" :key="index" :src="picture" reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
         </v-carousel>
@@ -27,6 +27,12 @@
         return {
           showDialog: false,
           selectedImages: null,
+          pictureWidth: 0,
+          resizeObserver: new ResizeObserver((entries) => {
+            let rect = entries[0].contentRect;
+            let width = rect.width;
+            this.pictureWidth = width;
+          }),
           certificates: [
             {
               name: "Thor Heyerdahl vgs",
@@ -64,16 +70,29 @@
         selectImage(image){
           this.selectedImages = image;
           this.showDialog = true;
+        },
+        startObserver(){
+          this.pictureWidth = document.body.offsetWidth;
+          this.resizeObserver.observe(document.body);
+        },
+        stopObserver(){
+          this.pictureWidth = document.body.offsetWidth;
+          this.resizeObserver.unobserve(document.body);
         }
       },
       computed: {
         
       },
       mounted() {
-        
+
       },
       watch: {
-        
+        showDialog: function (newValue, oldValue){
+          this.$nextTick(() => {
+            if(!oldValue && newValue) this.startObserver();
+            if(oldValue && !newValue) this.stopObserver();
+          })
+        }
       },
     }
   </script>
