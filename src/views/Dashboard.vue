@@ -113,7 +113,7 @@ import util from "@/helpers/util";
 }
 
 .aboutText{
-  max-height: 25vh;
+  max-height: calc(25vh - 64px);
   overflow-y: auto;
 }
 
