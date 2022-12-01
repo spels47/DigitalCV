@@ -13,7 +13,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{codeLanguage.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(codeLanguage.experienceStart, codeLanguage.experienceStop)}} experience</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(codeLanguage.experienceStart, codeLanguage.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -28,7 +28,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{technology.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(technology.experienceStart, technology.experienceStop)}} experience</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(technology.experienceStart, technology.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -43,7 +43,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{framework.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(framework.experienceStart, framework.experienceStop)}} experience</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(framework.experienceStart, framework.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -58,7 +58,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{methodology.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(methodology.experienceStart, methodology.experienceStop)}} experience</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(methodology.experienceStart, methodology.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -73,7 +73,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{packageManager.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(packageManager.experienceStart, packageManager.experienceStop)}} experience</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(packageManager.experienceStart, packageManager.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
