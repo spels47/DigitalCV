@@ -40,72 +40,84 @@
     data: function () {
       return {
         pictures: [
-          {
-            src: require('@/assets/patrick/patrick4.jpg'),
-            crop: false
-          },
-          {
-            src: require('@/assets/patrick/patrick10.jpg'),
-            crop: true
-          },
-          {
-            src: require('@/assets/patrick/patrick11.jpg'),
-            crop: false
-          },
-          {
-            src: require('@/assets/patrick/patrick13.jpg'),
-            crop: false
-          },
-          {
-            src: require('@/assets/patrick/patrick14.jpg'),
-            crop: true
-          },
+          // {
+          //   src: require('@/assets/patrick/patrick4.jpg'),
+          //   crop: false
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick10.jpg'),
+          //   crop: true
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick11.jpg'),
+          //   crop: false
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick13.jpg'),
+          //   crop: false
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick14.jpg'),
+          //   crop: true
+          // },
           {
             src: require('@/assets/patrick/patrick15.jpg'),
             crop: false
           },
-          {
-            src: require('@/assets/patrick/patrick16.jpg'),
-            crop: true
-          },
-          {
-            src: require('@/assets/patrick/patrick17.jpg'),
-            crop: true
-          },
-          {
-            src: require('@/assets/patrick/patrick18.jpg'),
-            crop: true
-          },
-          {
-            src: require('@/assets/patrick/patrick19.jpg'),
-            crop: false
-          },
-          {
-            src: require('@/assets/patrick/patrick20.jpg'),
-            crop: true
-          },
-          {
-            src: require('@/assets/patrick/patrick21.jpg'),
-            crop: true
-          },
+          // {
+          //   src: require('@/assets/patrick/patrick16.jpg'),
+          //   crop: true
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick17.jpg'),
+          //   crop: true
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick18.jpg'),
+          //   crop: true
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick19.jpg'),
+          //   crop: false
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick20.jpg'),
+          //   crop: true
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick21.jpg'),
+          //   crop: true
+          // },
           {
             src: require('@/assets/patrick/patrick22.jpg'),
             crop: true
           },
+          // {
+          //   src: require('@/assets/patrick/patrick23.jpg'),
+          //   crop: true
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick24.jpg'),
+          //   crop: false
+          // },
+          // {
+          //   src: require('@/assets/patrick/patrick25.jpg'),
+          //   crop: false
+          // },
           {
-            src: require('@/assets/patrick/patrick23.jpg'),
+            src: require('@/assets/patrick/patrick26.jpg'),
             crop: true
           },
           {
-            src: require('@/assets/patrick/patrick24.jpg'),
-            crop: false
+            src: require('@/assets/patrick/patrick28.jpg'),
+            crop: true
           },
           {
-            src: require('@/assets/patrick/patrick25.jpg'),
-            crop: false
+            src: require('@/assets/patrick/patrick29.jpg'),
+            crop: true
           },
           {
-            src: require('@/assets/patrick/patrick26.jpg'),
+            src: require('@/assets/patrick/patrick30.jpg'),
             crop: true
           },
         ],
