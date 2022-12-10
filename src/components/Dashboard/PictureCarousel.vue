@@ -2,21 +2,21 @@
   <div class="d-flex justify-space-around align-center" style="max-height: 100%; overflow: hidden;">
     <v-card color="cardbg">
       <v-carousel style="width: 20vw;" height="20vh" :show-arrows="false" :value="previousPicture" hide-delimiters>
-        <v-carousel-item v-for="(picture, index) in pictures" :key="index" :src="picture.crop ? '' : picture.src" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+        <v-carousel-item v-for="(picture, index) in pictures" :key="index" :src="picture.crop ? backgroundPicture : picture.src" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
           <v-img v-if="picture.crop" :src="picture.src" contain max-height="20vh"></v-img>
         </v-carousel-item>
       </v-carousel>
     </v-card>
     <v-card color="cardbg">
       <v-carousel style="width: 40vw;" height="35vh" v-model="selected" interval="10000" cycle progress progress-color="accent" hide-delimiters>
-        <v-carousel-item v-for="(picture, index) in pictures" :key="index" :src="picture.crop ? '' : picture.src" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+        <v-carousel-item v-for="(picture, index) in pictures" :key="index" :src="picture.crop ? backgroundPicture : picture.src" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
           <v-img v-if="picture.crop" :src="picture.src" contain max-height="35vh"></v-img>
         </v-carousel-item>
       </v-carousel>
     </v-card>
     <v-card color="cardbg">
       <v-carousel style="width: 20vw;" height="20vh" :show-arrows="false" :value="nextPicture" hide-delimiters>
-        <v-carousel-item v-for="(picture, index) in pictures" :key="index" :src="picture.crop ? '' : picture.src" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
+        <v-carousel-item v-for="(picture, index) in pictures" :key="index" :src="picture.crop ? backgroundPicture : picture.src" reverse-transition="slide-x-reverse-transition" transition="slide-x-transition">
           <v-img v-if="picture.crop" :src="picture.src" contain max-height="20vh"></v-img>
         </v-carousel-item>
       </v-carousel>
@@ -120,9 +120,22 @@
             src: require('@/assets/patrick/patrick30.jpg'),
             crop: true
           },
+          {
+            src: require('@/assets/patrick/patrick31.jpg'),
+            crop: false
+          },
+          {
+            src: require('@/assets/patrick/patrick32.jpg'),
+            crop: false
+          },
+          {
+            src: require('@/assets/patrick/patrick33.jpg'),
+            crop: false
+          },
         ],
         selected: 0,
-        togglePatrick: true
+        togglePatrick: true,
+        backgroundPicture: require('@/assets/CarouselBackground2.jpg')
       }
     },
     methods: {
