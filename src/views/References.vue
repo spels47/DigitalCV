@@ -58,6 +58,15 @@
             phoneNumber: null,
             link: "https://www.linkedin.com/in/andr%C3%A9-andersen-trommestad-bba0346/",
             referenceText: "Patrick Johnsen worked as a Software Engineer at ABAX between July 1st, 2020 and March 31st, 2023 after completion of his internship (September 19th, 2019 – March 17th, 2020) Patrick maintained the software part of our products, created new value across the whole value chain, achieved product stability and shared technical knowledge within the department. Patrick was part of one of the biggest software projects in ABAX, implementing micro frontend for our main product. Patrick is an outgoing and positive person who works very well in a team. Patrick is an enthusiastic person that with his presence creates a good working environment, he is self-sufficient and solves tasks in a well-structured way with others, but also alone. Knowledge sharing through good documentation or through knowledge sessions is something the team appreciated. Patrick is a person who takes responsibility and ownership to projects/deliveries and will always strive to deliver good quality."
+          },
+          {
+            name: "Eskil Domben",
+            picture: require("@/assets/references/eskil.jpeg"),
+            company: "Get Academy",
+            jobTitle: "Gründer & Lærer i 21st century skills & CEO av Get Academy Solutions",
+            phoneNumber: null,
+            link: "https://www.linkedin.com/in/eskil-domben-429372113/",
+            referenceText: "Etter en kort justering den første uken på grunn av forsentkomming. Kom Patrick etter dette før alle andre studenter, superklar kl 07.00 og fortsatte med dette hele perioden ut (1-1/2 år). Vi spør alltid oss selv om vi selv ville ansatt våre studenter. Vedr dette spørsmålet er det et klart JA når det gjelder Patrick. Vi opplever Patrick som svært Målrettet, ambisiøs, arbeidssom, pliktoppfyllende og god på samarbeid i team."
           }
         ]
       }
