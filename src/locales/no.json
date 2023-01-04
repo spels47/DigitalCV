@@ -7,7 +7,7 @@
   "topBar": {
     "dashboard": "dashbord",
     "contact": "kontakt patrick",
-    "education": "Utdannelse & Kursbevis",
+    "education": "Kursbevis & Attester",
     "references": "Referanser",
     "darkMode": "Veksle mørk modus",
     "languagePicker": "Endre språk"
@@ -176,9 +176,11 @@
     "emailLabel": "Epost"
   },
   "education": {
-    "title": "Utdannelse & Kursbevis",
+    "title": "Kursbevis & Attester",
     "highSchool": "Vidregående",
-    "codeBootcamp": "Programmerings kurs"
+    "codeBootcamp": "Programmerings kurs",
+    "recommendation": "Attest",
+    "certificate": "Kursbevis"
   },
   "references": {
     "title": "References"

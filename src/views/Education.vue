@@ -46,13 +46,23 @@
             },
             {
               name: "Get Academy",
-              type: this.$t("education.codeBootcamp"),
+              type: this.$t("education.certificate"),
               pictures: [
                 require("@/assets/education/get-academy1.jpg"),
                 require("@/assets/education/get-academy2.jpg")
               ],
               startDate: new Date(2019, 1, 28),
               stopDate: new Date(2020, 6, 19),
+              show: true,
+            },
+            {
+              name: "ABAX",
+              type: this.$t("education.recommendation"),
+              pictures: [
+                require("@/assets/education/abax-recommendation.png")
+              ],
+              startDate: new Date(2020, 7, 1),
+              stopDate: new Date(2023, 3, 31),
               show: true,
             }
           ]

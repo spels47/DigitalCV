@@ -7,7 +7,7 @@
   "topBar": {
     "dashboard": "dashboard",
     "contact": "contact patrick",
-    "education": "Education & Certificates",
+    "education": "Certificates & Letters of recommendation",
     "references": "References",
     "darkMode": "Toggle dark mode",
     "languagePicker": "Change language"
@@ -176,9 +176,11 @@
     "emailLabel": "Email"
   },
   "education": {
-    "title": "Education & Certificates",
+    "title": "Certificates & Letters of recommendation",
     "highSchool": "High School",
-    "codeBootcamp": "Code Bootcamp"
+    "codeBootcamp": "Code Bootcamp",
+    "recommendation": "Letter of recommendation",
+    "certificate": "Certificate"
   },
   "references": {
     "title": "References"
