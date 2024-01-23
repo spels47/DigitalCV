@@ -32,8 +32,10 @@ import util from "@/helpers/util";
     },
     data: function () {
       return {
-        experienceStart: new Date(2019, 3),
-        experienceStop: null
+        experienceDates: [
+          {startDate: new Date(2019, 3), stopDate: new Date(2019, 4)},
+          {startDate: new Date(2019, 9), stopDate: null}
+        ]
       }
     },
     methods: {
@@ -41,7 +43,7 @@ import util from "@/helpers/util";
     },
     computed: {
       experience(){
-        return util.calculateExperience(this.experienceStart, this.experienceStop, this.$t("years"), this.$t("months"), this.$t("days"));
+        return util.calculateExperienceList(this.experienceDates, this.$t("years"), this.$t("months"), this.$t("days"));
       }
     },
     mounted() {

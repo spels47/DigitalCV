@@ -1,7 +1,7 @@
 <template>
   <v-container class="dialogPadding">
     <v-row justify="space-around">
-      <v-col>
+      <v-col class="hideForMobileWidth">
         <v-card min-width="300" width="30vw" color="cardbg">
           <v-card-title class="title"><span class="pr-4">{{$t("contact.contactByEmail")}}</span> <v-icon color="primary">mdi-email</v-icon></v-card-title>
           <div class="pa-8">
@@ -94,6 +94,11 @@
   .dialogPadding{
     margin: 64px;
   }
+  @media only screen and (max-width: 1220px) {
+  .hideForMobileWidth{
+    display: none;
+  }
+}
   @media only screen and (max-width: 430px) {
     .dialogPadding{
       margin: 32px;

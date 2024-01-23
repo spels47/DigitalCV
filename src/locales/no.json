@@ -183,6 +183,9 @@
     "certificate": "Kursbevis"
   },
   "references": {
-    "title": "References"
+    "title": "Referanser"
+  },
+  "profilePicture": {
+    "title": "Programvare Utvikler"
   }
 }

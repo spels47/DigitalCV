@@ -13,7 +13,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{codeLanguage.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(codeLanguage.experienceStart, codeLanguage.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(codeLanguage.experienceDates)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -28,7 +28,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{technology.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(technology.experienceStart, technology.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(technology.experienceDates)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -43,7 +43,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{framework.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(framework.experienceStart, framework.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(framework.experienceDates)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -58,7 +58,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{methodology.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(methodology.experienceStart, methodology.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(methodology.experienceDates)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -73,7 +73,7 @@
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>{{packageManager.name}}</v-list-item-title>
-              <v-list-item-subtitle>{{experience(packageManager.experienceStart, packageManager.experienceStop)}} {{$t("experience")}}</v-list-item-subtitle>
+              <v-list-item-subtitle>{{experience(packageManager.experienceDates)}} {{$t("experience")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -102,121 +102,154 @@
         codeLanguages: [
           {
             name: "Csharp",
-            experienceStart: new Date(2016, 8),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2016, 8), stopDate: new Date(2017, 5)},
+              {startDate: new Date(2019, 4), stopDate: new Date(2020, 6, 19)},
+              {startDate: new Date(2020, 7, 1), stopDate: new Date(2023, 3, 1)},
+              {startDate: new Date(2023, 3, 1), stopDate: null}
+            ]
           },
           {
             name: "Javascript",
-            experienceStart: new Date(2019, 1, 27),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2019, 2), stopDate: new Date(2019, 4)},
+              {startDate: new Date(2019, 9), stopDate: new Date(2023, 3)},
+              {startDate: new Date(2024, 1, 19), stopDate: null}
+            ]
           },
           {
             name: "Visual Basic",
-            experienceStart: new Date(2020, 1),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2020, 7), stopDate: null}
+            ]
           },
           {
             name: "Typescript",
-            experienceStart: new Date(2020, 8),
-            experienceStop: new Date(2021, 2)
+            experienceDates: [
+              {startDate: new Date(2020, 8), stopDate: new Date(2021, 2)},
+              {startDate: new Date(2023, 3), stopDate: null}
+            ]
           }
         ],
         technologies: [
           {
             name: "Mssql",
-            experienceStart: new Date(2019, 3),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2019, 3), stopDate: new Date(2019, 4)},
+              {startDate: new Date(2019, 9), stopDate: null}
+            ]
           },
           {
             name: "MongoDB",
-            experienceStart: new Date(2020, 1),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2020, 1), stopDate: null}
+            ]
           },
           {
             name: "RavenDB",
-            experienceStart: new Date(2019, 11),
-            experienceStop: new Date(2020, 3)
+            experienceDates: [
+              {startDate: new Date(2019, 11), stopDate: new Date(2020, 3)}
+            ]
           },
           {
             name: "Google Firebase",
-            experienceStart: new Date(2019, 2),
-            experienceStop: new Date(2019, 3)
+            experienceDates: [
+              {startDate: new Date(2019, 2), stopDate: new Date(2019, 3)}
+            ]
           },
           {
             name: "Docker",
-            experienceStart: new Date(2020, 2),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2020, 2), stopDate: null}
+            ]
           },
           {
             name: "RabbitMQ",
-            experienceStart: new Date(2020, 7),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2020, 7), stopDate: null}
+            ]
           }
         ],
         frameworks: [
           {
             name: "AngularJS",
-            experienceStart: new Date(2019, 9),
-            experienceStop: new Date(2021, 2)
+            experienceDates: [
+              {startDate: new Date(2019, 9), stopDate: new Date(2021, 2)}
+            ]
           },
           {
             name: "Vue",
-            experienceStart: new Date(2019, 2),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2019, 2), stopDate: new Date(2023, 3)},
+              {startDate: new Date(2024, 1, 19), stopDate: null}
+            ]
           },
           {
             name: "Bootstrap",
-            experienceStart: new Date(2019, 2),
-            experienceStop: new Date(2021, 2)
+            experienceDates: [
+              {startDate: new Date(2019, 9), stopDate: new Date(2021, 2)}
+            ]
           },
           {
             name: "Vuetify",
-            experienceStart: new Date(2022, 2),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2022, 2), stopDate: new Date(2023, 3)},
+              {startDate: new Date(2024, 1, 19), stopDate: null}
+            ]
           },
           {
             name: "Vuex",
-            experienceStart: new Date(2022, 2),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2022, 2), stopDate: new Date(2023, 3)},
+              {startDate: new Date(2024, 1, 19), stopDate: null}
+            ]
           },
           {
             name: "Vue Router",
-            experienceStart: new Date(2019, 2),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2019, 2), stopDate: new Date(2023, 3)},
+              {startDate: new Date(2024, 1, 19), stopDate: null}
+            ]
           }
         ],
         methodologies: [
           {
             name: "Kanban",
-            experienceStart: new Date(2019, 9),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2019, 9), stopDate: null}
+            ]
           },
           {
             name: "Scrum",
-            experienceStart: new Date(2019, 9),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2019, 9), stopDate: null}
+            ]
           }
         ],
         packageManagers: [
           {
             name: "Node Package Manager (NPM)",
-            experienceStart: new Date(2019, 1, 27),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2019, 1, 27), stopDate: null}
+            ]
           },
           {
             name: "Yarn",
-            experienceStart: new Date(2019, 9),
-            experienceStop: new Date(2020, 1)
+            experienceDates: [
+              {startDate: new Date(2019, 9), stopDate: new Date(2020, 1)}
+            ]
           },
           {
             name: "Paket",
-            experienceStart: new Date(2019, 9),
-            experienceStop: new Date(2021, 1)
+            experienceDates: [
+              {startDate: new Date(2019, 9), stopDate: new Date(2021, 1)}
+            ]
           },
           {
             name: "NuGet",
-            experienceStart: new Date(2019, 9),
-            experienceStop: null
+            experienceDates: [
+              {startDate: new Date(2019, 9), stopDate: null}
+            ]
           }
         ]
       }
@@ -232,8 +265,8 @@
       changeGroupSelection(selection, group){
         this.changeCompetencyGroupSelection({type: group, value: selection});
       },
-      experience(start, stop){
-        return util.calculateExperience(start, stop, this.$t("years"), this.$t("months"), this.$t("days"));
+      experience(experienceList){
+        return util.calculateExperienceList(experienceList, this.$t("years"), this.$t("months"), this.$t("days"));
       }
     },
     computed: {

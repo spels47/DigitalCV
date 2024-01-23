@@ -45,7 +45,7 @@
       <CompetenciesList :loading="loading"></CompetenciesList>
     </div> -->
     
-    <div class="pictureCarousel">
+    <div class="pictureCarousel" style="display: none;"> <!-- style was set to hide picture carousel -->
       <PictureCarousel></PictureCarousel>
     </div>
     
@@ -113,7 +113,8 @@ import util from "@/helpers/util";
 }
 
 .aboutText{
-  max-height: calc(25vh - 64px);
+  // max-height: calc(25vh - 64px); // was swapped out with the other one to accommodate the removal of the picture carousel
+  max-height: 40vh;
   overflow-y: auto;
 }
 
@@ -122,7 +123,7 @@ import util from "@/helpers/util";
 }
 
 .mobileFlex{
-  max-height: 50vh;
+  max-height: 80vh; // was 50 to make space for picture carousel
 }
 
 @media only screen and (max-width: 1220px) {

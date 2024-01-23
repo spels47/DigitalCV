@@ -3,7 +3,7 @@
     <v-img height="250" id="backgroundPicture" lazy-src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg" :src="backgroundPictureWidth > 630 ? require('@/assets/programming.gif') : null">
       <v-row align="end" class="fill-height">
         <v-col align-self="start" class="pa-0" cols="12">
-          <v-avatar class="profile" color="grey" :size="200" rounded>
+          <v-avatar class="profile" color="grey" :size="175" rounded>
             <v-img src="@/assets/patrick/patrick29.jpg"></v-img>
           </v-avatar>
         </v-col>
@@ -11,7 +11,7 @@
           <v-list-item color="rgba(0, 0, 0, .4)" dark>
             <v-list-item-content>
               <v-list-item-title class="text-h6">Patrick Brekke Johnsen</v-list-item-title>
-              <v-list-item-subtitle>Software Engineer</v-list-item-subtitle>
+              <v-list-item-subtitle>{{$t("profilePicture.title")}}</v-list-item-subtitle>
             </v-list-item-content>
           </v-list-item>
         </v-col>

@@ -1,6 +1,6 @@
 <template>
     <v-card class="outerCard">
-    <v-card-title><v-icon color="primary">mdi-account-school</v-icon><span class="pl-4">{{$t("education.title")}}</span></v-card-title>
+    <v-card-title class="cardTitle"><v-icon color="primary">mdi-account-school</v-icon><span class="pl-4 title">{{$t("education.title")}}</span></v-card-title>
     <div class="d-flex flex-wrap justify-start align-start boxSize">
       <v-card v-for="(certificate, index) in certificates.filter(cert => cert.show)" :key="index" class="ma-4 cardMain d-flex flex-column align-center" width="100%" height="100%" color="cardbg" @click="selectImage(certificate.pictures)">
         <v-card-title>{{certificate.name}}</v-card-title>
@@ -148,6 +148,16 @@
     }
     .dialogSize{
       width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 452px) {
+    .title{
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    .cardTitle{
+      display:inline-block;
     }
   }
   </style>  

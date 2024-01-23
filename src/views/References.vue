@@ -1,6 +1,6 @@
 <template>
   <v-card height="100%">
-    <v-card-title><v-icon color="primary">mdi-account-heart</v-icon><span class="pl-4">{{$t("references.title")}}</span></v-card-title>
+    <v-card-title class="cardTitle"><v-icon color="primary">mdi-account-heart</v-icon><span class="pl-4 title">{{$t("references.title")}}</span></v-card-title>
     <div class="d-flex flex-wrap justify-start align-start flexContainer">
       <v-card v-for="(reference, index) in references" :key="index" class="ma-4 cardMain" color="cardbg">
         <v-card :class="`d-flex pa-2 ${reference.link ? 'pointerLink' : ''}`" elevation="0" color="cardbg" @click="openReferenceLink(reference.link)">
@@ -131,4 +131,14 @@
     max-height: initial;
   }
 }
+
+@media only screen and (max-width: 452px) {
+    .title{
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    .cardTitle{
+      display:inline-block;
+    }
+  }
 </style>  
