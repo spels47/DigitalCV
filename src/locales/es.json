@@ -1,0 +1,87 @@
+{
+  "ofExperience": "de experiencia",
+  "experience": "experiencia",
+  "years": "año(s)",
+  "months": "mes(es)",
+  "days": "día(s)",
+  "topBar": {
+    "dashboard": "tablero",
+    "contact": "contactar a Patrick",
+    "education": "Certificados y Cartas de recomendación",
+    "references": "Referencias",
+    "darkMode": "Cambiar modo oscuro",
+    "languagePicker": "Cambiar idioma"
+  },
+  "dashboard": {
+    "about": "Acerca de Patrick",
+    "content1": "¡Hola 😁! Soy un desarrollador full stack de {age} años de Larvik, Noruega. Me enorgullezco de mi trabajo y me gusta trabajar en mis entregas hasta que estoy orgulloso de lo que entrego. Me esfuerzo por mejorar profesionalmente, independientemente de cuán bueno pueda ser en lo que hago.",
+    "content2": "Soy un pensador objetivo, bueno para identificar problemas y trabajar activamente en soluciones. Me gusta trabajar de cerca con el departamento de productos y proponer ideas para cambios o mejoras mientras implemento las especificaciones proporcionadas.",
+    "content3": "Fuera del trabajo, paso tiempo con amigos, veo películas, juego Pathfinder, disfruto de documentales y juego videojuegos. Me gusta dedicar tiempo al desarrollo de juegos y otros proyectos creativos.",
+    "content4": "Me introduje por primera vez a la programación cuando fui a la universidad comunitaria en 2016 y me enamoré del desarrollo de juegos ese año. Aprendí a usar la programación con fines más relacionados con los negocios cuando ingresé a Get Academy en 2019, y tengo una experiencia total con la programación de {experience},",
+    "content5": "pero tengo {experience} de experiencia trabajando con programación profesionalmente."
+  },
+  "hobbiesList": {
+    "title": "Pasatiempos y actividades de tiempo libre",
+    "hobbyHeader": "Pasatiempos",
+    "gameDevelopment": "Desarrollo de juegos",
+    "streaming": "Transmisión"
+  },
+  "gameDevelopment": {
+    "title": "Desarrollo de juegos",
+    "content1": "Aprendí a desarrollar juegos cuando fui a Bjerkely Folkehøyskole en 2016-2017. Allí aprendí a programar en C# en el motor Unity y a usar el motor Unity en general. También aprendí los conceptos básicos de modelado 3D con Blender y texturización de modelos 3D, que incluye la creación de texturas que simulan 3D mediante mapas de relieve y tienen metadatos sobre cómo la luz interactúa con la textura mediante mapas de difusión, etc. Los proyectos que hice ese año desaparecieron ya que no trabajé con ninguna tecnología que hiciera copias de seguridad durante ese tiempo.",
+    "content2": "Pero hice algunos juegos después de dejar la escuela. Hice un juego para móviles llamado FlurryTurry que tuve alojado en Google Play Store por un tiempo limitado hasta que fue eliminado por Google. Era un juego de defensa de torres relativamente divertido que hice.",
+    "content3": "La razón por la que el juego fue retirado de Google Play Store fue porque había utilizado un SDK, un paquete de herramientas para hacer las compilaciones de mi juego para móviles que también incluía herramientas para la funcionalidad de compra dentro de la aplicación, no que supiera acerca de esto o hubiera usado estas herramientas, pero como eran parte del conjunto de herramientas con el que se construyó el juego, Google pensó que mi juego tenía compras dentro de la aplicación. Y como no había declarado ninguna compra dentro de la aplicación, Google retiró el juego. Así que fue retirado por un malentendido, sin embargo, logré corromper los archivos del proyecto cuando actualicé Unity accidentalmente a una versión beta, lo que hizo imposible corregirlo y crear otra compilación del juego, lamentablemente.",
+    "content4": "También hice un juego de aventuras de texto para consola llamado Ogrevent, que está disponible para su descarga",
+    "here": "aquí",
+    "content5": "El desarrollo de juegos es algo que encuentro divertido, pero lleva mucho tiempo y es difícil hacerlo solo, así que no es algo que haga con frecuencia en estos días."
+  },
+  "pathfinder": {
+    "title": "Pathfinder",
+    "content1": "Pathfinder es un",
+    "tabletopLink": "juego de rol de mesa",
+    "content2": "la mayoría de las personas que han oído hablar de algún tipo de juego de rol de mesa han oído hablar de Dungeons & Dragons.",
+    "content3": "Pathfinder es como Dungeons & Dragons, solo que tiene reglas diferentes.",
+    "content4": "Algunos amigos y yo nos reunimos ocasionalmente, quizás cada dos fines de semana, y lanzamos dados y nos divertimos jugando Pathfinder juntos."
+  },
+  "streaming": {
+    "title": "Transmisión",
+    "content1": "De vez en cuando transmito juegos en Twitch, es solo algo que hago porque creo que es divertido, y no es algo que hago de manera profesional o que me gustaría hacer de manera profesional."
+  },
+  "technicalList": {
+    "title": "Competencias técnicas",
+    "codeLanguageHeader": "Lenguajes de código",
+    "technologyHeader": "Tecnologías",
+    "frameworkHeader": "Frameworks",
+    "methodologyHeader": "Metodologías",
+    "packageManagerHeader": "Gestores de paquetes"
+  },
+  "angularJs": {
+    "title": "AngularJS",
+    "content": "Tengo experiencia con una versión anterior de AngularJS de mi tiempo en ABAX, donde solía hacer mantenimiento y corrección de errores que ocasionalmente implicaban corregir cosas que no funcionaban como se esperaba en el frontend. Durante ese tiempo me familiaricé mucho con AngularJS."
+  },
+  "bootstrap": {
+    "title": "Bootstrap",
+    "content": "Bootstrap es la primera biblioteca enfocada en estilo que utilicé. Lo aprendí en Get Academy primero, pero también lo usé en ABAX durante un tiempo. Sin embargo, vale la pena mencionar que el Bootstrap que usé en ABAX estaba altamente personalizado y no era Bootstrap puro."
+  },
+  "csharp": {
+    "title": "Csharp",
+    "content1": "Aprendí C# en 2016-2017 cuando fui a Bjerkely Folkehøyskole, donde estudié desarrollo de juegos. Había muchos roles diferentes que se podían elegir en el desarrollo de juegos. Un juego suele contener imágenes, animaciones, modelos 3D o sprites 2D, efectos de sonido, música y, por supuesto, código que dicta el comportamiento e interactividad del juego. Y fue el código, la programación, lo que más me interesó. Así que pasé la mayor parte de mi tiempo ese año aprendiendo a escribir en C# en el motor de juegos Unity.",
+    "content2": "Después de mi año en Bjerkely, aún hice algún desarrollo de juegos ocasional, pero pocos de los proyectos en los que trabajé se convirtieron en algo funcional, ya que no tenía artistas, animadores ni ingenieros de sonido con los que trabajar. Así que, incluso si podía hacer que el código funcionara, mi motivación comenzó a disminuir bastante rápido cuando me di cuenta de que no podía hacer que el juego se viera y sonara bien por mi cuenta.",
+    "content3": "En 2019, cuando fui a Get Academy, aprendí más sobre C# para fines comerciales y para crear API REST con el marco .NET. Aprendería aún más sobre esto cuando comenzara ese mismo año como pasante en ABAX y mantendría y corregiría errores en su WebApi, que era .NET Framework, pero luego también interactuaría con API en .NET Core moderno. También he usado C# para consumir y emitir eventos sobre colas de mensajes (RabbitMQ) durante mi tiempo en ABAX. También he escrito muchas pruebas unitarias e integradas en XUnit, usando sustitutos para servicios externos y proveedores de datos al escribir pruebas unitarias.",
+    "content4": "También he creado un juego de aventuras de texto para consola que está disponible en mi perfil de GitHub."
+  },
+  "docker": {
+    "title": "Docker",
+    "content": "Aprendí Docker cuando comencé en ABAX. Lo he usado para escribir Dockerfiles para la contenerización de aplicaciones, también lo he usado para docker-compose. Me familiaricé con los comandos de construcción y ejecución y algunos de sus diferentes indicadores. También he usado la interfaz gráfica de Docker Desktop."
+  },
+  "googleFirebase": {
+    "title": "Google Firebase",
+    "content": "Usé Google Firebase como tecnología de base de datos cuando trabajé en la aplicación de citas que fue comisionada mientras iba a Get Academy. En esa base de datos almacené cosas como credenciales de usuario, imágenes de perfil y otra información del usuario."
+  },
+  "javascript": {
+    "title": "Javascript",
+    "content1": "Aprendí Javascript cuando comencé en Get Academy en 2019 y solo lo he usado en el contexto de crear clientes web (páginas web).",
+    "content2": "El primer proyecto real en el que usé Javascript fue cuando Get Academy fue comisionada para hacer una prueba de concepto para una aplicación de citas, en la que me delegaron trabajar. La primera iteración se hizo solo con javascript, html y css; luego refactoricé esto para trabajar con Vue y Bootstrap, que fue la primera vez que usé frameworks.",
+    "content3": "Durante mi tiempo en ABAX también usé Javascript al mantener o crear soluciones para los diferentes clientes web allí, y aprendí y desarrollé mis habilidades con Javascript allí."
+  }
+}
