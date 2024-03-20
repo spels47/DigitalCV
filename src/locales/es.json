@@ -83,5 +83,109 @@
     "content1": "Aprendí Javascript cuando comencé en Get Academy en 2019 y solo lo he usado en el contexto de crear clientes web (páginas web).",
     "content2": "El primer proyecto real en el que usé Javascript fue cuando Get Academy fue comisionada para hacer una prueba de concepto para una aplicación de citas, en la que me delegaron trabajar. La primera iteración se hizo solo con javascript, html y css; luego refactoricé esto para trabajar con Vue y Bootstrap, que fue la primera vez que usé frameworks.",
     "content3": "Durante mi tiempo en ABAX también usé Javascript al mantener o crear soluciones para los diferentes clientes web allí, y aprendí y desarrollé mis habilidades con Javascript allí."
+  },
+  "kanban": {
+    "title": "Kanban",
+    "content": "Durante mi tiempo en ABAX, rastreé mis tareas en los tableros Kanban. Usé principalmente Jira y Gitlab para rastrear las tareas en las que trabajaba personalmente. Pero también usé Monday, pero principalmente Monday es un lugar donde se rastrean los elementos de la hoja de ruta, que a menudo son grandes tareas a largo plazo, que las tareas que rastreaba en Gitlab representaban una pequeña parte."
+  },
+  "mongoDb": {
+    "title": "MongoDB",
+    "content1": "Utilicé MongoDB por primera vez en ABAX, durante ese tiempo aprendí a usar herramientas como Mongo Compass y Studio 3T. Además de usar ocasionalmente la Mongo Shell. Durante mi tiempo usando MondoDB he aprendido:",
+    "listItem1": "Cómo usar el controlador de C#",
+    "listItem2": "Cómo crear nuevos índices, incluidos los índices {TTL} {TTLText}",
+    "listItem3": "Cómo escribir consultas utilizando el controlador de C#",
+    "content2": "También he utilizado MongoDB en un proyecto personal para almacenar documentos PDF como cadena base64."
+  },
+  "mssql": {
+    "title": "MSSQL",
+    "content1": "Aprendí los conceptos básicos del lenguaje de consulta SQL cuando fui a Get Academy. Obtuve una comprensión más profunda del lenguaje de consulta cuando trabajaba en ABAX. Durante mi tiempo en ABAX, he escrito consultas complicadas, he aprendido sobre:",
+    "listItem1": "Índices",
+    "listItem2": "Cómo alcanzar los índices",
+    "listItem3": "Cómo medir el rendimiento",
+    "listItem4": "Cómo mejorar el rendimiento en las consultas",
+    "listItem5": "Cómo vincular bases de datos",
+    "listItem6": "Cómo usar tablas temporales",
+    "listItem7": "Cómo configurar transacciones y usarlas tanto para confirmar como para deshacer cambios.",
+    "content2": "Personalmente prefiero las tecnologías de bases de datos relacionales sobre las tecnologías de bases de datos de documentos en general, pero ambas tienen sus ventajas y desventajas."
+  },
+  "npm": {
+    "title": "Node Package Manager (NPM)",
+    "content": "Node Package Manager es el administrador de paquetes principal que he utilizado para todas las aplicaciones frontend en las que he trabajado. Y como tal, he aprendido varios comandos con él, pero también he aprendido cómo crear mis propios comandos personalizados donde encadeno varios comandos para su uso fácil usando la sintaxis && entre los comandos."
+  },
+  "nuget": {
+    "title": "NuGet",
+    "content": "NuGet es el administrador de paquetes principal que he utilizado para instalar y actualizar las dependencias de paquetes para proyectos .NET."
+  },
+  "paket": {
+    "title": "Paket",
+    "content": "He usado paket para instalar dependencias para un proyecto .NET que tenía paket como forma de obtener paquetes. Paket también se usó para bloquear versiones de paquetes en ese proyecto y era todo muy heredado, las cosas se romperían y dejarían de funcionar si los paquetes se actualizaban a la última versión. Un efecto secundario desafortunado del estado heredado del proyecto en ese momento, Sin embargo, esto mejoraría gradualmente con el tiempo. Entonces mi experiencia con Paket es bastante aislada en ese proyecto."
+  },
+  "rabbitMq": {
+    "title": "RabbitMQ",
+    "content": "He utilizado RabbitMQ para consumir y emitir mensajes en los backends de C#, también he utilizado la interfaz gráfica de usuario de RabbitMQ donde he examinado mensajes de error en colas de error y he aprendido la diferencia entre nack y ack. También he aprendido cómo mover mensajes de una cola a otra usando esa interfaz."
+  },
+  "ravenDb": {
+    "title": "RavenDB",
+    "content": "Solo he usado RavenDB un poco, lo he usado para modificar algunos documentos en la interfaz web, y también para descargar y cargar colecciones."
+  },
+  "scrum": {
+    "title": "Scrum",
+    "content": "Mientras trabajaba en ABAX, seguimos el marco de trabajo SCRUM para la gestión de proyectos. Celebrábamos reuniones standup por la mañana, turnándonos para explicar qué hicimos ayer y si estábamos atascados en algo / necesitábamos ayuda de alguien en el equipo con algo. Estimábamos nuestras tareas y dividíamos las tareas más grandes en tareas más pequeñas, más fáciles de definir en pasos técnicos necesarios para terminar. Luego trabajábamos con esas tareas más pequeñas en nuestro tablero Kanban. También celebrábamos reuniones semanales con el Analista de Negocios del equipo para revisar el progreso y también para revisar las especificaciones de las próximas tareas y planificar hacia adelante cuándo deberían comenzar a trabajar nuevas tareas."
+  },
+  "typescript": {
+    "title": "TypeScript",
+    "content1": "Solo he usado TypeScript un poco, tengo un entendimiento básico de ello. Usé TypeScript ocasionalmente cuando trabajaba en un proyecto de refactorización de frontend bastante grande para ABAX, para algunos componentes específicos que requerían esto. Sin embargo, en su mayor parte usé JavaScript durante mi tiempo en ese proyecto.",
+    "content2": "Aún así, tengo algo de experiencia con TypeScript, así que no comenzaría desde cero si me encontrara con él nuevamente en el futuro."
+  },
+  "visualBasic": {
+    "title": "Visual Basic",
+    "content": "Solo he usado Visual Basic para mantener bases de código heredadas, pero en ese tiempo hice correcciones de errores a una API SOAP y escribí pruebas unitarias. También he convertido grandes cantidades de código Visual Basic a C#."
+  },
+  "vueRouter": {
+    "title": "Vue Router",
+    "content1": "Vue Router es un paquete opcional para aplicaciones Vue. Facilita el enrutamiento entre diferentes páginas dentro de la aplicación, lo que permite que la aplicación se divida en múltiples páginas web sin tener que volver a cargar toda la página. Vue Router almacena el estado de la navegación a través de su aplicación y le permite retroceder en la historia del estado de la navegación.",
+    "content2": "Vue Router es un componente clave en el ecosistema Vue. Fue uno de los primeros paquetes disponibles para Vue 2 y desempeñó un papel importante en el crecimiento de la popularidad de Vue."
+  },
+  "vue": {
+    "title": "Vue",
+    "content1": "Vue es el primer framework que aprendí a usar, y también es mi framework favorito de todos los frameworks de su tipo que he tenido el placer de experimentar a lo largo de mi carrera. Lo usé por primera vez en una refactorización de una aplicación de citas en la que estaba trabajando cuando fui a Get Academy. Luego lo usé en algunos proyectos de aprendizaje donde mi enfoque estaba principalmente en aprender tecnologías distintas a Vue. Algún tiempo después de esto, utilicé el framework mientras trabajaba en un proyecto centrado en refactorizar nuestro frontend desde el antiguo AngularJS al nuevo Vue 3 para ABAX. Después de este proyecto, trabajé en mantenimiento y desarrollo de funciones para herramientas internas que también usaban Vue para su frontend.",
+    "content2": "Estoy principalmente familiarizado con la escritura de Vue en el API de opciones, pero tengo una comprensión básica del API de composiciones también.",
+    "content3": "¡Esta página web también está escrita en Vue!"
+  },
+  "vuetify": {
+    "title": "Vuetify",
+    "content1": "Vuetify fue el framework que usamos para nuestras herramientas internas en ABAX, es un framework que realmente me ha gustado.",
+    "content2": "¡Esta página también se escribió usando Vuetify!"
+  },
+  "vuex": {
+    "title": "Vuex",
+    "content1": "Vuex es un contenedor de estado global que es un complemento opcional para aplicaciones Vue. Escuché sobre esto en Get Academy, pero realmente no comencé a usarlo hasta que comencé a trabajar en el proyecto de herramientas internas en ABAX. Pero me alegro de haberlo hecho y soy un gran fanático de él ahora que estoy familiarizado con él.",
+    "content2": "¡Esta página web también usó Vuex!"
+  },
+  "yarn": {
+    "title": "Yarn",
+    "content": "Usé Yarn durante un corto período de tiempo para instalar las dependencias del frontend para un proyecto porque si instalabas esas dependencias con NPM no funcionaría por razones que nunca investigamos más a fondo. Pero descubrimos que si instalabas esas dependencias con Yarn, funcionaría perfectamente, así que simplemente usamos eso para ese proyecto específico, hasta que un día NPM funcionó con ese proyecto también. Esto fue bastante temprano en mi pasantía con ABAX."
+  },
+  "contact": {
+    "contactByEmail": "Contáctame por correo electrónico",
+    "subject": "Asunto",
+    "messageBody": "Cuerpo del mensaje",
+    "sendEmail": "Enviar correo electrónico",
+    "contactInfo": "Información de contacto",
+    "phoneLabel": "Número de teléfono",
+    "emailLabel": "Correo electrónico"
+  },
+  "education": {
+    "title": "Certificados y Cartas de Recomendación",
+    "highSchool": "Escuela secundaria",
+    "codeBootcamp": "Bootcamp de código",
+    "recommendation": "Carta de recomendación",
+    "certificate": "Certificado"
+  },
+  "references": {
+    "title": "Referencias"
+  },
+  "profilePicture": {
+    "title": "Ingeniero de Software"
   }
 }
