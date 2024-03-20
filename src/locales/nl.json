@@ -1,0 +1,159 @@
+{
+  "ofExperience": "ervaring",
+  "experience": "ervaring",
+  "years": "jaar",
+  "months": "maand(en)",
+  "days": "dag(en)",
+  "topBar": {
+    "dashboard": "dashboard",
+    "contact": "contact opnemen met Patrick",
+    "education": "Certificaten & Aanbevelingsbrieven",
+    "references": "Referenties",
+    "darkMode": "Donkere modus",
+    "languagePicker": "Taal wijzigen"
+  },
+  "dashboard": {
+    "about": "Over Patrick",
+    "content1": "Hallo 😁 ik ben een {age} jaar oude full-stack ontwikkelaar uit Larvik, Noorwegen. Ik ben trots op mijn werk en werk graag aan mijn projecten totdat ik trots ben op wat ik lever. Ik streef ernaar om mezelf professioneel te verbeteren, ongeacht hoe goed ik ben in wat ik doe.",
+    "content2": "Ik ben een objectieve denker die goed is in het identificeren van problemen en actief werkt aan oplossingen. Ik werk graag nauw samen met de productafdeling en pitch ideeën voor veranderingen of verbeteringen, omdat ik creatieve inspiraties krijg tijdens het implementeren van de specificatie die aan mij is verstrekt.",
+    "content3": "Buiten het werk besteed ik tijd met vrienden, kijk ik naar films, speel ik Pathfinder, geniet ik van documentaires en speel ik video games. Ik besteed graag tijd aan game-ontwikkeling en andere creatieve zijprojecten.",
+    "content4": "Ik maakte voor het eerst kennis met programmeren toen ik in 2016 naar een community college ging en werd verliefd op game-ontwikkeling dat jaar. Ik leerde programmeren voor meer zakelijke doeleinden toen ik in 2019 naar Get Academy ging en heb in totaal {experience} ervaring met programmeren,",
+    "content5": "maar ik heb {experience} ervaring met professioneel programmeren."
+  },
+  "hobbiesList": {
+    "title": "Hobby's & Vrijetijdsactiviteiten",
+    "hobbyHeader": "Hobby's",
+    "gameDevelopment": "Game-ontwikkeling",
+    "streaming": "Streaming"
+  },
+  "gameDevelopment": {
+    "title": "Game-ontwikkeling",
+    "content1": "Ik leerde voor het eerst game-ontwikkeling toen ik in 2016-2017 naar Bjerkely Folkehøyskole ging. Tijdens mijn verblijf leerde ik programmeren in C# in de Unity-engine en hoe ik de Unity-engine in het algemeen kon gebruiken. Ik leerde ook de basis van 3D-modelleren met Blender en het textureren van 3D-modellen, inclusief het maken van texturen die 3D simuleren met bump maps en metadata over hoe licht interageert met de textuur met diffusiemaps, enzovoort. De projecten die ik dat jaar heb gemaakt, zijn verdwenen omdat ik niet met technologie heb gewerkt die back-ups maakte tijdens die tijd.",
+    "content2": "Maar ik heb sinds ik de school heb verlaten wel enkele spellen gemaakt, ik heb een mobiel spel gemaakt dat ik tijdelijk op de Google Play Store heb gehost totdat het door Google werd verwijderd. Het heette FlurryTurry en het was een relatief leuk tower defense-spel dat ik had gemaakt.",
+    "content3": "De reden waarom het spel uit de Google Play Store werd gehaald, was omdat ik een SDK had gebruikt, een pakket tools voor het maken van de builds van mijn mobiele spel dat ook tools voor in-app-aankoopfunctionaliteit bevatte, niet dat ik dit wist of deze tools had gebruikt, maar omdat ze deel uitmaakten van de toolset waarmee het spel was gebouwd, dacht Google dat mijn spel in-app-aankopen had. En omdat ik geen in-app-aankopen had verklaard, heeft Google het spel verwijderd. Dus het werd verwijderd vanwege een misverstand, maar ik slaagde erin de projectbestanden te beschadigen toen ik per ongeluk Unity naar een bètaversie had bijgewerkt, waardoor het onmogelijk werd om dit te repareren en een andere build van het spel te maken helaas.",
+    "content4": "Ik heb ook een Console App tekstavonturenspel genaamd Ogrevent gemaakt, dat beschikbaar is om te downloaden",
+    "here": "hier",
+    "content5": "Game-ontwikkeling is iets wat ik leuk vind, maar het is erg tijdrovend en moeilijk om alleen te doen, dus het is niet iets waar ik heel vaak aan toe kom."
+  },
+  "pathfinder": {
+    "title": "Pathfinder",
+    "content1": "Pathfinder is een",
+    "tabletopLink": "tabletop rollenspel",
+    "content2": "de meeste mensen die van een vorm van tabletop rollenspel hebben gehoord, hebben gehoord van Dungeons & Dragons.",
+    "content3": "Pathfinder lijkt op Dungeons & Dragons, alleen heeft het andere regels.",
+    "content4": "Ik kom af en toe met een paar vrienden samen, misschien om het andere weekend, en we rollen dobbelstenen en hebben een goede tijd met het spelen van Pathfinder samen."
+  },
+  "streaming": {
+    "title": "Streaming",
+    "content1": "Af en toe stream ik games op Twitch, het is gewoon iets wat ik doe omdat ik het leuk vind, en het is niet iets dat ik professioneel doe of ooit professioneel zou willen doen."
+  },
+  "technicalList": {
+    "title": "Technische Vaardigheden",
+    "codeLanguageHeader": "Programmeertalen",
+    "technologyHeader": "Technologieën",
+    "frameworkHeader": "Frameworks",
+    "methodologyHeader": "Methodologieën",
+    "packageManagerHeader": "Pakketbeheerders"
+  },
+  "angularJs": {
+    "title": "AngularJS",
+    "content": "Ik heb ervaring met een oudere versie van AngularJS uit mijn tijd bij ABAX, waar ik onderhoud en bugfixes deed die af en toe het repareren van dingen omvatten die niet werkten zoals verwacht in de frontend. Dus tijdens die tijd werd ik erg vertrouwd met AngularJS."
+  },
+  "bootstrap": {
+    "title": "Bootstrap",
+    "content": "Bootstrap is de eerste op stijl gerichte bibliotheek die ik ooit heb gebruikt. Ik leerde erover bij Get Academy, maar gebruikte het ook bij ABAX gedurende een tijdje. Het is echter vermeldenswaard dat de Bootstrap die ik bij ABAX gebruikte sterk was aangepast en niet de standaard Bootstrap was."
+  },
+  "csharp": {
+    "title": "Csharp",
+    "content1": "Ik leerde C# in 2016-2017 toen ik naar Bjerkely Folkehøyskole ging, waar ik game-ontwikkeling studeerde. Er waren veel verschillende rollen die konden worden gekozen bij game-ontwikkeling. Een game bevat meestal afbeeldingen, animaties, 3D-modellen of 2D-sprites, geluidseffecten, muziek en natuurlijk code die het gedrag en de interactie van de game bepaalt. En het was de code, de programmering, die mijn interesse het meest trok. Dus bracht ik het grootste deel van mijn tijd dat jaar door met het leren van C# schrijven in de Unity-game-engine.",
+    "content2": "Na mijn jaar op Bjerkely deed ik nog steeds af en toe game-ontwikkeling, maar weinig van de projecten waaraan ik werkte werden functioneel omdat ik geen artiesten, animators of geluidstechnici had om mee samen te werken. Dus zelfs als ik de code aan de praat kon krijgen, begon mijn motivatie al snel af te nemen toen ik me realiseerde dat ik niet in staat was om het spel er goed uit te laten zien en te laten klinken in mijn eentje.",
+    "content3": "In 2019, toen ik naar Get Academy ging, leerde ik meer over C# voor zakelijke doeleinden en het maken van REST API's met het .NET-framework. Ik zou hier nog meer over leren wanneer ik later dat jaar als stagiair bij ABAX zou beginnen en hun WebAPI zou onderhouden en bugs zou repareren, wat .NET-framework was, maar later ook zou interageren met API's in modernere .NET Core. Ik heb ook C# gebruikt om gebeurtenissen te consumeren en te genereren via berichtenwachtrijen (RabbitMQ) tijdens mijn tijd bij ABAX. Ik heb ook veel unit- en integratietests geschreven in XUnit, waarbij ik substituten heb gebruikt voor externe services en gegevensproviders bij het schrijven van unit-tests.",
+    "content4": "Ik heb ook een tekstavonturenspel voor de Console-app gemaakt dat beschikbaar is op mijn GitHub-profiel."
+  },
+  "docker": {
+    "title": "Docker",
+    "content": "Ik leerde Docker kennen toen ik bij ABAX begon, ik heb het gebruikt om Docker-bestanden te schrijven voor containerisatie van apps, ik heb het ook gebruikt voor docker-compose. Ik heb me vertrouwd gemaakt met de build- en run-opdrachten en enkele van de verschillende vlaggen. Ik heb ook de Docker-desktop-GUI gebruikt."
+  },
+  "googleFirebase": {
+    "title": "Google Firebase",
+    "content": "Ik heb Google Firebase gebruikt als database-technologie naar keuze toen ik werkte aan de dating-app die werd gecommissioneerd terwijl ik naar Get Academy ging. In die database heb ik dingen opgeslagen zoals gebruikersreferenties en profielfoto's, en andere gebruikersinformatie."
+  },
+  "javascript": {
+    "title": "Javascript",
+    "content1": "Ik leerde JavaScript toen ik in 2019 bij Get Academy begon, en heb het alleen gebruikt in de context van het maken van webclients (webpagina's)",
+    "content2": "Het eerste echte project waarbij ik JavaScript gebruikte, was toen Get Academy was ingehuurd om een proof of concept te maken voor een dating-app, waar ik aan werd toegewezen. De eerste iteratie werd gemaakt met alleen JavaScript, html en css, ik zou dit later refactoren om te werken met Vue en Bootstrap, wat de eerste keer was dat ik frameworks gebruikte.",
+    "content3": "Tijdens mijn tijd bij ABAX heb ik ook JavaScript gebruikt bij het onderhouden of maken van oplossingen voor de verschillende webclients daar, en heb ik mijn vaardigheden met JavaScript daar geleerd en ontwikkeld."
+  },
+  "kanban": {
+    "title": "Kanban",
+    "content": "Gedurende mijn tijd bij ABAX heb ik mijn taken bijgehouden in Kanban-borden. Ik heb voornamelijk Jira- en GitLab-borden gebruikt om de taken bij te houden waar ik persoonlijk aan werkte. Maar heb ook Monday gebruikt, maar voornamelijk was Monday een plek waar routekaartitems werden bijgehouden die vaak grote langetermijntaken vertegenwoordigden, die de taken die ik bijhield in GitLab een klein deel van vertegenwoordigden."
+  },
+  "mongoDb": {
+    "title": "MongoDB",
+    "content1": "Ik heb MongoDB voor het eerst gebruikt bij ABAX, tijdens die tijd leerde ik tools zoals Mongo Compass en Studio 3T gebruiken. En ook de Mongo Shell af en toe gebruikt. Tijdens mijn tijd met MondoDB heb ik geleerd:",
+    "listItem1": "Hoe de C#-driver te gebruiken",
+    "listItem2": "Hoe nieuwe indexen te maken, inclusief {TTL}-indexen {TTLText}",
+    "listItem3": "Hoe query's te schrijven met de C#-driver",
+    "content2": "Ik heb ook MongoDB gebruikt in een persoonlijk project om pdf-documenten op te slaan als base64-string"
+  },
+  "mssql": {
+    "title": "MSSQL",
+    "content1": "Ik leerde de basisprincipes van de SQL-querytaal toen ik naar Get Academy ging. Ik kreeg een dieper inzicht in de querytaal toen ik bij ABAX werkte. Tijdens mijn tijd bij ABAX heb ik ingewikkelde query's geschreven, ik heb geleerd over:",
+    "listItem1": "Indexen",
+    "listItem2": "Hoe indexen te raken",
+    "listItem3": "Hoe prestaties te meten",
+    "listItem4": "Hoe prestaties in query's te verbeteren",
+    "listItem5": "Hoe databases te koppelen",
+    "listItem6": "Hoe tijdelijke tabellen te gebruiken",
+    "listItem7": "Hoe verbindingen te leggen tussen verschillende tabellen",
+    "listItem8": "Transacties",
+    "listItem9": "Stored Procedures",
+    "listItem10": "Functies",
+    "listItem11": "Triggers"
+  },
+  "nodeJs": {
+    "title": "Node.js",
+    "content1": "Ik leerde Node.js kennen in 2019 toen ik naar Get Academy ging, en leerde het te gebruiken voor het bouwen van RESTful API's.",
+    "content2": "Ik heb me bekwaam gemaakt in het opzetten van een project met npm en het beheren van pakketten.",
+    "content3": "Tijdens mijn tijd bij ABAX heb ik Node.js gebruikt voor het maken van services die luisteren naar gebeurtenissen die zijn verzonden naar RabbitMQ, en vervolgens verwerken wat er gebeurt op basis van de informatie die wordt verzonden met het bericht."
+  },
+  "rabbitMq": {
+    "title": "RabbitMQ",
+    "content1": "Ik leerde RabbitMQ kennen tijdens mijn tijd bij ABAX, ik gebruikte het om evenementen te genereren en te consumeren als onderdeel van de Cloud-datastack waarop de microservices van ABAX draaiden. Ik leerde om te gaan met:",
+    "listItem1": "Uitwisselingen",
+    "listItem2": "Wachtrijen",
+    "listItem3": "Bindings",
+    "listItem4": "Berichten",
+    "listItem5": "Dead-letter-exchanges en -queues"
+  },
+  "vuex": {
+    "title": "Vuex",
+    "content": "Ik heb Vuex gebruikt als een statemanagementtool in Vue-applicaties. Vuex is geïnspireerd op het Flux-ontwerp dat wordt gebruikt en populair gemaakt door Facebook."
+  },
+  "yarn": {
+    "title": "Yarn",
+    "content": "Usei o Yarn por um curto período de tempo para instalar as dependências para o frontend de um projeto, porque se você instalasse essas dependências com o NPM, não funcionaria por razões que nunca investigamos mais a fundo. Mas descobrimos que, se você instalasse essas dependências com o Yarn, funcionaria muito bem, então apenas usamos isso para esse projeto específico, até um dia em que o NPM funcionou com esse projeto também. Isso foi bem no início do meu estágio na ABAX."
+  },
+  "contact": {
+    "contactByEmail": "Contate-me por e-mail",
+    "subject": "Assunto",
+    "messageBody": "Corpo da mensagem",
+    "sendEmail": "Enviar e-mail",
+    "contactInfo": "Informações de contato",
+    "phoneLabel": "Número de telefone",
+    "emailLabel": "E-mail"
+  },
+  "education": {
+    "title": "Certificados e Cartas de Recomendação",
+    "highSchool": "Ensino Médio",
+    "codeBootcamp": "Bootcamp de Código",
+    "recommendation": "Carta de Recomendação",
+    "certificate": "Certificado"
+  },
+  "references": {
+    "title": "Referências"
+  },
+  "profilePicture": {
+    "title": "Engenheiro de Software"
+  }
+}
