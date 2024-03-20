@@ -108,6 +108,30 @@ export default {
           {
             text: "Norwegian",
             value: "NO"
+          },
+          {
+            text: "German",
+            value: "DE"
+          },
+          {
+            text: "Spanish",
+            value: "ES"
+          },
+          {
+            text: "French",
+            value: "FR"
+          },
+          {
+            text: "Italian",
+            value: "IT"
+          },
+          {
+            text: "Dutch",
+            value: "NL"
+          },
+          {
+            text: "Portuguese",
+            value: "PT"
           }
         ],
         navDrawerOpen: false,
