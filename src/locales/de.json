@@ -147,5 +147,31 @@
   "vuex": {
     "title": "Vuex",
     "content1": "Vuex ist ein globaler Statushalter, der ein optionales Add-On für Vue-Anwendungen ist. Ich habe davon in Get Academy gehört, habe es aber erst angefangen zu verwenden, als ich an dem internen Tools-Projekt bei ABAX gearbeitet habe. Aber ich bin froh, dass ich es getan habe, und ich bin ein großer Fan davon, jetzt wo ich damit vertraut bin."
+  },
+  "yarn": {
+    "title": "Yarn",
+    "content": "Ich habe Yarn für einen kurzen Zeitraum verwendet, um die Abhängigkeiten für das Frontend eines Projekts zu installieren, da es mit NPM nicht funktionieren würde, aus Gründen, die wir nie weiter untersucht haben. Aber wir haben festgestellt, dass es mit Yarn gut funktioniert hat, also haben wir das einfach für dieses spezifische Projekt verwendet, bis eines Tages auch NPM mit diesem Projekt funktioniert hat. Das war ziemlich früh in meinem Praktikum bei ABAX."
+  },
+  "contact": {
+    "contactByEmail": "Kontaktiere mich per E-Mail",
+    "subject": "Betreff",
+    "messageBody": "Nachrichtentext",
+    "sendEmail": "E-Mail senden",
+    "contactInfo": "Kontaktinformationen",
+    "phoneLabel": "Telefonnummer",
+    "emailLabel": "E-Mail"
+  },
+  "education": {
+    "title": "Zertifikate & Empfehlungsschreiben",
+    "highSchool": "Gymnasium",
+    "codeBootcamp": "Code-Bootcamp",
+    "recommendation": "Empfehlungsschreiben",
+    "certificate": "Zertifikat"
+  },
+  "references": {
+    "title": "Referenzen"
+  },
+  "profilePicture": {
+    "title": "Software-Ingenieur"
   }
 }
