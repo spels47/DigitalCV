@@ -1,0 +1,185 @@
+{
+  "ofExperience": "de experiência",
+  "experience": "experiência",
+  "years": "ano(s)",
+  "months": "mês(es)",
+  "days": "dia(s)",
+  "topBar": {
+    "dashboard": "painel",
+    "contact": "contactar",
+    "education": "Certificados & Cartas de Recomendação",
+    "references": "Referências",
+    "darkMode": "Alternar modo escuro",
+    "languagePicker": "Alterar idioma"
+  },
+  "dashboard": {
+    "about": "Sobre",
+    "content1": "Olá 😁 Eu sou um desenvolvedor full stack de {age} anos de Larvik, Noruega. Eu me orgulho do meu trabalho e gosto de trabalhar nas minhas entregas até estar orgulhoso do que eu entrego. Eu me esforço para me aprimorar profissionalmente, independentemente de quão bom eu possa me tornar no que faço.",
+    "content2": "Eu sou um pensador objetivo, bom em identificar problemas e trabalhar ativamente em soluções. Gosto de trabalhar em estreita colaboração com o departamento de produtos e apresentar ideias para mudanças ou melhorias, já que tenho inspirações criativas enquanto implemento a especificação fornecida para mim.",
+    "content3": "Fora do trabalho, passo tempo com amigos, assisto a filmes, jogo pathfinder, curto documentários e jogo videogames. Gosto de passar tempo no desenvolvimento de jogos e outros projetos criativos paralelos.",
+    "content4": "Fui apresentado à programação quando fui para uma faculdade comunitária em 2016 e me apaixonei pelo desenvolvimento de jogos naquele ano. Aprendi a usar a programação para fins mais relacionados a negócios quando entrei na Get Academy em 2019 e tenho uma experiência total com programação de {experience},",
+    "content5": "mas tenho {experience} de experiência, trabalhando com programação profissionalmente."
+  },
+  "hobbiesList": {
+    "title": "Hobbies & Atividades de Tempo Livre",
+    "hobbyHeader": "Hobbies",
+    "gameDevelopment": "Desenvolvimento de Jogos",
+    "streaming": "Streaming"
+  },
+  "gameDevelopment": {
+    "title": "Desenvolvimento de Jogos",
+    "content1": "Aprendi a desenvolver jogos quando fui para a Bjerkely Folkehøyskole em 2016-2017. Lá, aprendi a programar em C# no motor Unity e a usar o motor Unity em geral. Também aprendi o básico de modelagem 3D usando o Blender e texturização de modelos 3D, que inclui criar texturas que simulam 3D usando mapas de deslocamento e têm metadados sobre como a luz interage com a textura usando mapas de difusão etc. Os projetos que fiz naquele ano se foram, já que não trabalhei com nenhuma tecnologia que mantivesse backups durante esse tempo.",
+    "content2": "Mas fiz alguns jogos desde que saí da escola. Fiz um jogo para celular que hospedei na Google Play Store por um tempo limitado até ser removido pelo Google. Chamava-se FlurryTurry e era um jogo de defesa de torre relativamente divertido que fiz.",
+    "content3": "O motivo pelo qual o jogo foi removido da Google Play Store foi porque usei um SDK, um pacote de ferramentas para fazer os builds do meu jogo para celular que também incluía ferramentas para funcionalidade de compra dentro do aplicativo, não que eu soubesse disso ou tivesse usado essas ferramentas, mas como elas faziam parte do conjunto de ferramentas com o qual o jogo foi construído, o Google achou que meu jogo tinha compras dentro do aplicativo. E como eu não tinha declarado nenhuma compra dentro do aplicativo, o Google removeu o jogo. Então, ele foi removido por um mal-entendido, no entanto, consegui corromper os arquivos do projeto quando atualizei acidentalmente o Unity para uma versão beta, o que tornou impossível corrigir isso e criar outro build do jogo, infelizmente.",
+    "content4": "Também fiz um jogo de aventura de texto da Console App chamado Ogrevent, que está disponível para download",
+    "here": "aqui",
+    "content5": "Desenvolvimento de jogos é algo que considero divertido, mas é muito demorado e difícil fazer sozinho, então não é algo que faço com muita frequência atualmente."
+  },
+  "pathfinder": {
+    "title": "Pathfinder",
+    "content1": "Pathfinder é um",
+    "tabletopLink": "jogo de interpretação de papéis",
+    "content2": "a maioria das pessoas que ouviram falar de algum tipo de jogo de interpretação de papéis, ouviram falar de Dungeons & Dragons.",
+    "content3": "Pathfinder é como Dungeons & Dragons, mas tem regras diferentes.",
+    "content4": "Eu e alguns amigos nos reunimos ocasionalmente, talvez a cada dois finais de semana, e jogamos dados e nos divertimos jogando Pathfinder juntos."
+  },
+  "streaming": {
+    "title": "Streaming",
+    "content1": "Ocasionalmente, faço transmissões de jogos no twitch, é apenas algo que faço porque acho divertido, e não é algo que faço em capacidade profissional ou gostaria de fazer em capacidade profissional."
+  },
+  "technicalList": {
+    "title": "Competências Técnicas",
+    "codeLanguageHeader": "Linguagens de Codificação",
+    "technologyHeader": "Tecnologias",
+    "frameworkHeader": "Frameworks",
+    "methodologyHeader": "Metodologias",
+    "packageManagerHeader": "Gerenciadores de Pacotes"
+  },
+  "angularJs": {
+    "title": "AngularJS",
+    "content": "Tenho experiência com uma versão mais antiga do AngularJS desde o meu tempo na ABAX, onde costumava fazer manutenção e correção de bugs que ocasionalmente envolviam corrigir coisas que não funcionavam conforme o esperado no frontend. Então, durante esse tempo, me familiarizei muito com o AngularJS."
+  },
+  "bootstrap": {
+    "title": "Bootstrap",
+    "content": "Bootstrap é a primeira biblioteca focada em estilos que usei. Aprendi sobre isso na Get Academy primeiro, mas também usei na ABAX por um tempo. No entanto, vale a pena mencionar que o Bootstrap que usei na ABAX foi altamente personalizado e não era o Bootstrap padrão."
+  },
+  "csharp": {
+    "title": "Csharp",
+    "content1": "Aprendi C# em 2016-2017, quando fui para a Bjerkely Folkehøyskole, onde estudei desenvolvimento de jogos. Havia muitas funções diferentes que poderiam ser escolhidas no desenvolvimento de jogos. Um jogo normalmente contém imagens, animações, modelos 3D ou sprites 2D, efeitos sonoros, música e, é claro, código que dita o comportamento e a interatividade do jogo. E foi o código, a programação, que mais me interessou. Então, passei a maior parte do tempo naquele ano aprendendo a escrever C# no motor Unity.",
+    "content2": "Depois do meu ano na Bjerkely, ainda fiz alguns desenvolvimentos de jogos ocasionais, mas poucos dos projetos em que trabalhei se tornaram funcionais, pois não tinha artistas, animadores ou engenheiros de som para trabalhar. Mesmo que conseguisse fazer o código funcionar, minha motivação começou a diminuir rapidamente quando percebi que não conseguia fazer o jogo parecer e soar bem sozinho.",
+    "content3": "Em 2019, quando entrei na Get Academy, aprendi mais sobre C# para fins comerciais e criação de APIs REST com o framework .NET. Aprenderia ainda mais sobre isso quando, mais tarde naquele ano, começaria como estagiário na ABAX e manteria e corrigiria bugs em sua WebApi, que era .NET Framework, mas posteriormente também interagiria com APIs em .NET Core moderno. Também usei C# para consumir e emitir eventos sobre filas de mensagens (RabbitMQ) durante meu tempo na ABAX. Também escrevi muitos testes unitários e de integração em XUnit, usando substitutos para serviços externos e provedores de dados ao escrever testes unitários.",
+    "content4": "Também fiz um jogo de aventura de texto da Console App que está disponível no meu perfil do github."
+  },
+  "docker": {
+    "title": "Docker",
+    "content": "Aprendi Docker quando comecei na ABAX. Usei para escrever Dockerfiles para contêinerização de aplicativos, também usei para docker-compose. Me familiarizei com os comandos build e run e com alguns de seus diferentes flags. Também usei a interface gráfica do Docker desktop."
+  },
+  "googleFirebase": {
+    "title": "Google Firebase",
+    "content": "Usei o Google Firebase como tecnologia de banco de dados de escolha ao trabalhar no aplicativo de namoro comissionado enquanto estava na Get Academy. Nesse banco de dados, armazenava coisas como credenciais de usuário, fotos de perfil e outras informações do usuário."
+  },
+  "javascript": {
+    "title": "Javascript",
+    "content1": "Aprendi Javascript quando comecei na Get Academy em 2019 e só o usei no contexto de criar clientes da web (páginas da web)",
+    "content2": "O primeiro projeto real em que usei Javascript foi quando a Get Academy foi comissionada para fazer um protótipo de um aplicativo de namoro, no qual fui designado para trabalhar. A primeira iteração foi feita apenas com javascript, html e css. Mais tarde, refatorei isso para funcionar com Vue e bootstrap, que foi a primeira vez que usei frameworks.",
+    "content3": "Durante meu tempo na ABAX, também usei Javascript ao manter ou criar soluções para os diferentes clientes da web lá e aprendi e desenvolvi minhas habilidades com Javascript lá."
+  },
+  "kanban": {
+    "title": "Kanban",
+    "content": "Ao longo do meu tempo na ABAX, acompanhei minhas tarefas em quadros Kanban. Usei principalmente os quadros Jira e Gitlab para acompanhar as tarefas com as quais trabalhei pessoalmente. Mas também usei o Monday, mas principalmente o Monday é um local onde os itens do roadmap foram rastreados, o que geralmente são grandes tarefas de longo prazo, que as tarefas que acompanhei no Gitlab representavam uma pequena parte."
+  },
+  "mongoDb": {
+    "title": "MongoDB",
+    "content1": "Usei o MongoDB pela primeira vez na ABAX, durante esse tempo, aprendi a usar ferramentas como Mongo Compass e Studio 3T. E também usando o Shell do Mongo às vezes. Durante meu tempo usando o MongoDB, aprendi:",
+    "listItem1": "Como usar o driver C#",
+    "listItem2": "Como criar novos índices, incluindo índices {TTL} {TTLText}",
+    "listItem3": "Como escrever consultas usando o driver C#",
+    "content2": "Também usei o MongoDB em um projeto pessoal para armazenar documentos em PDF como string base64"
+  },
+  "mssql": {
+    "title": "Mssql",
+    "content1": "Aprendi os fundamentos da linguagem de consulta SQL quando ingressei na Get Academy. Ganhei uma compreensão mais profunda da linguagem de consulta ao trabalhar na ABAX. Durante meu tempo na ABAX, escrevi consultas complexas e aprendi sobre:",
+    "listItem1": "Índices",
+    "listItem2": "Como otimizar o desempenho",
+    "listItem3": "Como medir o desempenho",
+    "listItem4": "Como vincular bancos de dados",
+    "listItem5": "Como usar tabelas temporárias",
+    "listItem6": "Como configurar e usar transações para confirmar ou reverter alterações",
+    "content2": "Pessoalmente, prefiro tecnologias de banco de dados relacionais, mas reconheço que tanto bancos de dados relacionais quanto bancos de dados de documentos têm suas vantagens e desvantagens."
+  },
+  "npm": {
+    "title": "Node Package Manager (NPM)",
+    "content": "O Node Package Manager (NPM) é o principal gerenciador de pacotes que utilizei para todos os aplicativos front-end em que trabalhei. Com o NPM, aprendi vários comandos e também como criar meus próprios comandos personalizados, facilitando a execução de tarefas comuns de desenvolvimento."
+  },
+  "nuget": {
+    "title": "NuGet",
+    "content": "O NuGet é o gerenciador de pacotes padrão que utilizei para instalar e atualizar dependências de pacotes para projetos .NET. Com o NuGet, pude gerenciar facilmente as dependências do projeto e garantir a compatibilidade entre os pacotes."
+  },
+  "paket": {
+    "title": "Paket",
+    "content": "Utilizei o Paket para instalar dependências em um projeto .NET específico que usava o Paket como gerenciador de pacotes. Embora tenha sido uma solução legada e enfrentado alguns desafios de compatibilidade, o Paket atendeu às necessidades do projeto na época."
+  },
+  "rabbitMq": {
+    "title": "RabbitMQ",
+    "content": "O RabbitMQ é um sistema de mensagens de código aberto que utilizei para implementar a comunicação assíncrona em back-ends escritos em C#. Com o RabbitMQ, pude criar uma arquitetura de microservices robusta e escalável."
+  },
+  "ravenDb": {
+    "title": "RavenDB",
+    "content": "Embora tenha usado o RavenDB apenas em uma capacidade limitada, achei sua interface fácil de usar e suas funcionalidades adequadas para armazenar e recuperar documentos em aplicativos .NET."
+  },
+  "scrum": {
+    "title": "Scrum",
+    "content": "Na ABAX, seguimos o framework Scrum para gerenciamento de projetos. Realizávamos reuniões diárias, estimávamos tarefas e priorizávamos o trabalho em equipe. Esse método ágil nos permitiu manter a transparência, adaptabilidade e foco no cliente em nossos projetos."
+  },
+  "typescript": {
+    "title": "Typescript",
+    "content1": "Embora tenha usado o Typescript apenas em projetos específicos, adquiri uma compreensão básica de sua sintaxe e funcionalidades. Usei o Typescript para melhorar a manutenibilidade e a segurança de aplicativos Vue.js e Angular."
+  },
+  "visualBasic": {
+    "title": "Visual Basic",
+    "content": "Embora tenha sido principalmente para manutenção de código legado, tive a oportunidade de trabalhar com o Visual Basic em projetos de integração de sistemas. Apesar de suas limitações, consegui fazer melhorias significativas nos sistemas existentes."
+  },
+  "vueRouter": {
+    "title": "Vue Router",
+    "content": "O Vue Router é uma parte fundamental do ecossistema Vue.js, permitindo a navegação entre componentes em aplicativos de página única. Usei o Vue Router em todos os meus projetos Vue.js para criar uma experiência de usuário fluida e consistente."
+  },
+  "vue": {
+    "title": "Vue",
+    "content1": "O Vue é o meu framework favorito para o desenvolvimento de interfaces de usuário. Com sua simplicidade e flexibilidade, ele se tornou minha escolha preferida para projetos front-end. Usei o Vue em uma variedade de projetos, desde pequenos aplicativos até grandes sistemas corporativos."
+  },
+  "vuetify": {
+    "title": "Vuetify",
+    "content": "O Vuetify é um framework de componentes Vue.js que usei para construir interfaces de usuário consistentes e visualmente atraentes. Com uma ampla variedade de componentes prontos para uso, o Vuetify acelerou significativamente o desenvolvimento de aplicativos Vue.js."
+  },
+  "vuex": {
+    "title": "Vuex",
+    "content1": "Vuex é um gerenciador de estado centralizado para aplicativos Vue.js. Utilizei Vuex em projetos Vue.js de médio a grande porte para gerenciar eficientemente o estado da aplicação e facilitar a comunicação entre componentes.",
+    "content2": "Com Vuex, pude manter uma estrutura de dados coerente e compartilhada em toda a aplicação, garantindo uma experiência de usuário consistente e sem bugs."
+  },
+  "yarn": {
+    "title": "Yarn",
+    "content": "Utilizei o Yarn em alguns projetos para gerenciar as dependências do aplicativo. Embora tenha sido uma escolha ocasional, o Yarn provou ser uma alternativa confiável e eficiente ao NPM."
+  },
+  "contact": {
+    "contactByEmail": "Contate-me por e-mail",
+    "subject": "Assunto",
+    "messageBody": "Corpo da mensagem",
+    "sendEmail": "Enviar e-mail",
+    "contactInfo": "Informações de contato",
+    "phoneLabel": "Número de telefone",
+    "emailLabel": "E-mail"
+  },
+  "education": {
+    "title": "Certificados e Cartas de Recomendação",
+    "highSchool": "Ensino Médio",
+    "codeBootcamp": "Bootcamp de Programação",
+    "recommendation": "Carta de recomendação",
+    "certificate": "Certificado"
+  },
+  "references": {
+    "title": "Referências"
+  },
+  "profilePicture": {
+    "title": "Engenheiro de Software"
+  }
+}
