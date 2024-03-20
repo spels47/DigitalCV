@@ -154,5 +154,119 @@
   "git": {
     "title": "Git",
     "content": "J'utilise Git pour contrôler les versions de tous les projets sur lesquels je travaille. J'ai appris à utiliser Git lorsque j'ai commencé à apprendre à coder, donc j'ai une expérience solide avec cet outil."
+  },
+  "googleFirebase": {
+    "title": "Google Firebase",
+    "content": "J'ai utilisé Google Firebase en tant que technologie de base de données de choix lors de la réalisation de l'application de rencontre qui a été commandée pendant que j'étais à Get Academy. Dans cette base de données, j'ai stocké des éléments tels que les informations d'identification des utilisateurs, les photos de profil et d'autres informations sur les utilisateurs."
+  },
+  "javascript": {
+    "title": "JavaScript",
+    "content1": "J'ai appris JavaScript lorsque j'ai commencé à Get Academy en 2019 et je ne l'ai utilisé que dans le contexte de création de clients web (pages web).",
+    "content2": "Le premier vrai projet sur lequel j'ai utilisé JavaScript a été lorsque Get Academy a été commissionnée pour créer une preuve de concept pour une application de rencontres, sur laquelle j'ai été affecté. La première itération a été réalisée uniquement avec JavaScript, HTML et CSS, que j'ai ensuite refactorisée pour fonctionner avec Vue et Bootstrap, ce qui a été la première fois que j'ai utilisé des frameworks.",
+    "content3": "Pendant mon temps chez ABAX, j'ai également utilisé JavaScript lorsque je maintenais ou créais des solutions pour les différents clients web là-bas, et j'ai appris et développé mes compétences avec JavaScript là-bas."
+  },
+  "kanban": {
+    "title": "Kanban",
+    "content": "Tout au long de mon temps chez ABAX, j'ai suivi mes tâches dans les tableaux Kanban. J'ai principalement utilisé Jira et Gitlab pour suivre les tâches sur lesquelles je travaillais personnellement. Mais j'ai aussi utilisé Monday, mais principalement Monday est un endroit où sont suivis les éléments de la feuille de route, qui sont souvent de grandes tâches à long terme, que les tâches que je suivais dans Gitlab représentaient une petite partie."
+  },
+  "mongoDb": {
+    "title": "MongoDB",
+    "content1": "J'ai utilisé MongoDB pour la première fois chez ABAX, pendant cette période j'ai appris à utiliser des outils comme Mongo Compass et Studio 3T. En plus d'utiliser occasionnellement la Mongo Shell. Pendant mon temps d'utilisation de MondoDB, j'ai appris :",
+    "listItem1": "Comment utiliser le pilote C#",
+    "listItem2": "Comment créer de nouveaux index, y compris les index {TTL} {TTLText}",
+    "listItem3": "Comment écrire des requêtes en utilisant le pilote C#",
+    "content2": "J'ai également utilisé MongoDB dans un projet personnel pour stocker des documents PDF sous forme de chaîne base64."
+  },
+  "mssql": {
+    "title": "MSSQL",
+    "content1": "J'ai d'abord appris les bases du langage de requête SQL lorsque je suis allé à Get Academy. J'ai acquis une compréhension plus approfondie du langage de requête lorsque je travaillais chez ABAX. Pendant mon temps chez ABAX, j'ai écrit des requêtes complexes, j'ai appris :",
+    "listItem1": "Indexes",
+    "listItem2": "Comment frapper les index",
+    "listItem3": "Comment mesurer les performances",
+    "listItem4": "Comment améliorer les performances dans les requêtes",
+    "listItem5": "Comment lier des bases de données",
+    "listItem6": "Comment utiliser des tables temporaires",
+    "listItem7": "Comment configurer des transactions et les utiliser pour confirmer ou annuler des modifications.",
+    "content2": "Je préfère personnellement les technologies de bases de données relationnelles aux technologies de bases de données de documents en général, mais les deux ont leurs forces et leurs faiblesses."
+  },
+  "npm": {
+    "title": "Node Package Manager (NPM)",
+    "content": "Node Package Manager est le gestionnaire de packages principal que j'ai utilisé pour toutes les applications frontend sur lesquelles j'ai travaillé. Et en tant que tel, j'ai appris diverses commandes avec lui, mais j'ai aussi appris à créer mes propres commandes personnalisées où je chaîne plusieurs commandes pour une utilisation facile en utilisant la syntaxe && entre les commandes."
+  },
+  "nuget": {
+    "title": "NuGet",
+    "content": "NuGet est le gestionnaire de packages principal que j'ai utilisé pour installer et mettre à jour les dépendances de packages pour les projets .NET."
+  },
+  "paket": {
+    "title": "Paket",
+    "content": "J'ai utilisé Paket pour installer des dépendances pour un projet .NET qui avait Paket comme moyen de récupérer des packages. Paket était également utilisé pour verrouiller les versions des packages dans ce projet, et tout cela était très obsolète, les choses se cassaient et cessaient de fonctionner si les packages étaient mis à jour vers la dernière version. Un effet secondaire malheureux de l'état obsolète des projets à l'époque. Cependant, cela s'est amélioré progressivement avec le temps. Donc, mon expérience avec Paket est plutôt isolée à ce projet."
+  },
+  "rabbitMq": {
+    "title": "RabbitMQ",
+    "content": "J'ai utilisé RabbitMQ pour consommer et émettre des messages dans les backends C#. J'ai également utilisé l'interface graphique de RabbitMQ où j'ai examiné des messages d'erreur dans les files d'attente d'erreur et j'ai appris la différence entre nack et ack. J'ai aussi appris comment déplacer des messages d'une file d'attente à une autre en utilisant cette interface."
+  },
+  "ravenDb": {
+    "title": "RavenDB",
+    "content": "J'ai seulement utilisé RavenDB un peu, je l'ai utilisé pour modifier quelques documents dans l'interface web, et aussi pour télécharger et télécharger des collections."
+  },
+  "scrum": {
+    "title": "Scrum",
+    "content": "Pendant mon temps chez ABAX, nous avons suivi le cadre SCRUM pour la gestion de projet. Nous tenions des réunions standup le matin, nous expliquions ce que nous avions fait hier et si nous étions bloqués sur quelque chose / avions besoin d'aide de quelqu'un dans l'équipe. Nous estimions nos tâches et les divisions en tâches plus petites, plus faciles à définir en étapes techniques nécessaires pour terminer. Ensuite, nous travaillions avec ces petites tâches sur notre tableau Kanban. Nous tenions également des réunions hebdomadaires avec l'analyste commercial de l'équipe pour examiner les progrès et aussi pour examiner les spécifications des prochaines tâches et planifier en avant pour quand les différentes nouvelles tâches devraient commencer à être travaillées."
+  },
+  "typescript": {
+    "title": "TypeScript",
+    "content1": "Je n'ai utilisé TypeScript que peu, j'en ai une compréhension de base. J'ai utilisé TypeScript occasionnellement lorsque j'ai travaillé sur un projet de refonte de frontend assez important pour ABAX, pour certains composants spécifiques qui nécessitaient cela. Cependant, pour la plupart, j'ai utilisé JavaScript pendant mon temps sur ce projet.",
+    "content2": "Pourtant, j'ai une certaine expérience avec TypeScript, donc je ne partirais pas de zéro si je le rencontrais à nouveau à l'avenir."
+  },
+  "visualBasic": {
+    "title": "Visual Basic",
+    "content": "Je n'ai utilisé Visual Basic que pour maintenir des bases de code héritées, mais j'ai à ce moment-là apporté des corrections de bugs à une API SOAP et écrit des tests unitaires. J'ai également converti de grandes quantités de code Visual Basic en C#."
+  },
+  "vueRouter": {
+    "title": "Vue Router",
+    "content1": "Vue Router est un package optionnel pour les applications Vue. Il facilite le routage entre différentes pages au sein de l'application, ce qui permet à l'application d'être une application SPA (Single Page Application) facilement. La plupart des pages modernes sont une forme d'application SPA, car charger une page web complète juste pour naviguer vers un autre endroit sur la même page web est très dépassé.",
+    "content2": "Chaque projet Vue sur lequel j'ai travaillé a utilisé Vue Router, y compris celui-ci!"
+  },
+  "vue": {
+    "title": "Vue",
+    "content1": "Vue est le premier framework que j'ai appris à utiliser, et c'est aussi mon framework préféré parmi tous les frameworks de ce type que j'ai eu le plaisir de découvrir tout au long de ma carrière. Je l'ai utilisé pour la première fois dans une refonte d'une application de rencontres sur laquelle je travaillais lorsque je suis allé à Get Academy. Ensuite, je l'ai utilisé dans certains projets d'apprentissage où mon objectif était principalement d'apprendre des technologies autres que Vue. Quelque temps après cela, j'ai utilisé le framework tout en travaillant sur un projet axé sur la refonte de notre frontend d'Ancien AngularJS à nouveau Vue3 pour ABAX. Après ce projet, j'ai travaillé sur la maintenance et le développement de fonctionnalités pour des outils internes qui utilisaient également Vue pour son frontend.",
+    "content2": "Je suis principalement familiarisé avec l'écriture de Vue dans l'API d'options, mais j'ai une compréhension de base de l'API de compositions également.",
+    "content3": "Cette page web est également écrite en Vue!"
+  },
+  "vuetify": {
+    "title": "Vuetify",
+    "content1": "Vuetify était le framework que nous avons utilisé pour nos outils internes chez ABAX, c'est un framework qui m'a vraiment séduit.",
+    "content2": "Cette page a également été écrite en utilisant Vuetify!"
+  },
+  "vuex": {
+    "title": "Vuex",
+    "content1": "Vuex est un conteneur d'état global qui est un module complémentaire facultatif pour les applications Vue. J'en ai entendu parler pour la première fois à Get Academy, mais je ne l'ai vraiment commencé à utiliser que lorsque j'ai commencé à travailler sur le projet d'outils internes chez ABAX. Mais je suis content de l'avoir fait et je suis un grand fan maintenant que je le connais.",
+    "content2": "Cette page web utilise également Vuex!"
+  },
+  "yarn": {
+    "title": "Yarn",
+    "content": "J'ai utilisé Yarn pendant une courte période pour installer les dépendances pour le frontend d'un projet car si vous installiez ces dépendances avec NPM, cela ne fonctionnerait pas pour des raisons que nous n'avons jamais approfondies. Mais nous avons découvert que si vous installiez ces dépendances avec Yarn, cela fonctionnerait très bien, nous avons donc simplement utilisé cela pour ce projet spécifique, jusqu'à ce qu'un jour NPM fonctionne également avec ce projet. C'était assez tôt dans mon stage chez ABAX."
+  },
+  "contact": {
+    "contactByEmail": "Contactez-moi par e-mail",
+    "subject": "Sujet",
+    "messageBody": "Corps du message",
+    "sendEmail": "Envoyer un e-mail",
+    "contactInfo": "Informations de contact",
+    "phoneLabel": "Numéro de téléphone",
+    "emailLabel": "E-mail"
+  },
+  "education": {
+    "title": "Certificats et Lettres de Recommandation",
+    "highSchool": "Lycée",
+    "codeBootcamp": "Bootcamp de code",
+    "recommendation": "Lettre de recommandation",
+    "certificate": "Certificat"
+  },
+  "references": {
+    "title": "Références"
+  },
+  "profilePicture": {
+    "title": "Ingénieur Logiciel"
   }
 }
