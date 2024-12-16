@@ -1,6 +1,11 @@
 <template>
   <v-card class="mx-auto width" tile>
-    <v-img height="250" id="backgroundPicture" lazy-src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg" :src="backgroundPictureWidth > 630 ? require('@/assets/programming.gif') : null">
+    <v-img
+      height="250"
+      id="backgroundPicture"
+      lazy-src="https://cdn.vuetifyjs.com/images/cards/server-room.jpg"
+      :src="backgroundPictureWidth > 630 ? require('@/assets/programming.gif') : null"
+    >
       <v-row align="end" class="fill-height">
         <v-col align-self="start" class="pa-0" cols="12">
           <v-avatar class="profile" color="grey" :size="175" rounded>
@@ -9,10 +14,10 @@
         </v-col>
         <v-col class="py-0">
           <v-list-item color="rgba(0, 0, 0, .4)" dark>
-            <v-list-item-content>
+             <!--  <v-list-item-content> -->
               <v-list-item-title class="text-h6">Patrick Brekke Johnsen</v-list-item-title>
-              <v-list-item-subtitle>{{$t("profilePicture.title")}}</v-list-item-subtitle>
-            </v-list-item-content>
+              <v-list-item-subtitle>{{ $t("profilePicture.title") }}</v-list-item-subtitle>
+             <!--  </v-list-item-content> -->
           </v-list-item>
         </v-col>
       </v-row>
@@ -21,60 +26,51 @@
 </template>
 
 <script>
-  export default {
-    name: 'ProfileImage',
-    components: {
+export default {
+  name: "ProfileImage",
+  data() {
+    return {
+      backgroundPictureWidth: 0,
+      resizeObserver: null,
+    };
+  },
+  mounted() {
+    this.backgroundPictureWidth = document.getElementById("backgroundPicture")?.offsetWidth;
 
-    },
-    props: {
-      
-    },
-    data: function () {
-      return {
-        backgroundPictureWidth: 0,
-        resizeObserver: new ResizeObserver((elements) => {
-          let element = elements[0].contentRect;
+    this.resizeObserver = new ResizeObserver((elements) => {
+      const element = elements[0].contentRect;
+      this.backgroundPictureWidth = element.width;
+    });
 
-          let width = element.width;
-          this.backgroundPictureWidth = width;
-        })
-      }
-    },
-    methods: {
-      
-    },
-    computed: {
-      
-    },
-    mounted() {
-      this.backgroundPictureWidth = document.getElementById("backgroundPicture")?.offsetWidth;
-      this.resizeObserver.observe(document.getElementById("backgroundPicture"));
-    },
-    unmounted(){
-      this.resizeObserver.unobserve();
-    },
-    watch: {
-      
-    },
-  }
+    const bgPicture = document.getElementById("backgroundPicture");
+    if (bgPicture) {
+      this.resizeObserver.observe(bgPicture);
+    }
+  },
+  unmounted() {
+    const bgPicture = document.getElementById("backgroundPicture");
+    if (bgPicture && this.resizeObserver) {
+      this.resizeObserver.unobserve(bgPicture);
+    }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-  .width{
-    max-width: 30vw;
-  }
+.width {
+  max-width: 30vw;
+}
 
-  @media only screen and (max-width: 1220px) {
-    .width{
-      max-width: 70vw;
-    }
+@media only screen and (max-width: 1220px) {
+  .width {
+    max-width: 70vw;
   }
-  @media only screen and (max-width: 900px) {
-    .width{
-      max-width: 90vw;
-    }
+}
+@media only screen and (max-width: 900px) {
+  .width {
+    max-width: 90vw;
   }
-  @media only screen and (max-width: 700px) {
-
-  }
+}
+@media only screen and (max-width: 700px) {
+}
 </style>

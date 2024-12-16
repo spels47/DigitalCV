@@ -1,14 +1,10 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+import { createApp } from 'vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Dashboard from '../views/Dashboard.vue'
 
-Vue.use(VueRouter)
+const app = createApp();
 
 const routes = [
-  {
-    path: '*',
-    redirect: '/'
-  },
   {
     path: '/',
     redirect: '/dashboard'
@@ -33,11 +29,18 @@ const routes = [
     name: 'references',
     component: () => import("@/views/References.vue")
   },
-]
+];
 
-const router = new VueRouter({
-  // mode: "history",
-  routes
-})
+const vueRouter = createRouter({
+  history: createWebHashHistory(),
+  routes: routes
+});
 
-export default router
+// Vue.use(VueRouter)
+
+// const router = new VueRouter({
+//   // mode: "history",
+//   routes
+// })
+
+export default vueRouter;

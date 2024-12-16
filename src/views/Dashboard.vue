@@ -1,54 +1,50 @@
 <template>
   <div class="my-12 mx-4">
     <div class="d-flex mb-4 justify-space-around mobileFlex">
-      <PersonalInterestsList class="hideBelow1220" :loading="loading"></PersonalInterestsList>
+      <PersonalInterestsList class="hideBelow1220" :loading="loading" />
 
       <v-card :loading="loading" color="cardbg" class="mx-auto maxWidth aboutCard">
-        <template slot="progress">
-          <v-progress-linear color="accent" height="10" indeterminate></v-progress-linear>
+        <template #progress>
+          <v-progress-linear color="accent" height="10" indeterminate />
         </template>
 
-        <ProfileImage></ProfileImage>
+        <ProfileImage />
 
-        <v-card-title>{{$t("dashboard.about")}}</v-card-title>
+        <v-card-title>{{ $t("dashboard.about") }}</v-card-title>
 
         <v-card-text class="aboutText">
-          {{$t("dashboard.content1", {age: age(new Date(1995, 9, 3))})}}
+          {{ $t("dashboard.content1", { age: age(new Date(1995, 9, 3)) }) }}
 
           <v-divider class="my-2"></v-divider>
 
-          {{$t("dashboard.content2")}}
+          {{ $t("dashboard.content2") }}
 
           <v-divider class="my-2"></v-divider>
 
-          {{$t("dashboard.content3")}}
+          {{ $t("dashboard.content3") }}
 
           <v-divider class="my-2"></v-divider>
 
-          {{$t("dashboard.content4", {experience: experience(new Date(2016, 9))})}}
+          {{ $t("dashboard.content4", { experience: experience(new Date(2016, 9)) }) }}
 
-          <br>
-          {{$t("dashboard.content5", {experience: experience(new Date(2019, 1, 27))})}}
+          <br />
+          {{ $t("dashboard.content5", { experience: experience(new Date(2019, 1, 27)) }) }}
         </v-card-text>
       </v-card>
 
-      <CompetenciesList class="mx-auto mt-4 hideAbove1220" :loading="loading"></CompetenciesList>
-      <PersonalInterestsList class="mx-auto mt-4 hideAbove1220" :loading="loading"></PersonalInterestsList>
+      <CompetenciesList class="mx-auto mt-4 hideAbove1220" :loading="loading" />
+      <PersonalInterestsList class="mx-auto mt-4 hideAbove1220" :loading="loading" />
 
-      <CompetenciesList class="hideBelow1220" :loading="loading"></CompetenciesList>
+      <CompetenciesList class="hideBelow1220" :loading="loading" />
 
-      <CompetenciesDialog></CompetenciesDialog>
-      <PersonalInterestsDialog></PersonalInterestsDialog>
+      <CompetenciesDialog />
+      <PersonalInterestsDialog />
     </div>
-    <!-- <div class="hideAbove1220 maxWidth">
-      <PersonalInterestsList :loading="loading"></PersonalInterestsList>
-      <CompetenciesList :loading="loading"></CompetenciesList>
-    </div> -->
-    
-    <div class="pictureCarousel" style="display: none;"> <!-- style was set to hide picture carousel -->
-      <PictureCarousel></PictureCarousel>
+
+    <div class="pictureCarousel" style="display: none;">
+      <!-- style was set to hide picture carousel -->
+      <PictureCarousel />
     </div>
-    
   </div>
 </template>
 
@@ -60,96 +56,96 @@ import PersonalInterestsDialog from "@/components/Dashboard/PersonalInterestsDia
 import PersonalInterestsList from "@/components/Dashboard/PersonalInterestsList.vue";
 import PictureCarousel from "@/components/Dashboard/PictureCarousel.vue";
 import util from "@/helpers/util";
-  export default {
-    name: 'Dashboard',
-    components: {
-      ProfileImage,
-      CompetenciesList,
-      CompetenciesDialog,
-      PersonalInterestsList,
-      PersonalInterestsDialog,
-      PictureCarousel
+
+export default {
+  name: "Dashboard",
+  components: {
+    ProfileImage,
+    CompetenciesList,
+    CompetenciesDialog,
+    PersonalInterestsList,
+    PersonalInterestsDialog,
+    PictureCarousel,
+  },
+  data() {
+    return {
+      loading: false,
+    };
+  },
+  methods: {
+    age(start) {
+      return util.calculateAge(start);
     },
-    data: function () {
-      return {
-        loading: false,
-      }
+    experience(start, stop) {
+      return util.calculateExperience(
+        start,
+        stop,
+        this.$t("years"),
+        this.$t("months"),
+        this.$t("days")
+      );
     },
-    methods: {
-      age(start){
-        return util.calculateAge(start);
-      },
-      experience(start, stop){
-        return util.calculateExperience(start, stop, this.$t("years"), this.$t("months"), this.$t("days"));
-      }
+  },
+  computed: {
+    itemValue() {
+      return undefined;
     },
-    computed: {
-      itemValue: function(){
-        return undefined;
-      }
-    },
-    mounted() {
-      
-    },
-    watch: {
-      
-    },
-  }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.pictureCarousel{
+.pictureCarousel {
   max-height: 35vh;
   overflow: hidden;
 }
 
-.maxWidth{
+.maxWidth {
   max-width: 30vw;
 }
 
-.aboutCard{
-  max-height: 100%; 
+.aboutCard {
+  max-height: 100%;
   overflow-y: hidden;
 }
 
-.aboutText{
-  // max-height: calc(25vh - 64px); // was swapped out with the other one to accommodate the removal of the picture carousel
+.aboutText {
   max-height: 40vh;
   overflow-y: auto;
 }
 
-.hideAbove1220{
+.hideAbove1220 {
   display: none;
 }
 
-.mobileFlex{
+.mobileFlex {
   max-height: 80vh; // was 50 to make space for picture carousel
 }
 
 @media only screen and (max-width: 1220px) {
-  .pictureCarousel{
+  .pictureCarousel {
     display: none;
   }
-  .hideAbove1220{
+  .hideAbove1220 {
     display: initial;
   }
-  .hideBelow1220{
+  .hideBelow1220 {
     display: none;
   }
-  .mobileFlex{
+  .mobileFlex {
     flex-direction: column;
     max-height: none;
   }
-  .maxWidth{
+  .maxWidth {
     max-width: 70vw;
   }
-  .aboutText{
+  .aboutText {
     max-height: none;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .maxWidth{
+  .maxWidth {
     max-width: 90vw;
   }
 }

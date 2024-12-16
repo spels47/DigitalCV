@@ -6,12 +6,12 @@
         <v-subheader>{{$t("hobbiesList.hobbyHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="hobbySelected" @change="changeGroupSelection($event)">
           <v-list-item v-for="(hobby, index) in hobbies" :key="index" :ripple="false" color="contrast" @click="displayPersonalInterest(hobby.name())">
-            <v-list-item-icon>
+            <v-list-item icon>
               <v-icon>mdi-dice-multiple-outline</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
+            </v-list-item>
+             <!--  <v-list-item-content> -->
               <v-list-item-title>{{hobby.name()}}</v-list-item-title>
-            </v-list-item-content>
+             <!--  </v-list-item-content> -->
           </v-list-item>
         </v-list-item-group>
       </v-list>

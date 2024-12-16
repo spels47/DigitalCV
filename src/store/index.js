@@ -1,11 +1,11 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createApp } from 'vue'
+import { createStore } from 'vuex'
 import CompetenciesModule from "@/store/modules/CompetenciesModule";
 import PersonalInterestsModule from "@/store/modules/PersonalInterestsModule";
 
-Vue.use(Vuex)
+const app = createApp();
 
-export default new Vuex.Store({
+const store = createStore({
   state: {
     vuetifyDarkMode: false,
   },
@@ -27,4 +27,8 @@ export default new Vuex.Store({
     CompetenciesModule: CompetenciesModule,
     PersonalInterestsModule: PersonalInterestsModule
   }
-})
+});
+
+app.use(store);
+
+export default store;
