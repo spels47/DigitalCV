@@ -109,30 +109,30 @@ export default {
             text: "Norwegian",
             value: "NO"
           },
-          {
-            text: "German",
-            value: "DE"
-          },
-          {
-            text: "Spanish",
-            value: "ES"
-          },
-          {
-            text: "French",
-            value: "FR"
-          },
-          {
-            text: "Italian",
-            value: "IT"
-          },
-          {
-            text: "Dutch",
-            value: "NL"
-          },
-          {
-            text: "Portuguese",
-            value: "PT"
-          }
+          // { // disabled because i dont have full translations, and ive decided that i want all these other languages i will get them translated professionally
+          //   text: "German",
+          //   value: "DE"
+          // },
+          // {
+          //   text: "Spanish",
+          //   value: "ES"
+          // },
+          // {
+          //   text: "French",
+          //   value: "FR"
+          // },
+          // {
+          //   text: "Italian",
+          //   value: "IT"
+          // },
+          // {
+          //   text: "Dutch",
+          //   value: "NL"
+          // },
+          // {
+          //   text: "Portuguese",
+          //   value: "PT"
+          // }
         ],
         navDrawerOpen: false,
         navDrawerGroup: []

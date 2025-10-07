@@ -11,12 +11,17 @@
       <GoogleFirebase v-if="selectedCompetency == 'Google Firebase'"></GoogleFirebase>
       <Docker v-if="selectedCompetency == 'Docker'"></Docker>
       <RabbitMQ v-if="selectedCompetency == 'RabbitMQ'"></RabbitMQ>
+      <Kafka v-if="selectedCompetency == 'Kafka'"></Kafka>
       <AngularJS v-if="selectedCompetency == 'AngularJS'"></AngularJS>
+      <React v-if="selectedCompetency == 'React'"></React>
       <Vue v-if="selectedCompetency == 'Vue'"></Vue>
       <Bootstrap v-if="selectedCompetency == 'Bootstrap'"></Bootstrap>
       <Vuetify v-if="selectedCompetency == 'Vuetify'"></Vuetify>
       <Vuex v-if="selectedCompetency == 'Vuex'"></Vuex>
       <VueRouter v-if="selectedCompetency == 'Vue Router'"></VueRouter>
+      <JSON v-if="selectedCompetency == 'Json'"></JSON>
+      <XML v-if="selectedCompetency == 'Xml'"></XML>
+      <Yaml v-if="selectedCompetency == 'Yaml'"></Yaml>
       <Kanban v-if="selectedCompetency == 'Kanban'"></Kanban>
       <Scrum v-if="selectedCompetency == 'Scrum'"></Scrum>
       <NPM v-if="selectedCompetency == 'Node Package Manager (NPM)'"></NPM>
@@ -51,6 +56,11 @@
   import Yarn from "./Competencies/Yarn.vue";
   import Paket from "./Competencies/Paket.vue";
   import NuGet from "./Competencies/NuGet.vue";
+  import React from "./Competencies/React.vue";
+  import Kafka from "./Competencies/Kafka.vue";
+  import Yaml from "./Competencies/Yaml.vue";
+  import JSON from "./Competencies/JSON.vue";
+  import XML from "./Competencies/XML.vue";
   export default {
     name: 'CompetenciesDialog',
     components: {
@@ -75,7 +85,12 @@
       NPM,
       Yarn,
       Paket,
-      NuGet
+      NuGet,
+      React,
+      Kafka,
+      Yaml,
+      XML,
+      JSON
     },
     props: {
       loading: {

@@ -26,7 +26,8 @@ import util from "@/helpers/util";
       return {
         experienceDates: [
           {startDate: new Date(2019, 2), stopDate: new Date(2023, 3)},
-          {startDate: new Date(2024, 1, 19), stopDate: null}
+          {startDate: new Date(2024, 1, 19), stopDate: new Date(2024, 2, 1)},
+          {startDate: new Date(2025, 10, 7), stopDate: null}
         ]
       }
     },

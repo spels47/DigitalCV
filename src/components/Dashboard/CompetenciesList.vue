@@ -7,7 +7,7 @@
 
         <v-subheader>{{$t("technicalList.codeLanguageHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="codeLanguageSelected" @change="changeGroupSelection($event, 'codeLanguage')">
-          <v-list-item v-for="(codeLanguage, index) in codeLanguages" :key="index" :ripple="false" color="contrast" @click="displayCompetence(codeLanguage.name)">
+          <v-list-item v-for="(codeLanguage, index) in sortedCodeLanguages" :key="index" :ripple="false" color="contrast" @click="displayCompetence(codeLanguage.name)">
             <v-list-item-icon >
               <v-icon>mdi-file-code</v-icon>
             </v-list-item-icon>
@@ -22,7 +22,7 @@
 
         <v-subheader>{{$t("technicalList.technologyHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="technologySelected" @change="changeGroupSelection($event, 'technology')">
-          <v-list-item v-for="(technology, index) in technologies" :key="index" :ripple="false" color="contrast" @click="displayCompetence(technology.name)">
+          <v-list-item v-for="(technology, index) in sortedTechnologies" :key="index" :ripple="false" color="contrast" @click="displayCompetence(technology.name)">
             <v-list-item-icon>
               <v-icon>mdi-cards-spade-outline</v-icon>
             </v-list-item-icon>
@@ -37,7 +37,7 @@
 
         <v-subheader>{{$t("technicalList.frameworkHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="frameworkSelected" @change="changeGroupSelection($event, 'framework')">
-          <v-list-item v-for="(framework, index) in frameworks" :key="index" :ripple="false" color="contrast" @click="displayCompetence(framework.name)">
+          <v-list-item v-for="(framework, index) in sortedFrameworks" :key="index" :ripple="false" color="contrast" @click="displayCompetence(framework.name)">
             <v-list-item-icon>
               <v-icon>mdi-code-json</v-icon>
             </v-list-item-icon>
@@ -50,9 +50,24 @@
 
         <v-divider class="my-2"></v-divider>
 
+        <v-subheader>{{$t("technicalList.markupHeader")}}</v-subheader>
+        <v-list-item-group color="primary" :value="markupSelected" @change="changeGroupSelection($event, 'markup')">
+          <v-list-item v-for="(markup, index) in sortedMarkupAndDataFormats" :key="index" :ripple="false" color="contrast" @click="displayCompetence(markup.name)">
+            <v-list-item-icon>
+              <v-icon>mdi-marker</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>{{markup.name}}</v-list-item-title>
+              <v-list-item-subtitle>{{experience(markup.experienceDates)}} {{$t("experience")}}</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+
+        <v-divider class="my-2"></v-divider>
+
         <v-subheader>{{$t("technicalList.methodologyHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="methodologySelected" @change="changeGroupSelection($event, 'methodology')">
-          <v-list-item v-for="(methodology, index) in methodologies" :key="index" :ripple="false" color="contrast" @click="displayCompetence(methodology.name)">
+          <v-list-item v-for="(methodology, index) in sortedMethodologies" :key="index" :ripple="false" color="contrast" @click="displayCompetence(methodology.name)">
             <v-list-item-icon>
               <v-icon>mdi-book</v-icon>
             </v-list-item-icon>
@@ -67,7 +82,7 @@
 
         <v-subheader>{{$t("technicalList.packageManagerHeader")}}</v-subheader>
         <v-list-item-group color="primary" :value="packageManagerSelected" @change="changeGroupSelection($event, 'packageManager')">
-          <v-list-item v-for="(packageManager, index) in packageManagers" :key="index" :ripple="false" color="contrast" @click="displayCompetence(packageManager.name)">
+          <v-list-item v-for="(packageManager, index) in sortedPackageManagers" :key="index" :ripple="false" color="contrast" @click="displayCompetence(packageManager.name)">
             <v-list-item-icon>
               <v-icon>mdi-package-variant-closed</v-icon>
             </v-list-item-icon>
@@ -114,7 +129,8 @@
             experienceDates: [
               {startDate: new Date(2019, 2), stopDate: new Date(2019, 4)},
               {startDate: new Date(2019, 9), stopDate: new Date(2023, 3)},
-              {startDate: new Date(2024, 1, 19), stopDate: null}
+              {startDate: new Date(2024, 1, 19), stopDate: new Date(2024, 2, 1)},
+              {startDate: new Date(2025, 10, 7), stopDate: null}
             ]
           },
           {
@@ -168,6 +184,12 @@
             experienceDates: [
               {startDate: new Date(2020, 7), stopDate: null}
             ]
+          },
+          {
+            name: "Kafka",
+            experienceDates: [
+              {startDate: new Date(2023, 3), stopDate: null}
+            ]
           }
         ],
         frameworks: [
@@ -178,10 +200,17 @@
             ]
           },
           {
+            name: "React",
+            experienceDates: [
+              {startDate: new Date(2023, 3, 1), stopDate: null}
+            ]
+          },
+          {
             name: "Vue",
             experienceDates: [
               {startDate: new Date(2019, 2), stopDate: new Date(2023, 3)},
-              {startDate: new Date(2024, 1, 19), stopDate: null}
+              {startDate: new Date(2024, 1, 19), stopDate: new Date(2024, 2, 1)},
+              {startDate: new Date(2025, 10, 7), stopDate: null}
             ]
           },
           {
@@ -194,21 +223,44 @@
             name: "Vuetify",
             experienceDates: [
               {startDate: new Date(2022, 2), stopDate: new Date(2023, 3)},
-              {startDate: new Date(2024, 1, 19), stopDate: null}
+              {startDate: new Date(2024, 1, 19), stopDate: new Date(2024, 2, 1)},
+              {startDate: new Date(2025, 10, 7), stopDate: null}
             ]
           },
           {
             name: "Vuex",
             experienceDates: [
               {startDate: new Date(2022, 2), stopDate: new Date(2023, 3)},
-              {startDate: new Date(2024, 1, 19), stopDate: null}
+              {startDate: new Date(2024, 1, 19), stopDate: new Date(2024, 2, 1)},
+              {startDate: new Date(2025, 10, 7), stopDate: null}
             ]
           },
           {
             name: "Vue Router",
             experienceDates: [
               {startDate: new Date(2019, 2), stopDate: new Date(2023, 3)},
-              {startDate: new Date(2024, 1, 19), stopDate: null}
+              {startDate: new Date(2024, 1, 19), stopDate: new Date(2024, 2, 1)},
+              {startDate: new Date(2025, 10, 7), stopDate: null}
+            ]
+          }
+        ],
+        markupAndDataFormats: [
+          {
+            name: "Json",
+            experienceDates: [
+              {startDate: new Date(2019, 2), stopDate: null}
+            ]
+          },
+          {
+            name: "Xml",
+            experienceDates: [
+              {startDate: new Date(2019, 9), stopDate: new Date(2023, 3)}
+            ]
+          },
+          {
+            name: "Yaml",
+            experienceDates: [
+              {startDate: new Date(2023, 3), stopDate: null}
             ]
           }
         ],
@@ -270,7 +322,25 @@
       }
     },
     computed: {
-      ...mapState('CompetenciesModule', ['codeLanguageSelected', 'technologySelected', 'frameworkSelected', 'methodologySelected', 'packageManagerSelected']),
+      ...mapState('CompetenciesModule', ['codeLanguageSelected', 'technologySelected', 'frameworkSelected', 'markupSelected', 'methodologySelected', 'packageManagerSelected']),
+      sortedCodeLanguages: function() {
+        return this.codeLanguages.sort((a, b) => util.calculateExperienceAsTotalTime(b.experienceDates) - util.calculateExperienceAsTotalTime(a.experienceDates));
+      },
+      sortedTechnologies: function() {
+        return this.technologies.sort((a, b) => util.calculateExperienceAsTotalTime(b.experienceDates) - util.calculateExperienceAsTotalTime(a.experienceDates));
+      },
+      sortedFrameworks: function() {
+        return this.frameworks.sort((a, b) => util.calculateExperienceAsTotalTime(b.experienceDates) - util.calculateExperienceAsTotalTime(a.experienceDates));
+      },
+      sortedMarkupAndDataFormats: function() {
+        return this.markupAndDataFormats.sort((a, b) => util.calculateExperienceAsTotalTime(b.experienceDates) - util.calculateExperienceAsTotalTime(a.experienceDates));
+      },
+      sortedMethodologies: function() {
+        return this.methodologies.sort((a, b) => util.calculateExperienceAsTotalTime(b.experienceDates) - util.calculateExperienceAsTotalTime(a.experienceDates));
+      },
+      sortedPackageManagers: function() {
+        return this.packageManagers.sort((a, b) => util.calculateExperienceAsTotalTime(b.experienceDates) - util.calculateExperienceAsTotalTime(a.experienceDates));
+      }
     },
     mounted() {
       

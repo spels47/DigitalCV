@@ -52,6 +52,7 @@
     "codeLanguageHeader": "Code Languages",
     "technologyHeader": "Technologies",
     "frameworkHeader": "Frameworks",
+    "markupHeader": "Markup & Data Formats",
     "methodologyHeader": "Methodologies",
     "packageManagerHeader": "Package managers"
   },
@@ -124,6 +125,10 @@
     "title": "RabbitMQ",
     "content": "I have used RabbitMQ to consume and emit messages in C# backends, i have also used the RabbitMQ GUI where i have looked at error messages in error queues and learned the difference between nack and ack. I have also learned how to move messages from one queue to another using that interface."
   },
+  "kafka": {
+    "title": "Kafka",
+    "content": "Kafka is an event distribution technology with less overhead than RabbitMQ, and I think it gains a lot of performance from that small overhead, which makes it perfect for large-scale systems. Still, I think I prefer RabbitMQ. I like being able to for example, acknowledge messages and remove them from queues, etc. Ive also had cases where Ive had to manually implement some of the features or overhead that RabbitMQ already provides, but by hand for Kafka. Kafka is the main event distribution technology used at Banqsoft, and at times Ive had to extend or set up consumers or event publishing with it."
+  },
   "ravenDb": {
     "title": "RavenDB",
     "content": "I have only used RavenDB a little bit, i have used it to alter some documents in the web interface, and also download and upload collections."
@@ -146,6 +151,10 @@
     "content1": "Vue Router is an optional package for Vue applications. It makes it easy to route between different pages within the application, making it possible to have the application be a {SPA} {SPAText} easily. Most modern pages are a form of {SPA} application as loading a full web page just to navigate to a different place on the same web page is very much a thing of the past.",
     "content2": "Every Vue project i have worked on has used Vue Router, including this one!"
   },
+  "react": {
+    "title": "React",
+    "content": "React is a frontend framework to make it easier to build web apps with a focus on reusable components and reactive variables or state handling as the name might suggest. React is the framework used at Banqsoft, i cant say React is my favorite out Angular and Vue which are the other frameworks ive had experience with earlier, but it gets the job done, and is the framework of choice for many large tech companies to this day."
+  },
   "vue": {
     "title": "Vue",
     "content1": "Vue is the first framework i learned how to use, and it is also my favorite framework out of all the frameworks of its kind that i have had the pleasure of experiencing throughout my career. I used it first in a refactor of a dating app i was working on back when i went to Get Academy. Then i used it in some learning projects where my focus was primarily on learning technologies other than Vue. Some time after this i used the framework while working on a project focused on refactoring our frontend from old AngularJS to new Vue3 for ABAX. After this project i worked on maintenance and feature development for internal tools that also used Vue for its frontend.",
@@ -161,6 +170,18 @@
     "title": "Vuex",
     "content1": "Vuex is a global stateholder that is an optional addon for Vue applications. I heard about this back in Get Academy but didn't really start using it before i started working with the internal tools project in ABAX. But i am glad that i did and i am a big fan of it now that i am familiar with it.",
     "content2": "This web page also used Vuex!"
+  },
+  "json": {
+    "title": "Json",
+    "content": "Json is used in many different places, from being the primary format data flows between Rest api's to frontend solutions to config files etc used in frontend solutions, i have become familiar with it, its a nice readable data structure."
+  },
+  "xml": {
+    "title": "Xml",
+    "content": "Xml is a data structure ive most commonly had to work with, when ive done tasks that involve a SOAP api, i prefer Json as i experience that as cleaner and more readable"
+  },
+  "yaml": {
+    "title": "Yaml",
+    "content": "Yaml is a format often used to configure applications and set up pipelines, its highly dependant on indentations which can be annoying, ive used it in many instances when doing tasks working at Banqsoft, its used for configuring deployments, pipelines and similar things there."
   },
   "yarn": {
     "title": "Yarn",

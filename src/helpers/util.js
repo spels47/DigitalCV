@@ -1,4 +1,15 @@
 export default {
+  calculateExperienceAsTotalTime(dates){
+    var experienceTime = 0;
+    if(dates == null || dates.length == 0) return 0;
+
+    for (let i = 0; i < dates.length; i++) {
+      const date = dates[i];
+      experienceTime += (date.stopDate ?? new Date()) - date.startDate;
+    }
+
+    return experienceTime;
+  },
   calculateExperienceList(dates, yearsText, monthsText, daysText){
     var experienceTime = 0;
 

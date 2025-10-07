@@ -52,6 +52,7 @@
     "codeLanguageHeader": "Programmeringsspråk",
     "technologyHeader": "Teknologier",
     "frameworkHeader": "Rammeverk",
+    "markupHeader": "Markup & Dataformater",
     "methodologyHeader": "Arbeids Metoder",
     "packageManagerHeader": "Pakkeforvaltere"
   },
@@ -124,6 +125,10 @@
     "title": "RabbitMQ",
     "content": "Jeg har brukt RabbitMQ til å konsumere og sende ut meldinger i C# backender, jeg har også brukt RabbitMQ sitt GUI hvor jeg har sett på error meldinger i error køer og lært forkjellen mellom nack og ack. Jeg har også lært hvordan jeg flytter meldinger fra en kø til en annen med det grensesnittet."
   },
+  "kafka": {
+    "title": "Kafka",
+    "content": "Kafka er en event distribusjonsteknologi med mindre overhead enn RabbitMQ, og jeg tror den tjener mye i performance på å ha lite overhead som gjør den perfekt til å skalere opp mye, men jeg tror jeg fortsatt foretrekker RabbitMQ, for jeg liker og for eksempel acke meldinger og få de ut av køene etc og har opplevd å måtte gjennomføre oppgaver for å implementere overhead som RabbitMQ har fra før, men for hånd for Kafka. Kafka er den distribusjonsteknologien som hovedsaklig blir brukt i Banqsoft og jeg har til tider måtte utvide eller sette opp consumers eller sending av events med dette"
+  },
   "ravenDb": {
     "title": "RavenDB",
     "content": "Jeg har bare brukt RavenDB littegrann, men jeg har brukt det til å endre dokumenter i web grensesnittet, og har også lastet ned og lastet opp collections."
@@ -146,6 +151,10 @@
     "content1": "Vue Router er en valgfri pakke som kan brukes i Vue applikasjoner. Det gjør det lettere å navigere mellom forkjellige sider inni applikasjonen, som gjør det lettere å gjøre applikasjonen til en {SPA} {SPAText} applikasjon. De fleste moderne nettsider er en eller annen form for {SPA} applikasjon siden det å gjøre en full lasting bare for å navigere til et annet sted på samme nettsted er for det meste en ting i fortiden.",
     "content2": "Alle Vue prosjekter jeg har jobbet med har brukt Vue Router, inkludert denne!"
   },
+  "react": {
+    "title": "React",
+    "content": "React er et frontend-rammeverk som gjør det enklere å bygge webapplikasjoner, med fokus på gjenbrukbare komponenter og reaktive variabler, som navnet kanskje antyder. React er rammeverket som brukes i Banqsoft. Jeg kan ikke si at React er min favoritt blant Angular og Vue, som er de andre rammeverkene jeg har erfaring med fra før, men det gjør jobben, og er fortsatt rammeverket mange store teknologiselskaper foretrekker i dag."
+  },
   "vue": {
     "title": "Vue",
     "content1": "Vue er det første rammeverket jeg lærte å bruke, og det er også favoritt rammeverket mitt ut av de forkjellige rammeverkene av dens type som jeg har hatt gleden av å erfare gjennom karrieren min. Jeg brukte det for første gang da jeg refaktorerte en dating app som jeg jobbet med tilbake på Get Academy. Så brukte jeg det igjen i noen lære prosjekter hvor fokuset mitt var primært på å lære noen andre teknologier enn Vue. En tid etter dette så brukte jeg rammeverket mens jeg jobbet på et prosjekt fokusert på å refaktorere en frontend fra en eldre versjon av AngularJS til Vue3 for ABAX. Etter det prosjektet jobbet jeg med vedlikehold og utvikling av nye interne verktøy som også brukte Vue i frontenden sin.",
@@ -161,6 +170,18 @@
     "title": "Vuex",
     "content1": "Vuex er en global holder av data tilstanden som er en valgfri pakke som kan brukes til Vue applikasjoner. Jeg hørte om det tilbake på Get Academy men tok det ikke i bruk før jeg startet å jobbe med de interne verktøyene i ABAX. Men jeg er glad for at jeg fikk muligheten til å jobbe med det og jeg er en stor fan av det nå som jeg er blitt kjent med det.",
     "content2": "Denne nettsiden er også skrevet med Vuex!"
+  },
+  "json": {
+    "title": "Json",
+    "content": "Json brukes mange forskjellige steder, fra å være hovedformatet for dataflyt mellom REST-APIer og frontend-løsninger, til konfigurasjonsfiler osv. Jeg har blitt godt kjent med det, og det er et fint lesbart datastruktur."
+  },
+  "xml": {
+    "title": "Xml",
+    "content": "Xml er en datastruktur jeg oftest har måttet jobbe med når jeg har utført oppgaver som involverer et SOAP-API. Jeg foretrekker Json, da jeg opplever det som renere og mer lesbart."
+  },
+  "yaml": {
+    "title": "Yaml",
+    "content": "Yaml er et format som ofte brukes for å konfigurere applikasjoner og sette opp pipelines. Det er svært avhengig av innrykk, noe som kan være irriterende. Jeg har brukt det i mange tilfeller når jeg har gjort oppgaver i Banqsoft, det brukes der til å konfigurere deployments, pipelines og lignende."
   },
   "yarn": {
     "title": "Yarn",
