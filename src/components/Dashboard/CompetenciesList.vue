@@ -262,6 +262,12 @@
             experienceDates: [
               {startDate: new Date(2023, 3), stopDate: null}
             ]
+          },
+          {
+            name: "Html",
+            experienceDates: [
+              {startDate: new Date(2019, 1), stopDate: null}
+            ]
           }
         ],
         methodologies: [

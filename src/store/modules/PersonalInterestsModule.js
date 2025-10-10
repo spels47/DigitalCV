@@ -1,5 +1,3 @@
-import axios from "axios";
-
 const state = {
   selectedPersonalInterest: null,
   showDialog: false,

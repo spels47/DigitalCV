@@ -187,6 +187,10 @@
     "title": "Yarn",
     "content": "I used Yarn for a short period of time for installing the dependencies for the frontend to a project because if you installed those dependencies with NPM it wouldnt work for reasons we never investigated deeper. But we found that if you installed those dependencies with Yarn it would work just fine, so we just used that for that specific project, until one day when NPM worked with that project as well. This was pretty early in my internship with ABAX."
   },
+  "html": {
+    "title": "Html",
+    "content": "Html is a markdown data structure that is commonly used in webapplications or more specifically webpages. In my first month at Get Academy i was introduced to html, and from there html, has become something i use all the time, but it has been a long time since i have used html without it being accompanied by some framework like React, Vue or similar."
+  },
   "contact": {
     "contactByEmail": "Contact me by Email",
     "subject": "Subject",

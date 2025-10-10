@@ -187,6 +187,10 @@
     "title": "Yarn",
     "content": "Jeg brukte Yarn i en kort periode for å installere avhengigheter til frontenden av et prosjekt fordi viss du installerte de avhengighetene med NPM så ville det ikke fungere av grunner vi aldri undersøkte dypere. Men vi fant ut at viss du bare installerte avhengighetene med Yarn så fungerte det helt fint, så vi bare brukte det for det spesifikke prosjektet, inntil en dag hvor NPM fungerte med det prosjektet også. Dette var ganske tidlig i min lærlingsperiode hos ABAX."
   },
+  "html": {
+    "title": "Html",
+    "content": "HTML er en markeringsdatastruktur som vanligvis brukes i webapplikasjoner, eller mer spesifikt nettsider. I min første måned på Get Academy ble jeg introdusert for HTML, og siden den gang har HTML blitt noe jeg bruker hele tiden. Det er imidlertid lenge siden jeg har brukt HTML uten at det har vært ledsaget av et rammeverk som React, Vue eller lignende."
+  },
   "contact": {
     "contactByEmail": "Kontakt meg på e-post",
     "subject": "Emne",
